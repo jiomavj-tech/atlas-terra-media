@@ -1,10 +1,10 @@
 # Tarefas — em ordem de prioridade
 
-Situação de partida: v7.7 (23/10/2026). Use `python tools/teste_fumaca.py` para reproduzir os erros.
+Situação atual: v7.8 (23/10/2026). Tarefas 1 a 4 resolvidas; pendentes: 5 e 6. Use `python tools/teste_fumaca.py` para reproduzir os erros.
 
 ---
 
-## Tarefa 1 — Grafo principal não abre (ALTA)
+## ✅ Tarefa 1 — Grafo principal não abre (ALTA) — RESOLVIDA na v7.8
 
 **Problema:** ao escolher **Menu → Grafo principal**, a tela não troca. O desenho do grafo trava antes de terminar. Os botões das seções **Obras** e **Genealogias clássicas** que levam ao grafo também disparam o erro.
 
@@ -21,7 +21,7 @@ A chamada vem de `window.atlasMainGraphStart` → `refresh()` → `draw()`.
 
 ---
 
-## Tarefa 2 — Pontos sem posição na Cronologia (ALTA)
+## ✅ Tarefa 2 — Pontos sem posição na Cronologia (ALTA) — RESOLVIDA na v7.8
 
 **Problema:** na seção **Cronologia**, alguns eventos são desenhados com coordenada `undefined`/`NaN` e não aparecem no gráfico.
 
@@ -33,7 +33,7 @@ A chamada vem de `window.atlasMainGraphStart` → `refresh()` → `draw()`.
 
 ---
 
-## Tarefa 3 — Versões desencontradas (MÉDIA)
+## ✅ Tarefa 3 — Versões desencontradas (MÉDIA) — RESOLVIDA na v7.8
 
 **Problema:** o `<title>` diz v7.7, o cabeçalho dizia "Versão 6.3" e os comentários do código citam v7.6. Isso confunde na hora de saber qual arquivo é o mais novo.
 
@@ -43,7 +43,7 @@ A chamada vem de `window.atlasMainGraphStart` → `refresh()` → `draw()`.
 
 ---
 
-## Tarefa 4 — Bloco largo demais na Genealogia completa (BAIXA)
+## ✅ Tarefa 4 — Bloco largo demais na Genealogia completa (BAIXA) — RESOLVIDA na v7.8
 
 **Problema:** na seção **Genealogias completas** (`#atlas-genealogia`), um elemento passa da largura da tela do celular e obriga a rolar para o lado.
 

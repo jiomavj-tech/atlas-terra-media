@@ -13,7 +13,7 @@ Este repositório guarda o **Atlas da Terra-média**: um aplicativo de **arquivo
    ```
    O PR não pode criar erros novos no teste. Os erros que a tarefa resolve têm que sumir da lista.
 3. **Atualize o `CHANGELOG.md`** com uma linha por mudança, em português.
-4. **Não mude a versão no título** (`<title>`) nem no cabeçalho. Quem faz isso, ao juntar os PRs, é o revisor.
+4. **Não mude a versão.** Ela fica num lugar só, `window.ATLAS_VERSAO` no `<head>`, e o título e o cabeçalho leem dali. Quem troca o número, ao juntar os PRs, é o revisor.
 
 ## O que NÃO fazer
 
