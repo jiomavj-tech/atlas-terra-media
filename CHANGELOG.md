@@ -1,5 +1,10 @@
 # Histórico de mudanças
 
+## 8.0 — 23/10/2026
+- Tela de Início: a Teia virou uma esfera 3D. Arraste com o dedo para girar (com embalo), use dois dedos para aproximar e toque num ponto para ver as conexões.
+- Ao tocar num ponto aparece um cartão com a descrição e as conexões. Tocar numa conexão gira a esfera até ela; "Ver no grafo completo" abre o Grafo principal já selecionado.
+- Botões "↻ Girar sozinha" e "◎ Centralizar". A esfera para de girar quando sai da tela, para economizar bateria.
+
 ## 7.9 — 23/10/2026
 - Tela de Início: a Teia completa (Grafo principal, 118 elementos e 202 relações) aparece no topo. Tocar num ponto abre o grafo já com aquele elemento selecionado; o botão "⛶ Abrir" abre o grafo inteiro.
 - O toque pega o ponto mais próximo do dedo, mesmo que ele não acerte o círculo exato.

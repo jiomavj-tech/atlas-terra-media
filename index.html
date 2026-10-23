@@ -1,4 +1,4 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#14271f"><title>Atlas da Terra-média — v7.9</title><script>window.ATLAS_VERSAO='7.9';document.addEventListener('DOMContentLoaded',function(){try{var v=window.ATLAS_VERSAO;document.title='Atlas da Terra-média — v'+v;var e=document.getElementById('atlasVersaoTxt');if(e)e.textContent='Versão '+v}catch(x){}})</script><style>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#14271f"><title>Atlas da Terra-média — v8.0</title><script>window.ATLAS_VERSAO='8.0';document.addEventListener('DOMContentLoaded',function(){try{var v=window.ATLAS_VERSAO;document.title='Atlas da Terra-média — v'+v;var e=document.getElementById('atlasVersaoTxt');if(e)e.textContent='Versão '+v}catch(x){}})</script><style>
 :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#f4ecd5;background:#0e1b17}*{box-sizing:border-box}body{margin:0}header{padding:19px 22px;background:#152a22;border-bottom:1px solid #5c704a}h1{font-family:Georgia,serif;margin:0;color:#e9c77d;font-size:28px}header p{margin:5px 0;color:#bac9b6}.layout{display:grid;grid-template-columns:300px minmax(0,1fr) 340px;height:calc(100dvh - 91px)}aside{padding:18px;overflow:auto;background:#14251f}aside:first-child{border-right:1px solid #34483d}aside:last-child{border-left:1px solid #34483d}input,select,button{font:inherit}input,select{width:100%;padding:11px;margin:7px 0;background:#21382e;color:#fff;border:1px solid #526e59;border-radius:8px}button{cursor:pointer;background:#2c4838;color:#f8edce;border:1px solid #728263;border-radius:8px;padding:9px 11px}button:hover,.active{background:#5a6640!important}.filters{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.filters button{font-size:12px;padding:7px}.list{display:grid;gap:5px}.list button{text-align:left}.list small{display:block;color:#c3cbbd}main{position:relative;overflow:hidden;background:radial-gradient(circle,#243c30 0%,#0d1916 75%)}svg{width:100%;height:100%;touch-action:none}line{stroke:#8f9d7c;stroke-opacity:.4;stroke-width:1.5}.edge-active{stroke:#f5cc75;stroke-opacity:.9;stroke-width:2.6}.node{cursor:pointer}.node circle{stroke:#e7d19a;stroke-width:1.4}.node text{fill:#fff7e5;font-size:12px;paint-order:stroke;stroke:#10211b;stroke-width:4px;stroke-linejoin:round;pointer-events:none}.node.selected circle{stroke:#fff;stroke-width:3}.node.dim{opacity:.17}.legend{position:absolute;bottom:12px;left:12px;background:#13261edc;border:1px solid #526e59;padding:9px;border-radius:8px;font-size:12px}.tools{position:absolute;top:12px;right:12px;display:flex;gap:5px}h2{font-family:Georgia,serif;color:#e8c77f;margin-top:0}p{line-height:1.5}.tag{display:inline-block;font-size:12px;background:#344b37;border-radius:5px;padding:5px 8px;margin:3px}.connections{display:grid;gap:7px}.connections button{text-align:left}.connections small{display:block;color:#d4d9c8;margin-top:4px}.muted{color:#bac6b7;font-size:13px}.mobile-tabs{display:none}@media(max-width:900px){header{padding:13px}h1{font-size:22px}.layout{display:flex;flex-direction:column;height:auto}main{height:55dvh;min-height:360px;order:1}aside{order:2;max-height:none;border:0!important}.legend{font-size:10px}.mobile-tabs{display:block}aside:last-child{order:3}} </style><style id="atlas-ux-v4">
 html{scroll-behavior:smooth}body.atlas-ux{padding-bottom:78px}body.atlas-ux>header{padding:12px 16px!important}body.atlas-ux>header h1{font-size:clamp(19px,5vw,29px);margin:0 0 3px}body.atlas-ux>header p{margin:2px 0;font-size:12px}
 body.atlas-ux>.layout{display:none!important}body.atlas-ux>section{display:none!important}body.atlas-ux[data-view="grafo"]>.layout{display:grid!important}body.atlas-ux>section.atlas-current{display:block!important;min-height:60vh;max-width:100vw;box-sizing:border-box;margin-top:8px!important}body.atlas-ux section{scroll-margin-top:72px}body.atlas-ux .layout{min-height:65vh}body.atlas-ux .layout aside{max-height:calc(100vh - 190px);overflow:auto}
@@ -183,24 +183,32 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,[r
 #atlasPortraitQualityBar button:focus-visible,.atlas-v50-card:focus-visible{outline:3px solid #f0d38b;outline-offset:2px}
 </style><style id="atlas-fontes-style">
 #atlasFontes{margin:26px auto;padding:22px;max-width:1120px;background:#16271f;color:#f5eedc;border:1px solid #ad9160;border-radius:15px;font:16px/1.55 system-ui,sans-serif}#atlasFontes h2,#atlasFontes h3{color:#f3d69b;margin:12px 0}#atlasFontes p{margin:9px 0}#atlasFontes .af-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}#atlasFontes article{background:#21382c;border:1px solid #5c705d;padding:14px;border-radius:9px}#atlasFontes small{color:#d3c6aa}#atlasFontes details{margin:9px 0;background:#21382c;padding:12px;border-radius:8px}#atlasFontes summary{cursor:pointer;font-weight:700;color:#f3d69b}#atlasFontes a{color:#f4d18b}#atlasFontes .af-warning{border-left:3px solid #d9ae63;padding-left:12px}#atlasFontes ul{padding-left:22px}#atlasFontes .af-tag{display:inline-block;font-size:12px;background:#3e5141;border-radius:4px;padding:2px 7px;margin-bottom:7px}
-</style><style id="atlas-v78-fixes">#atlas-genealogia{max-width:100%;box-sizing:border-box;overflow-x:clip}#atlas-genealogia *{min-width:0}#atlas-genealogia .family-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}#atlas-genealogia select,#atlas-genealogia input{max-width:100%;box-sizing:border-box}@media (max-width:700px){body[data-view="grafo"] .layout{display:grid}}</style><style id="atlas-v79-home-graph">
+</style><style id="atlas-v78-fixes">#atlas-genealogia{max-width:100%;box-sizing:border-box;overflow-x:clip}#atlas-genealogia *{min-width:0}#atlas-genealogia .family-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}#atlas-genealogia select,#atlas-genealogia input{max-width:100%;box-sizing:border-box}@media (max-width:700px){body[data-view="grafo"] .layout{display:grid}}</style><style id="atlas-v80-sphere">
 #atlasHomeGraph{border:1px solid #806a40;border-radius:16px;background:radial-gradient(circle at 50% 45%,#173f33,#0b1f1b 70%);margin:12px 0 18px;overflow:hidden}
 #atlasHomeGraph .ahg-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:12px 14px 0}
 #atlasHomeGraph .ahg-top h2{margin:0;font-family:Georgia,serif;color:#e8c783;font-size:clamp(20px,5vw,28px)}
 #atlasHomeGraph .ahg-top small{color:#b9cbb9;white-space:nowrap}
-#ahgStage{min-height:240px;cursor:pointer}
-#ahgStage svg{display:block;width:100%;height:auto}
-#ahgStage text{display:none}
-#ahgStage .ahg-big text,#ahgStage .node.selected text{display:block}
-#ahgStage .node{cursor:pointer}
-#atlasHomeGraph .ahg-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:0 14px 12px;color:#c8d3c8;font-size:13px}
-#atlasHomeGraph .ahg-foot button{background:#18372e;border:1px solid #8c784b;border-radius:10px;color:#f1e2bb;padding:9px 12px;font-size:14px;white-space:nowrap}
+#ahgCanvas{display:block;width:100%;touch-action:none;cursor:grab}
+#ahgCanvas:active{cursor:grabbing}
+#atlasHomeGraph .ahg-tools{display:flex;gap:8px;flex-wrap:wrap;padding:0 12px 10px}
+#atlasHomeGraph .ahg-tools button,#ahgCard button{background:#18372e;border:1px solid #8c784b;border-radius:10px;color:#f1e2bb;padding:9px 12px;font-size:14px}
+#atlasHomeGraph .ahg-tools button[aria-pressed="true"]{background:#d4b16a;color:#102b25}
+#atlasHomeGraph .ahg-hint{padding:0 14px 12px;margin:0;color:#c8d3c8;font-size:13px}
+#ahgCard{margin:0 12px 12px;padding:12px;border:1px solid #8a7147;border-radius:12px;background:#102a24;color:#f3e8cd}
+#ahgCard[hidden]{display:none}
+#ahgCard h3{margin:0 0 4px;color:#e8c783;font-family:Georgia,serif}
+#ahgCard p{margin:0 0 8px;color:#d4d7c6;font-size:14px;line-height:1.4}
+#ahgCard .ahg-links{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+#ahgCard .ahg-links button{font-size:13px;padding:7px 9px;text-align:left}
+#ahgCard .ahg-links button small{color:#b9cbb9}
 </style>
 </head><body class="atlas-ux" data-view="atlas-home"><section id="atlas-home" class="atlas-current">
-<div id="atlasHomeGraph" aria-label="Teia completa da Terra-média">
+<div id="atlasHomeGraph" aria-label="Teia completa da Terra-média em esfera">
 <div class="ahg-top"><h2>🕸️ Teia da Terra-média</h2><small id="ahgCount"></small></div>
-<div id="ahgStage" role="img" aria-label="Rede com todos os personagens, lugares, obras e eras ligados entre si"></div>
-<div class="ahg-foot"><span>Toque num ponto para ver as conexões dele.</span><button type="button" id="ahgOpen">⛶ Abrir</button></div>
+<canvas id="ahgCanvas" aria-label="Esfera girável com personagens, lugares, obras e eras"></canvas>
+<div class="ahg-tools"><button type="button" id="ahgSpin" aria-pressed="false">↻ Girar sozinha</button><button type="button" id="ahgReset">◎ Centralizar</button><button type="button" id="ahgOpen">⛶ Grafo completo</button></div>
+<p class="ahg-hint">Arraste com o dedo para girar a esfera • dois dedos para aproximar • toque num ponto para ver as conexões.</p>
+<div id="ahgCard" hidden aria-live="polite"></div>
 </div>
 <div class="atlas-v50-hero"><h2>✦ Explore a Terra-média</h2><p>Personagens, lugares, histórias, jornadas e conexões em um atlas offline.</p>
 <input id="atlasV50HomeSearch" class="atlas-v50-search" type="search" placeholder="Buscar personagem, povo ou lugar…" aria-label="Buscar personagens">
@@ -230,7 +238,7 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,[r
 <div id="atlasGamesGrid" class="atlas-games-grid"></div>
 <div id="atlasGamesDetail" hidden></div>
 <p class="atlas-games-note">Capas nesta seção são artes gráficas originais de identificação, não capas oficiais. Consulte os links para imagens, trailers e condições atuais de compra. Compatibilidade retroativa e disponibilidade regional devem ser verificadas na loja da plataforma.</p>
-</section><div id="atlasUxTop" role="navigation" aria-label="Navegação rápida do Atlas"><select id="atlasUxSelect" aria-label="Escolher seção"></select><input id="atlasUxSearch" placeholder="Buscar seção..." aria-label="Buscar seção"><button id="atlasUxUp" title="Voltar ao topo">↑</button><div id="atlasUxResults"></div></div><div id="atlasUxBottom" aria-label="Atalhos"><button data-ux="atlas-home">⌂ Início</button><button data-ux="teia-viva">🧠 Teia</button><button data-ux="mapas-originais">🗺️ Mapas</button><button data-ux="atlas-portraits">👤 Pessoas</button><button data-ux="atlas-games">🎮 Jogos</button><button data-ux="atlas-genealogia">🌳 Famílias</button></div><div id="atlasUxToast" role="status"></div><header><h1>✦ Atlas da Terra-média</h1><p>Livros, filmes, jogos e genealogias • <span id="atlasVersaoTxt">Versão 7.9</span></p></header><div class="layout"><aside><h2>Explorar</h2><input id="search" placeholder="Buscar personagem, obra, lugar..."><select id="category"><option value="all">Todas as categorias</option></select><select id="era"><option value="all">Todas as eras</option></select><div class="filters"><button id="reset">Mostrar tudo</button><button id="focus">Somente conexões</button></div><p class="muted" id="counter"></p><div class="list" id="list"></div></aside><main><svg id="graph" viewBox="0 0 1000 760" aria-label="Mapa interativo de relações"></svg><div class="tools"><button id="zoomIn">＋</button><button id="zoomOut">－</button><button id="fit">Centralizar</button></div><div class="legend">● Toque em um nó para explorar relações<br>Arraste o fundo para mover • Role para aproximar</div></main><aside id="details"><h2>Selecione um elemento</h2><p>Explore as relações entre obras, acontecimentos, personagens e adaptações.</p></aside></div><script>
+</section><div id="atlasUxTop" role="navigation" aria-label="Navegação rápida do Atlas"><select id="atlasUxSelect" aria-label="Escolher seção"></select><input id="atlasUxSearch" placeholder="Buscar seção..." aria-label="Buscar seção"><button id="atlasUxUp" title="Voltar ao topo">↑</button><div id="atlasUxResults"></div></div><div id="atlasUxBottom" aria-label="Atalhos"><button data-ux="atlas-home">⌂ Início</button><button data-ux="teia-viva">🧠 Teia</button><button data-ux="mapas-originais">🗺️ Mapas</button><button data-ux="atlas-portraits">👤 Pessoas</button><button data-ux="atlas-games">🎮 Jogos</button><button data-ux="atlas-genealogia">🌳 Famílias</button></div><div id="atlasUxToast" role="status"></div><header><h1>✦ Atlas da Terra-média</h1><p>Livros, filmes, jogos e genealogias • <span id="atlasVersaoTxt">Versão 8.0</span></p></header><div class="layout"><aside><h2>Explorar</h2><input id="search" placeholder="Buscar personagem, obra, lugar..."><select id="category"><option value="all">Todas as categorias</option></select><select id="era"><option value="all">Todas as eras</option></select><div class="filters"><button id="reset">Mostrar tudo</button><button id="focus">Somente conexões</button></div><p class="muted" id="counter"></p><div class="list" id="list"></div></aside><main><svg id="graph" viewBox="0 0 1000 760" aria-label="Mapa interativo de relações"></svg><div class="tools"><button id="zoomIn">＋</button><button id="zoomOut">－</button><button id="fit">Centralizar</button></div><div class="legend">● Toque em um nó para explorar relações<br>Arraste o fundo para mover • Role para aproximar</div></main><aside id="details"><h2>Selecione um elemento</h2><p>Explore as relações entre obras, acontecimentos, personagens e adaptações.</p></aside></div><script>
 const N=[];const E=[];function add(id,name,category,era,description,source=''){N.push({id,name,category,era,description,source})}function link(a,b,label){E.push({a,b,label})}
 add('arda','Arda','Universo','Antes das Eras','O mundo criado por Eru Ilúvatar no legendário de Tolkien.');add('primeira','Primeira Era','Era','Primeira Era','Conflitos em Beleriand e a guerra contra Morgoth.');add('segunda','Segunda Era','Era','Segunda Era','Númenor, os Anéis de Poder e a Última Aliança.');add('terceira','Terceira Era','Era','Terceira Era','O Hobbit, a Guerra do Anel e o fim do poder de Sauron.');add('quarta','Quarta Era','Era','Quarta Era','O domínio dos homens após a queda de Sauron.');
 add('silmarillion','O Silmarillion','Livro','Múltiplas eras','Coletânea editada por Christopher Tolkien sobre a criação do mundo e as eras antigas.');add('hobbit','O Hobbit','Livro','Terceira Era','A aventura de Bilbo até Erebor e seu encontro com o Um Anel.');add('lotr','O Senhor dos Anéis','Livro','Terceira Era','Romance publicado em três volumes: A Sociedade do Anel, As Duas Torres e O Retorno do Rei.');add('unfinished','Contos Inacabados','Livro','Múltiplas eras','Narrativas e textos complementares editados por Christopher Tolkien.');add('hurin','Os Filhos de Húrin','Livro','Primeira Era','Tragédia de Túrin Turambar e sua família.');add('beren','Beren e Lúthien','Livro','Primeira Era','História do amor de Beren e Lúthien e suas versões textuais.');add('gondolin','A Queda de Gondolin','Livro','Primeira Era','A história da cidade élfica oculta e sua destruição.');add('numenorbook','A Queda de Númenor','Livro','Segunda Era','Compilação de textos sobre a Segunda Era.');
@@ -329,7 +337,7 @@ link("sauron_game","sauron","Adaptação do personagem literário");
 link("sauron_game","shadowwar","Aparece no jogo");
 link("talion","cel_game","Ligados na narrativa dos jogos");
 const colors={'Livro':'#9a693c','Filme':'#91566d','Série':'#91566d','Jogo':'#497f95','Personagem':'#4f8961','Era':'#b49346','Lugar':'#587c91','Artefato':'#9b6b39','Universo':'#c49b52','Povo':'#688a8e','Evento':'#ab784c'};const svg=document.getElementById('graph');const ns='http://www.w3.org/2000/svg';const byId=Object.fromEntries(N.map(n=>[n.id,n]));let selected=null,only=false,scale=1,tx=0,ty=0,drag=null;N.forEach((n,i)=>{const a=i*2.39996,r=55+Math.sqrt(i/N.length)*305;n.x=500+Math.cos(a)*r;n.y=380+Math.sin(a)*r});function el(tag,attrs={},parent=svg){let e=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));parent.append(e);return e}let viewport=el('g');let _avisoGrafo=false;function syncGraph(){let novos=0;N.forEach((n,i)=>{if(byId[n.id]!==n)byId[n.id]=n;if(!Number.isFinite(n.x)||!Number.isFinite(n.y)){const a=i*2.39996,r=55+Math.sqrt(i/N.length)*305;n.x=500+Math.cos(a)*r;n.y=380+Math.sin(a)*r;novos++}});const inv=E.filter(e=>!byId[e.a]||!byId[e.b]);if(inv.length&&!_avisoGrafo){_avisoGrafo=true;console.warn('[grafo] '+inv.length+' relações ignoradas por apontar para itens inexistentes: '+inv.slice(0,5).map(e=>e.a+'→'+e.b).join(', ')+(inv.length>5?'…':''))}}function draw(){syncGraph();viewport.replaceChildren();viewport.setAttribute('transform',`translate(${tx} ${ty}) translate(500 380) scale(${scale}) translate(-500 -380)`);let visible=new Set(N.filter(n=>filter(n)).map(n=>n.id));if(only&&selected){let ids=new Set([selected]);E.forEach(e=>{if(e.a===selected)ids.add(e.b);if(e.b===selected)ids.add(e.a)});visible=new Set([...visible].filter(id=>ids.has(id)))}E.forEach(e=>{if(!visible.has(e.a)||!visible.has(e.b))return;const a=byId[e.a],b=byId[e.b];if(!a||!b)return;el('line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y,class:selected&&(e.a===selected||e.b===selected)?'edge-active':''},viewport)});N.filter(n=>visible.has(n.id)).forEach(n=>{let g=el('g',{class:'node'+(selected===n.id?' selected':'')},viewport);el('circle',{cx:n.x,cy:n.y,r:n.category==='Universo'?26:n.category==='Era'?19:13,fill:colors[n.category]},g);let t=el('text',{x:n.x,y:n.y+32,'text-anchor':'middle'},g);t.textContent=n.name.length>24?n.name.slice(0,23)+'…':n.name;g.addEventListener('click',()=>select(n.id))});document.getElementById('counter').textContent=`${visible.size} elementos • ${E.filter(e=>visible.has(e.a)&&visible.has(e.b)).length} relações`}
-function filter(n){let q=document.getElementById('search').value.toLowerCase();let c=document.getElementById('category').value;let era=document.getElementById('era').value;return (!q||(n.name+' '+n.description).toLowerCase().includes(q))&&(c==='all'||n.category===c)&&(era==='all'||n.era===era)}function refresh(){document.getElementById('list').replaceChildren();N.filter(filter).forEach(n=>{let b=document.createElement('button');b.textContent=n.name;let sm=document.createElement('small');sm.textContent=n.category+' · '+n.era;b.append(sm);b.onclick=()=>select(n.id);document.getElementById('list').append(b)});draw()}function select(id){syncGraph();const n=byId[id];if(!n)return;selected=id;document.getElementById('search').value='';document.getElementById('category').value='all';document.getElementById('era').value='all';let rel=E.filter(e=>e.a===id||e.b===id);let d=document.getElementById('details');d.replaceChildren();let h=document.createElement('h2');h.textContent=n.name;d.append(h);let tags=document.createElement('div');tags.innerHTML=`<span class="tag">${n.category}</span><span class="tag">${n.era}</span>`;d.append(tags);let p=document.createElement('p');p.textContent=n.description;d.append(p);let h3=document.createElement('h3');h3.textContent=`Conexões (${rel.length})`;d.append(h3);let wrap=document.createElement('div');wrap.className='connections';rel.forEach(e=>{let other=byId[e.a===id?e.b:e.a];let b=document.createElement('button');b.textContent=other.name;let s=document.createElement('small');s.textContent=e.label;b.append(s);b.onclick=()=>select(other.id);wrap.append(b)});d.append(wrap);draw()}
+window.atlasGraphData=function(){syncGraph();return {N:N,E:E.filter(e=>byId[e.a]&&byId[e.b]),colors:colors}};window.atlasGraphSelect=function(id){select(id)};function filter(n){let q=document.getElementById('search').value.toLowerCase();let c=document.getElementById('category').value;let era=document.getElementById('era').value;return (!q||(n.name+' '+n.description).toLowerCase().includes(q))&&(c==='all'||n.category===c)&&(era==='all'||n.era===era)}function refresh(){document.getElementById('list').replaceChildren();N.filter(filter).forEach(n=>{let b=document.createElement('button');b.textContent=n.name;let sm=document.createElement('small');sm.textContent=n.category+' · '+n.era;b.append(sm);b.onclick=()=>select(n.id);document.getElementById('list').append(b)});draw()}function select(id){syncGraph();const n=byId[id];if(!n)return;selected=id;document.getElementById('search').value='';document.getElementById('category').value='all';document.getElementById('era').value='all';let rel=E.filter(e=>e.a===id||e.b===id);let d=document.getElementById('details');d.replaceChildren();let h=document.createElement('h2');h.textContent=n.name;d.append(h);let tags=document.createElement('div');tags.innerHTML=`<span class="tag">${n.category}</span><span class="tag">${n.era}</span>`;d.append(tags);let p=document.createElement('p');p.textContent=n.description;d.append(p);let h3=document.createElement('h3');h3.textContent=`Conexões (${rel.length})`;d.append(h3);let wrap=document.createElement('div');wrap.className='connections';rel.forEach(e=>{let other=byId[e.a===id?e.b:e.a];let b=document.createElement('button');b.textContent=other.name;let s=document.createElement('small');s.textContent=e.label;b.append(s);b.onclick=()=>select(other.id);wrap.append(b)});d.append(wrap);draw()}
 [...new Set(N.map(n=>n.category))].sort().forEach(c=>document.getElementById('category').add(new Option(c,c)));[...new Set(N.map(n=>n.era))].sort().forEach(c=>document.getElementById('era').add(new Option(c,c)));['search','category','era'].forEach(id=>document.getElementById(id).addEventListener(id==='search'?'input':'change',refresh));document.getElementById('reset').onclick=()=>{selected=null;only=false;['search'].forEach(id=>document.getElementById(id).value='');['category','era'].forEach(id=>document.getElementById(id).value='all');refresh()};document.getElementById('focus').onclick=()=>{only=!only;document.getElementById('focus').classList.toggle('active',only);draw()};document.getElementById('zoomIn').onclick=()=>{scale=Math.min(3,scale*1.2);draw()};document.getElementById('zoomOut').onclick=()=>{scale=Math.max(.45,scale/1.2);draw()};document.getElementById('fit').onclick=()=>{scale=1;tx=ty=0;draw()};svg.addEventListener('wheel',e=>{e.preventDefault();scale=Math.max(.45,Math.min(3,scale*(e.deltaY<0?1.1:.9)));draw()},{passive:false});svg.addEventListener('pointerdown',e=>{if(e.pointerType==='touch')return;if(e.target.closest('.node'))return;drag={x:e.clientX,y:e.clientY};svg.setPointerCapture(e.pointerId)});svg.addEventListener('pointermove',e=>{if(!drag)return;let r=svg.getBoundingClientRect();tx+=(e.clientX-drag.x)*1000/r.width;ty+=(e.clientY-drag.y)*760/r.height;drag={x:e.clientX,y:e.clientY};});svg.addEventListener('pointerup',()=>{if(drag){drag=null;draw()}});svg.addEventListener('pointercancel',()=>{if(drag){drag=null;draw()}});if(!matchMedia('(max-width:700px)').matches){refresh();select('sauron')}else{window.atlasMainGraphStart=()=>{if(window.atlasMainGraphStart){window.atlasMainGraphStart=null;refresh();select('sauron')}}}
 </script>
 <style>
@@ -1666,29 +1674,94 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 </script>
 <script>
 (()=>{
-const stage=document.getElementById('ahgStage'),count=document.getElementById('ahgCount');
-function openGrafo(){const s=document.getElementById('atlasUxSelect');if(s){s.value='grafo';s.dispatchEvent(new Event('change'))}}
-function snapshot(){
-  const g=document.getElementById('graph');if(!g)return false;
-  if(typeof window.atlasMainGraphStart==='function'){try{window.atlasMainGraphStart()}catch(e){}}
-  if(!g.querySelector('.node'))return false;
-  // Montar a STRING do svg e injetar numa DIV: evita o problema de namespace em webviews do Android.
-  stage.innerHTML='<svg viewBox="'+(g.getAttribute('viewBox')||'0 0 1000 760')+'" xmlns="http://www.w3.org/2000/svg">'+g.innerHTML.replace(/\sid="[^"]*"/g,'')+'</svg>';
-  stage.querySelectorAll('.node').forEach(n=>{const c=n.querySelector('circle');if(c&&+c.getAttribute('r')>=19)n.classList.add('ahg-big')});
-  const c=document.getElementById('counter');count.textContent=c?c.textContent:'';
+const cv=document.getElementById('ahgCanvas'),ctx=cv.getContext('2d'),card=document.getElementById('ahgCard'),count=document.getElementById('ahgCount'),spinBtn=document.getElementById('ahgSpin');
+let data=null,P=[],nb={},sel=null,W=0,H=0,dpr=1,zoom=1,need=true,raf=0;
+let R=[1,0,0,0,1,0,0,0,1]; // matriz de rotação 3x3
+let vel={x:0,y:0},spin=false,focus=null,visible=true;
+const mul=(a,b)=>{const r=new Array(9);for(let i=0;i<3;i++)for(let j=0;j<3;j++)r[i*3+j]=a[i*3]*b[j]+a[i*3+1]*b[3+j]+a[i*3+2]*b[6+j];return r};
+function axisRot(x,y,z,ang){const c=Math.cos(ang),s=Math.sin(ang),t=1-c;return[t*x*x+c,t*x*y-s*z,t*x*z+s*y,t*x*y+s*z,t*y*y+c,t*y*z-s*x,t*x*z-s*y,t*y*z+s*x,t*z*z+c]}
+function rotate(dx,dy){const ang=Math.hypot(dx,dy);if(ang<1e-6)return;R=mul(axisRot(-dy/ang,dx/ang,0,ang),R);need=true}
+function apply(p){return[R[0]*p[0]+R[1]*p[1]+R[2]*p[2],R[3]*p[0]+R[4]*p[1]+R[5]*p[2],R[6]*p[0]+R[7]*p[1]+R[8]*p[2]]}
+function load(){
+  if(typeof window.atlasGraphData!=='function')return false;
+  data=window.atlasGraphData();if(!data||!data.N.length)return false;
+  // Usa o desenho plano do grafo como "mapa-múndi" e enrola na esfera: vizinhos continuam perto.
+  P=data.N.map(n=>{const lon=((n.x-500)/520)*Math.PI*0.95,lat=Math.max(-1.35,Math.min(1.35,((n.y-380)/400)*Math.PI*0.5));return{n,v:[Math.cos(lat)*Math.sin(lon),Math.sin(lat),Math.cos(lat)*Math.cos(lon)],deg:0}});
+  const idx={};P.forEach((p,i)=>idx[p.n.id]=i);nb={};
+  data.edges=data.E.map(e=>[idx[e.a],idx[e.b],e]).filter(x=>x[0]!=null&&x[1]!=null);
+  data.edges.forEach(([a,b,e])=>{P[a].deg++;P[b].deg++;(nb[a]=nb[a]||[]).push([b,e]);(nb[b]=nb[b]||[]).push([a,e])});
+  count.textContent=P.length+' elementos • '+data.edges.length+' relações';
   return true;
 }
-stage.addEventListener('click',e=>{
-  let node=e.target.closest('.node');
-  if(!node){let best=null,bd=24*24;stage.querySelectorAll('.node circle').forEach(c=>{const r=c.getBoundingClientRect(),dx=r.left+r.width/2-e.clientX,dy=r.top+r.height/2-e.clientY,d=dx*dx+dy*dy;if(d<bd){bd=d;best=c.parentNode}});node=best}// dedo é maior que o ponto: pega o mais próximo
-  const idx=node?[...stage.querySelectorAll('.node')].indexOf(node):-1;
-  openGrafo();
-  if(idx>=0)setTimeout(()=>{const real=document.querySelectorAll('#graph .node')[idx];if(real)real.dispatchEvent(new MouseEvent('click',{bubbles:true}));const d=document.getElementById('details');if(d&&matchMedia('(max-width:700px)').matches)d.scrollIntoView({behavior:'smooth',block:'start'})},80);
-});
-document.getElementById('ahgOpen').addEventListener('click',openGrafo);
-let tries=0;(function first(){if(!snapshot()&&++tries<20)setTimeout(first,250)})();
-// Atualiza a imagem da teia sempre que voltar ao Início.
-new MutationObserver(()=>{if(document.body.dataset.view==='atlas-home')snapshot()}).observe(document.body,{attributes:true,attributeFilter:['data-view']});
+function size(){const w=cv.parentNode.clientWidth||360;dpr=Math.min(2,window.devicePixelRatio||1);W=w;H=Math.round(Math.min(w,440));cv.width=W*dpr;cv.height=H*dpr;cv.style.height=H+'px';need=true}
+let proj=[];
+function draw(){
+  need=false;ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,W,H);
+  const rad=Math.min(W,H)*0.40*zoom,cx=W/2,cy=H/2,f=2.6;
+  proj=P.map((p,i)=>{const v=apply(p.v),s=f/(f-v[2]);return{i,x:cx+v[0]*rad*s,y:cy+v[1]*rad*s,z:v[2],s}});
+  // contorno da esfera
+  ctx.beginPath();ctx.arc(cx,cy,rad*1.02,0,Math.PI*2);ctx.strokeStyle='rgba(232,199,131,.18)';ctx.lineWidth=1;ctx.stroke();
+  const hl=sel!=null?new Set((nb[sel]||[]).map(x=>x[0]).concat(sel)):null;
+  ctx.lineWidth=1;
+  for(const [a,b] of data.edges){const A=proj[a],B=proj[b];const act=sel!=null&&(a===sel||b===sel);const depth=(A.z+B.z+2)/4;
+    ctx.strokeStyle=act?'rgba(245,204,117,.95)':`rgba(143,157,124,${(hl?0.06:0.12)+depth*(hl?0.08:0.28)})`;ctx.lineWidth=act?2.2:1;
+    ctx.beginPath();ctx.moveTo(A.x,A.y);ctx.lineTo(B.x,B.y);ctx.stroke()}
+  const order=proj.slice().sort((a,b)=>a.z-b.z);
+  for(const q of order){const p=P[q.i],cat=p.n.category;const base=cat==='Universo'?9:cat==='Era'?7:3.2+Math.min(4,p.deg*0.35);const r=base*q.s*Math.sqrt(zoom);const dim=hl&&!hl.has(q.i);
+    ctx.globalAlpha=dim?0.25:0.35+0.65*((q.z+1)/2);ctx.beginPath();ctx.arc(q.x,q.y,r,0,Math.PI*2);ctx.fillStyle=data.colors[cat]||'#8a90a6';ctx.fill();
+    ctx.lineWidth=q.i===sel?2.5:1;ctx.strokeStyle=q.i===sel?'#fff':'#e7d19a';ctx.stroke();ctx.globalAlpha=1}
+  // nomes: só na frente da esfera, dos maiores, do selecionado e dos vizinhos dele
+  ctx.font='600 12px system-ui,sans-serif';ctx.textAlign='center';ctx.lineJoin='round';
+  for(const q of order){const p=P[q.i];const show=q.i===sel||(hl&&hl.has(q.i)&&q.z>-0.2)||(!hl&&q.z>0.55&&(p.deg>=6||p.n.category==='Era'||p.n.category==='Universo'));if(!show)continue;
+    const t=p.n.name.length>22?p.n.name.slice(0,21)+'…':p.n.name;ctx.lineWidth=4;ctx.strokeStyle='#10211b';ctx.strokeText(t,q.x,q.y-9*q.s-4);ctx.fillStyle=q.i===sel?'#ffe7a8':'#fff7e5';ctx.fillText(t,q.x,q.y-9*q.s-4)}
+}
+function loop(){raf=0;let moving=false;
+  if(focus){const v=apply(P[focus.i].v);const ax=[v[1],-v[0],0],al=Math.hypot(ax[0],ax[1]);const ang=Math.acos(Math.max(-1,Math.min(1,v[2])));
+    if(ang<0.01){focus=null}else{const step=Math.min(ang,Math.max(0.02,ang*0.18));R=mul(axisRot(ax[0]/(al||1),ax[1]/(al||1),0,step),R);need=true;moving=true}}
+  else if(Math.abs(vel.x)+Math.abs(vel.y)>0.0004){rotate(vel.x,vel.y);vel.x*=0.94;vel.y*=0.94;moving=true}
+  else if(spin&&visible){rotate(0.004,0);moving=true}
+  if(need)draw();if(moving)raf=requestAnimationFrame(loop)}
+function kick(){if(!raf)raf=requestAnimationFrame(loop)}
+// --- toque / mouse ---
+const pts=new Map();let start=null,last=null,pinch0=0,zoom0=1,moved=false;
+cv.addEventListener('pointerdown',e=>{cv.setPointerCapture(e.pointerId);pts.set(e.pointerId,{x:e.clientX,y:e.clientY});vel={x:0,y:0};focus=null;
+  if(pts.size===1){start=last={x:e.clientX,y:e.clientY,t:performance.now()};moved=false}
+  else if(pts.size===2){const [a,b]=[...pts.values()];pinch0=Math.hypot(a.x-b.x,a.y-b.y);zoom0=zoom;moved=true}});
+cv.addEventListener('pointermove',e=>{if(!pts.has(e.pointerId))return;pts.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  if(pts.size===2){const [a,b]=[...pts.values()];const d=Math.hypot(a.x-b.x,a.y-b.y);if(pinch0>0){zoom=Math.max(0.7,Math.min(2.6,zoom0*d/pinch0));need=true;kick()}return}
+  if(!last)return;const dx=e.clientX-last.x,dy=e.clientY-last.y;if(Math.hypot(e.clientX-start.x,e.clientY-start.y)>6)moved=true;
+  const k=1/(Math.min(W,H)*0.40*zoom);rotate(dx*k,dy*k);const t=performance.now(),dt=Math.max(8,t-last.t);vel={x:dx*k*16/dt,y:dy*k*16/dt};last={x:e.clientX,y:e.clientY,t};draw()});
+function up(e){pts.delete(e.pointerId);if(pts.size>0)return;
+  if(!moved&&start){tap(start.x,start.y);vel={x:0,y:0}}
+  else if(last&&performance.now()-last.t>80)vel={x:0,y:0};
+  start=last=null;kick()}
+cv.addEventListener('pointerup',up);cv.addEventListener('pointercancel',up);
+cv.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(0.7,Math.min(2.6,zoom*(e.deltaY<0?1.1:0.9)));need=true;kick()},{passive:false});
+function tap(x,y){const r=cv.getBoundingClientRect();x-=r.left;y-=r.top;let best=null,bd=26*26;
+  for(const q of proj){if(q.z<-0.15)continue;const d=(q.x-x)**2+(q.y-y)**2-q.z*40;if(d<bd){bd=d;best=q.i}}
+  if(best==null){sel=null;card.hidden=true;need=true;kick();return}choose(best)}
+function choose(i,bring){sel=i;if(bring)focus={i};need=true;kick();
+  const n=P[i].n,links=(nb[i]||[]).slice(0,14);
+  card.replaceChildren();const h=document.createElement('h3');h.textContent=n.name;const p=document.createElement('p');p.textContent=(n.category||'')+(n.era?' · '+n.era:'')+(n.description?' — '+n.description:'');
+  const box=document.createElement('div');box.className='ahg-links';
+  for(const [j,e] of links){const b=document.createElement('button');b.type='button';b.textContent=P[j].n.name+' ';const sm=document.createElement('small');sm.textContent='— '+(e.label||'');b.append(sm);b.onclick=()=>choose(j,true);box.append(b)}
+  if(!links.length){const s=document.createElement('p');s.textContent='Sem conexões cadastradas.';box.append(s)}
+  const open=document.createElement('button');open.type='button';open.textContent='⛶ Ver no grafo completo';open.onclick=()=>openGrafo(n.id);
+  card.append(h,p,box,open);card.hidden=false}
+function openGrafo(id){const s=document.getElementById('atlasUxSelect');if(s){s.value='grafo';s.dispatchEvent(new Event('change'))}
+  if(id&&typeof window.atlasGraphSelect==='function')setTimeout(()=>{try{window.atlasGraphSelect(id)}catch(e){}},60)}
+spinBtn.onclick=()=>{spin=!spin;spinBtn.setAttribute('aria-pressed',String(spin));kick()};
+document.getElementById('ahgReset').onclick=()=>{R=[1,0,0,0,1,0,0,0,1];zoom=1;vel={x:0,y:0};focus=null;sel=null;card.hidden=true;need=true;kick()};
+document.getElementById('ahgOpen').onclick=()=>openGrafo(sel!=null?P[sel].n.id:null);
+// Economia de bateria: para de girar quando a esfera sai da tela ou o app vai para segundo plano.
+if('IntersectionObserver' in window)new IntersectionObserver(es=>{visible=es[0].isIntersecting;if(visible)kick()}).observe(cv);
+document.addEventListener('visibilitychange',()=>{visible=!document.hidden;if(visible)kick()});
+window.addEventListener('resize',()=>{size();kick()});
+new MutationObserver(()=>{if(document.body.dataset.view==='atlas-home'){size();kick()}}).observe(document.body,{attributes:true,attributeFilter:['data-view']});
+let tries=0;(function first(){if(load()){size();draw();
+  // Boas-vindas: uma volta curta para mostrar que gira, depois para sozinha.
+  vel={x:0.05,y:0.012};kick()}else if(++tries<20)setTimeout(first,250)})();
+window.AtlasEsfera={choose:i=>choose(i,true),find:name=>P.findIndex(p=>p.n.name===name),state:()=>({sel,zoom,R:R.slice()})};
 })();
 </script>
 <style>
