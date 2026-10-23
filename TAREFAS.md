@@ -1,6 +1,6 @@
 # Tarefas — em ordem de prioridade
 
-Situação atual: v7.8 (23/10/2026). Tarefas 1 a 4 resolvidas; pendentes: 5 e 6. Use `python tools/teste_fumaca.py` para reproduzir os erros.
+Situação atual: v7.9 (23/10/2026). Tarefas 1 a 4 resolvidas; pendentes: 5 e 6. Use `python tools/teste_fumaca.py` para reproduzir os erros.
 
 ---
 
