@@ -1,5 +1,9 @@
 # Histórico de mudanças
 
+## 7.9 — 23/10/2026
+- Tela de Início: a Teia completa (Grafo principal, 118 elementos e 202 relações) aparece no topo. Tocar num ponto abre o grafo já com aquele elemento selecionado; o botão "⛶ Abrir" abre o grafo inteiro.
+- O toque pega o ponto mais próximo do dedo, mesmo que ele não acerte o círculo exato.
+
 ## 7.8 — 23/10/2026
 - Corrigido: o Grafo principal não abria. Itens adicionados por outras partes do app (livros, filmes, famílias) não entravam na lista do grafo; agora o grafo se atualiza sozinho antes de desenhar.
 - Corrigido: relações que apontam para itens inexistentes agora são ignoradas, com um único aviso no console, sem travar o desenho.
