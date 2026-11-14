@@ -1,5 +1,10 @@
 # Histórico de mudanças
 
+## 8.2 — 14/11/2026
+- Grafo principal em 3D (modo padrão; o "Grafo plano" continua no botão ao lado). Os 118 elementos ficam distribuídos no espaço, com os itens ligados mais próximos uns dos outros. Arraste para girar (com embalo), dois dedos para aproximar, botões ＋ － ↻ (girar sozinho) e ◎.
+- Tocar num ponto acende as conexões e abre a ficha completa ao lado (ou abaixo, no celular, pelo botão "Detalhes ↓"). Escolher um item na lista, nas conexões da ficha ou vindo da esfera do Início gira o grafo até ele.
+- A busca e os filtros de categoria e era destacam os itens correspondentes no 3D.
+
 ## 8.1 — 14/11/2026
 - Mapa 3D no estilo Google Earth (agora é o modo padrão; o "Mapa plano" continua disponível no botão ao lado). O mapa fica inclinado com horizonte e céu; 1 dedo move, 2 dedos aproximam e giram, 2 dedos para cima/baixo inclinam. Botões de aproximar, inclinar, bússola (volta para o norte), ver tudo e tela cheia.
 - Alfinetes em pé com o nome de cada lugar; tocar num alfinete faz a câmera voar até ele e abre a ficha. Novos lugares: Fangorn, Gondor, Minas Morgul, Barad-dûr, Floresta das Trevas, Cidade do Lago, Lindon e Angmar.
