@@ -1,5 +1,11 @@
 # Histórico de mudanças
 
+## 8.1 — 14/11/2026
+- Mapa 3D no estilo Google Earth (agora é o modo padrão; o "Mapa plano" continua disponível no botão ao lado). O mapa fica inclinado com horizonte e céu; 1 dedo move, 2 dedos aproximam e giram, 2 dedos para cima/baixo inclinam. Botões de aproximar, inclinar, bússola (volta para o norte), ver tudo e tela cheia.
+- Alfinetes em pé com o nome de cada lugar; tocar num alfinete faz a câmera voar até ele e abre a ficha. Novos lugares: Fangorn, Gondor, Minas Morgul, Barad-dûr, Floresta das Trevas, Cidade do Lago, Lindon e Angmar.
+- Rotas passo a passo (Sociedade do Anel, Frodo e Sam, Bilbo): a câmera acompanha o viajante parada por parada, com o texto do que aconteceu em cada lugar. Botões Anterior, Próximo, Reproduzir/Pausar e Sair da rota. A rota de Frodo e Sam ganhou Ithilien e Minas Morgul.
+- Corrigido: os pontos das rotas no mapa plano estavam deslocados em relação aos desenhos do mapa; foram recalibrados.
+
 ## 8.0 — 23/10/2026
 - Tela de Início: a Teia virou uma esfera 3D. Arraste com o dedo para girar (com embalo), use dois dedos para aproximar e toque num ponto para ver as conexões.
 - Ao tocar num ponto aparece um cartão com a descrição e as conexões. Tocar numa conexão gira a esfera até ela; "Ver no grafo completo" abre o Grafo principal já selecionado.

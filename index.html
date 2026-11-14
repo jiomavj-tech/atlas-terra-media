@@ -1,4 +1,4 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#14271f"><title>Atlas da Terra-média — v8.0</title><script>window.ATLAS_VERSAO='8.0';document.addEventListener('DOMContentLoaded',function(){try{var v=window.ATLAS_VERSAO;document.title='Atlas da Terra-média — v'+v;var e=document.getElementById('atlasVersaoTxt');if(e)e.textContent='Versão '+v}catch(x){}})</script><style>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#14271f"><title>Atlas da Terra-média — v8.1</title><script>window.ATLAS_VERSAO='8.1';document.addEventListener('DOMContentLoaded',function(){try{var v=window.ATLAS_VERSAO;document.title='Atlas da Terra-média — v'+v;var e=document.getElementById('atlasVersaoTxt');if(e)e.textContent='Versão '+v}catch(x){}})</script><style>
 :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#f4ecd5;background:#0e1b17}*{box-sizing:border-box}body{margin:0}header{padding:19px 22px;background:#152a22;border-bottom:1px solid #5c704a}h1{font-family:Georgia,serif;margin:0;color:#e9c77d;font-size:28px}header p{margin:5px 0;color:#bac9b6}.layout{display:grid;grid-template-columns:300px minmax(0,1fr) 340px;height:calc(100dvh - 91px)}aside{padding:18px;overflow:auto;background:#14251f}aside:first-child{border-right:1px solid #34483d}aside:last-child{border-left:1px solid #34483d}input,select,button{font:inherit}input,select{width:100%;padding:11px;margin:7px 0;background:#21382e;color:#fff;border:1px solid #526e59;border-radius:8px}button{cursor:pointer;background:#2c4838;color:#f8edce;border:1px solid #728263;border-radius:8px;padding:9px 11px}button:hover,.active{background:#5a6640!important}.filters{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.filters button{font-size:12px;padding:7px}.list{display:grid;gap:5px}.list button{text-align:left}.list small{display:block;color:#c3cbbd}main{position:relative;overflow:hidden;background:radial-gradient(circle,#243c30 0%,#0d1916 75%)}svg{width:100%;height:100%;touch-action:none}line{stroke:#8f9d7c;stroke-opacity:.4;stroke-width:1.5}.edge-active{stroke:#f5cc75;stroke-opacity:.9;stroke-width:2.6}.node{cursor:pointer}.node circle{stroke:#e7d19a;stroke-width:1.4}.node text{fill:#fff7e5;font-size:12px;paint-order:stroke;stroke:#10211b;stroke-width:4px;stroke-linejoin:round;pointer-events:none}.node.selected circle{stroke:#fff;stroke-width:3}.node.dim{opacity:.17}.legend{position:absolute;bottom:12px;left:12px;background:#13261edc;border:1px solid #526e59;padding:9px;border-radius:8px;font-size:12px}.tools{position:absolute;top:12px;right:12px;display:flex;gap:5px}h2{font-family:Georgia,serif;color:#e8c77f;margin-top:0}p{line-height:1.5}.tag{display:inline-block;font-size:12px;background:#344b37;border-radius:5px;padding:5px 8px;margin:3px}.connections{display:grid;gap:7px}.connections button{text-align:left}.connections small{display:block;color:#d4d9c8;margin-top:4px}.muted{color:#bac6b7;font-size:13px}.mobile-tabs{display:none}@media(max-width:900px){header{padding:13px}h1{font-size:22px}.layout{display:flex;flex-direction:column;height:auto}main{height:55dvh;min-height:360px;order:1}aside{order:2;max-height:none;border:0!important}.legend{font-size:10px}.mobile-tabs{display:block}aside:last-child{order:3}} </style><style id="atlas-ux-v4">
 html{scroll-behavior:smooth}body.atlas-ux{padding-bottom:78px}body.atlas-ux>header{padding:12px 16px!important}body.atlas-ux>header h1{font-size:clamp(19px,5vw,29px);margin:0 0 3px}body.atlas-ux>header p{margin:2px 0;font-size:12px}
 body.atlas-ux>.layout{display:none!important}body.atlas-ux>section{display:none!important}body.atlas-ux[data-view="grafo"]>.layout{display:grid!important}body.atlas-ux>section.atlas-current{display:block!important;min-height:60vh;max-width:100vw;box-sizing:border-box;margin-top:8px!important}body.atlas-ux section{scroll-margin-top:72px}body.atlas-ux .layout{min-height:65vh}body.atlas-ux .layout aside{max-height:calc(100vh - 190px);overflow:auto}
@@ -202,6 +202,50 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,[r
 #ahgCard .ahg-links button{font-size:13px;padding:7px 9px;text-align:left}
 #ahgCard .ahg-links button small{color:#b9cbb9}
 </style>
+<style id="atlas-v81-map3d">
+#atlasMap3D{position:relative;margin:10px 0 12px}
+#atlasMap3D .m3-switch{display:flex;gap:8px;margin:0 0 8px}
+#atlasMap3D .m3-switch button,#atlasMap3D .m3-tools button,#atlasMap3D .m3-tour button{background:#18372e;border:1px solid #8c784b;border-radius:10px;color:#f1e2bb;padding:9px 12px;font-size:14px;min-height:40px}
+#atlasMap3D button[aria-pressed="true"]{background:#d4b16a;color:#102b25;font-weight:700}
+#m3Stage{position:relative;height:min(68vh,560px);min-height:340px;overflow:hidden;border:1px solid #806a40;border-radius:16px;touch-action:none;
+  background:linear-gradient(#0b1a2b 0%,#21405a 30%,#6d8aa0 52%,#2b4a3d 53%,#0d211b 100%);perspective:900px;perspective-origin:50% 58%;cursor:grab;user-select:none;-webkit-user-select:none}
+#m3Stage:active{cursor:grabbing}
+#m3Stage::after{content:'';position:absolute;inset:0 0 auto 0;height:38%;pointer-events:none;background:linear-gradient(rgba(11,26,43,.0),rgba(170,190,205,.0) 60%,rgba(190,205,215,.18))}
+#m3Plane{position:absolute;left:0;top:0;width:984px;height:877px;transform-origin:0 0;transform-style:preserve-3d;will-change:transform}
+#m3Plane>img{position:absolute;inset:0;width:984px;height:877px;display:block;pointer-events:none;box-shadow:0 0 80px 30px rgba(10,30,40,.65);border-radius:6px}
+#m3Plane svg{position:absolute;inset:0;width:984px;height:877px;overflow:visible;pointer-events:none}
+#m3Plane .m3-route-all{fill:none;stroke:#f6e3a6;stroke-opacity:.55;stroke-dasharray:calc(var(--sw)*3px) calc(var(--sw)*2.2px);stroke-width:calc(var(--sw)*1px);stroke-linecap:round}
+#m3Plane .m3-route-done{fill:none;stroke:#ffcc4d;stroke-width:calc(var(--sw)*1.9px);stroke-linecap:round;stroke-linejoin:round}
+#m3Plane .m3-stop{fill:#102b25;stroke:#ffcc4d;stroke-width:calc(var(--sw)*.6px)}
+#m3Plane .m3-stop.done{fill:#ffcc4d}
+.m3-pin{position:absolute;width:0;height:0;transform-style:preserve-3d}
+.m3-pin>.m3-in{position:absolute;left:0;bottom:0;transform-origin:0 100%;transform:rotateZ(calc(var(--h)*-1deg)) rotateX(calc(var(--t)*-1deg)) scale(var(--ps)) translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;cursor:pointer;pointer-events:auto}
+.m3-pin .m3-lbl{background:#0f2a24ee;color:#fff3cf;border:1px solid #d9b56b;border-radius:9px;padding:4px 8px;font:600 13px/1.1 system-ui,sans-serif;white-space:nowrap;box-shadow:0 3px 8px #0009}
+.m3-pin .m3-stick{width:2px;height:20px;background:linear-gradient(#e8c783,#7a5f2e)}
+.m3-pin .m3-dot{width:10px;height:10px;border-radius:50%;background:#e8c783;border:2px solid #102b25;margin-top:-2px}
+.m3-pin.on .m3-lbl{background:#d4b16a;color:#102b25}
+.m3-pin.stop .m3-lbl{border-color:#ffcc4d}
+.m3-pin.minor .m3-lbl{font-size:11px;opacity:.9}
+#m3Plane.m3-far .m3-pin.minor .m3-lbl{display:none}
+#m3Traveler{position:absolute;width:0;height:0;transform-style:preserve-3d;display:none}
+#m3Traveler>div{position:absolute;left:0;bottom:0;transform-origin:0 100%;transform:rotateZ(calc(var(--h)*-1deg)) rotateX(calc(var(--t)*-1deg)) scale(var(--ps)) translateX(-50%);font-size:26px;filter:drop-shadow(0 3px 3px #000a)}
+#atlasMap3D .m3-tools{position:absolute;right:8px;top:8px;display:flex;flex-direction:column;gap:6px;z-index:3}
+#atlasMap3D .m3-tools button{width:44px;height:44px;padding:0;font-size:18px;background:#102b25e6}
+#m3Compass span{display:inline-block;transition:none}
+#atlasMap3D .m3-help{position:absolute;left:8px;bottom:8px;right:60px;margin:0;color:#e9efe6;font-size:12px;text-shadow:0 1px 3px #000;pointer-events:none;z-index:2}
+#atlasMap3D .m3-tour{margin-top:8px;border:1px solid #8a7147;border-radius:12px;background:#102a24;color:#f3e8cd;padding:10px}
+#atlasMap3D .m3-tour[hidden]{display:none}
+#atlasMap3D .m3-tour h3{margin:0 0 2px;color:#e8c783;font-family:Georgia,serif;font-size:18px}
+#atlasMap3D .m3-tour small{color:#b9cbb9}
+#atlasMap3D .m3-tour p{margin:6px 0 10px;line-height:1.45}
+#atlasMap3D .m3-tour .m3-ctrl{display:flex;gap:8px;flex-wrap:wrap}
+#atlasMap3D .m3-bar{height:4px;background:#2a463c;border-radius:4px;margin:6px 0 2px;overflow:hidden}
+#atlasMap3D .m3-bar i{display:block;height:100%;background:#ffcc4d;width:0}
+#atlasMap3D.m3-full{position:fixed;inset:0;z-index:80;margin:0;background:#07130f;padding:8px;overflow:auto}
+#atlasMap3D.m3-full #m3Stage{height:calc(100vh - 120px);max-height:none}
+body.atlas-map3d-on #mapas-originais .atlas-map-frame,body.atlas-map3d-on #atlasV53Directions,body.atlas-map3d-on #mapas-originais .atlas-v51-map-tools,body.atlas-map3d-on #atlasV57Inline{display:none!important}
+</style>
 </head><body class="atlas-ux" data-view="atlas-home"><section id="atlas-home" class="atlas-current">
 <div id="atlasHomeGraph" aria-label="Teia completa da Terra-média em esfera">
 <div class="ahg-top"><h2>🕸️ Teia da Terra-média</h2><small id="ahgCount"></small></div>
@@ -238,7 +282,7 @@ button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,[r
 <div id="atlasGamesGrid" class="atlas-games-grid"></div>
 <div id="atlasGamesDetail" hidden></div>
 <p class="atlas-games-note">Capas nesta seção são artes gráficas originais de identificação, não capas oficiais. Consulte os links para imagens, trailers e condições atuais de compra. Compatibilidade retroativa e disponibilidade regional devem ser verificadas na loja da plataforma.</p>
-</section><div id="atlasUxTop" role="navigation" aria-label="Navegação rápida do Atlas"><select id="atlasUxSelect" aria-label="Escolher seção"></select><input id="atlasUxSearch" placeholder="Buscar seção..." aria-label="Buscar seção"><button id="atlasUxUp" title="Voltar ao topo">↑</button><div id="atlasUxResults"></div></div><div id="atlasUxBottom" aria-label="Atalhos"><button data-ux="atlas-home">⌂ Início</button><button data-ux="teia-viva">🧠 Teia</button><button data-ux="mapas-originais">🗺️ Mapas</button><button data-ux="atlas-portraits">👤 Pessoas</button><button data-ux="atlas-games">🎮 Jogos</button><button data-ux="atlas-genealogia">🌳 Famílias</button></div><div id="atlasUxToast" role="status"></div><header><h1>✦ Atlas da Terra-média</h1><p>Livros, filmes, jogos e genealogias • <span id="atlasVersaoTxt">Versão 8.0</span></p></header><div class="layout"><aside><h2>Explorar</h2><input id="search" placeholder="Buscar personagem, obra, lugar..."><select id="category"><option value="all">Todas as categorias</option></select><select id="era"><option value="all">Todas as eras</option></select><div class="filters"><button id="reset">Mostrar tudo</button><button id="focus">Somente conexões</button></div><p class="muted" id="counter"></p><div class="list" id="list"></div></aside><main><svg id="graph" viewBox="0 0 1000 760" aria-label="Mapa interativo de relações"></svg><div class="tools"><button id="zoomIn">＋</button><button id="zoomOut">－</button><button id="fit">Centralizar</button></div><div class="legend">● Toque em um nó para explorar relações<br>Arraste o fundo para mover • Role para aproximar</div></main><aside id="details"><h2>Selecione um elemento</h2><p>Explore as relações entre obras, acontecimentos, personagens e adaptações.</p></aside></div><script>
+</section><div id="atlasUxTop" role="navigation" aria-label="Navegação rápida do Atlas"><select id="atlasUxSelect" aria-label="Escolher seção"></select><input id="atlasUxSearch" placeholder="Buscar seção..." aria-label="Buscar seção"><button id="atlasUxUp" title="Voltar ao topo">↑</button><div id="atlasUxResults"></div></div><div id="atlasUxBottom" aria-label="Atalhos"><button data-ux="atlas-home">⌂ Início</button><button data-ux="teia-viva">🧠 Teia</button><button data-ux="mapas-originais">🗺️ Mapas</button><button data-ux="atlas-portraits">👤 Pessoas</button><button data-ux="atlas-games">🎮 Jogos</button><button data-ux="atlas-genealogia">🌳 Famílias</button></div><div id="atlasUxToast" role="status"></div><header><h1>✦ Atlas da Terra-média</h1><p>Livros, filmes, jogos e genealogias • <span id="atlasVersaoTxt">Versão 8.1</span></p></header><div class="layout"><aside><h2>Explorar</h2><input id="search" placeholder="Buscar personagem, obra, lugar..."><select id="category"><option value="all">Todas as categorias</option></select><select id="era"><option value="all">Todas as eras</option></select><div class="filters"><button id="reset">Mostrar tudo</button><button id="focus">Somente conexões</button></div><p class="muted" id="counter"></p><div class="list" id="list"></div></aside><main><svg id="graph" viewBox="0 0 1000 760" aria-label="Mapa interativo de relações"></svg><div class="tools"><button id="zoomIn">＋</button><button id="zoomOut">－</button><button id="fit">Centralizar</button></div><div class="legend">● Toque em um nó para explorar relações<br>Arraste o fundo para mover • Role para aproximar</div></main><aside id="details"><h2>Selecione um elemento</h2><p>Explore as relações entre obras, acontecimentos, personagens e adaptações.</p></aside></div><script>
 const N=[];const E=[];function add(id,name,category,era,description,source=''){N.push({id,name,category,era,description,source})}function link(a,b,label){E.push({a,b,label})}
 add('arda','Arda','Universo','Antes das Eras','O mundo criado por Eru Ilúvatar no legendário de Tolkien.');add('primeira','Primeira Era','Era','Primeira Era','Conflitos em Beleriand e a guerra contra Morgoth.');add('segunda','Segunda Era','Era','Segunda Era','Númenor, os Anéis de Poder e a Última Aliança.');add('terceira','Terceira Era','Era','Terceira Era','O Hobbit, a Guerra do Anel e o fim do poder de Sauron.');add('quarta','Quarta Era','Era','Quarta Era','O domínio dos homens após a queda de Sauron.');
 add('silmarillion','O Silmarillion','Livro','Múltiplas eras','Coletânea editada por Christopher Tolkien sobre a criação do mundo e as eras antigas.');add('hobbit','O Hobbit','Livro','Terceira Era','A aventura de Bilbo até Erebor e seu encontro com o Um Anel.');add('lotr','O Senhor dos Anéis','Livro','Terceira Era','Romance publicado em três volumes: A Sociedade do Anel, As Duas Torres e O Retorno do Rei.');add('unfinished','Contos Inacabados','Livro','Múltiplas eras','Narrativas e textos complementares editados por Christopher Tolkien.');add('hurin','Os Filhos de Húrin','Livro','Primeira Era','Tragédia de Túrin Turambar e sua família.');add('beren','Beren e Lúthien','Livro','Primeira Era','História do amor de Beren e Lúthien e suas versões textuais.');add('gondolin','A Queda de Gondolin','Livro','Primeira Era','A história da cidade élfica oculta e sua destruição.');add('numenorbook','A Queda de Númenor','Livro','Segunda Era','Compilação de textos sobre a Segunda Era.');
@@ -1287,7 +1331,7 @@ window.addEventListener('error',e=>{console.warn('[Atlas v4.6] Erro detectado:',
 <script id="atlas-map-v49-script">(()=>{'use strict';
 const ns='http://www.w3.org/2000/svg', layer=document.getElementById('atlasMapRouteLayer'),info=document.getElementById('atlasMapJourneyInfo');
 if(!layer||!info)return;
-const places={Condado:[325,210],Bri:[385,221],Valfenda:[467,244],Moria:[541,339],Lothlorien:[611,367],Isengard:[481,481],Edoras:[590,508],MinasTirith:[656,589],PortaoNegro:[782,478],MontePerdicao:[800,555],Erebor:[829,126],AmonHen:[650,442],EmynMuil:[699,455],PantanosMortos:[752,466],CirithUngol:[816,529],BosqueVelho:[355,221],MontanhasSombrias:[544,255],FlorestaTrevas:[750,228],CidadeLago:[826,164],Rivendell:[467,244]};
+const places={Condado:[305,234],Bri:[376,226],Valfenda:[483,200],Moria:[526,295],Lothlorien:[637,339],Isengard:[398,429],Edoras:[574,435],MinasTirith:[603,544],PortaoNegro:[769,444],MontePerdicao:[875,438],Erebor:[803,130],AmonHen:[654,399],EmynMuil:[679,419],PantanosMortos:[722,438],CirithUngol:[742,523],BosqueVelho:[344,222],MontanhasSombrias:[536,174],FlorestaTrevas:[675,192],CidadeLago:[819,167],Rivendell:[483,200]};
 const routes={
  fellowship:{title:'A Sociedade do Anel — percurso aproximado',steps:['Condado','Bri','Valfenda','Moria','Lothlorien','AmonHen'],labels:['Condado','Bri','Valfenda','Moria','Lothlórien','Amon Hen'],note:'A Sociedade parte de Valfenda; os primeiros trechos mostram a jornada anterior dos hobbits. A Sociedade se desfaz em Amon Hen. Fonte: O Senhor dos Anéis, livros I–II.'},
  frodo:{title:'Frodo e Sam — rumo à Montanha da Perdição',steps:['AmonHen','EmynMuil','PantanosMortos','PortaoNegro','CirithUngol','MontePerdicao'],labels:['Amon Hen','Emyn Muil','Pântanos Mortos','Portão Negro','Cirith Ungol','Monte da Perdição'],note:'Rota esquemática: os hobbits não atravessam o Portão Negro; seguem rumo a Ithilien e Cirith Ungol. Fonte: O Senhor dos Anéis, livros IV e VI.'},
@@ -1764,6 +1808,159 @@ let tries=0;(function first(){if(load()){size();draw();
 window.AtlasEsfera={choose:i=>choose(i,true),find:name=>P.findIndex(p=>p.n.name===name),state:()=>({sel,zoom,R:R.slice()})};
 })();
 </script>
+<div id="atlasMap3D">
+<div class="m3-switch" role="group" aria-label="Tipo de mapa"><button type="button" id="m3Btn3D" aria-pressed="true">🌍 Mapa 3D</button><button type="button" id="m3Btn2D" aria-pressed="false">🗺️ Mapa plano</button></div>
+<div id="m3Stage" aria-label="Mapa 3D da Terra-média: arraste para mover, dois dedos para girar, aproximar e inclinar">
+<div id="m3Plane"><img alt="" id="m3Img"><svg viewBox="0 0 984 877" id="m3Svg"></svg></div>
+<div class="m3-tools"><button type="button" id="m3In" aria-label="Aproximar">＋</button><button type="button" id="m3Out" aria-label="Afastar">－</button><button type="button" id="m3Tilt" aria-label="Alternar visão inclinada ou de cima">⛰</button><button type="button" id="m3Compass" aria-label="Apontar para o norte"><span>🧭</span></button><button type="button" id="m3Home" aria-label="Ver o mapa inteiro">◎</button><button type="button" id="m3Full" aria-label="Tela cheia">⛶</button></div>
+<p class="m3-help">1 dedo: mover • 2 dedos: aproximar e girar • 2 dedos para cima/baixo: inclinar</p>
+</div>
+<div class="m3-tour" id="m3Tour" hidden aria-live="polite">
+<small id="m3TourTitle"></small>
+<div class="m3-bar"><i id="m3TourBar"></i></div>
+<h3 id="m3StepName"></h3><small id="m3StepCount"></small>
+<p id="m3StepText"></p>
+<div class="m3-ctrl"><button type="button" id="m3Prev">◀ Anterior</button><button type="button" id="m3Play" aria-pressed="false">▶ Reproduzir</button><button type="button" id="m3Next">Próximo ▶</button><button type="button" id="m3Stop">✕ Sair da rota</button></div>
+</div>
+</div>
+<script>
+(()=>{'use strict';
+const sec=document.getElementById('mapas-originais'),box=document.getElementById('atlasMap3D');if(!sec||!box)return;
+const frame=sec.querySelector('.atlas-map-frame');if(frame)frame.parentNode.insertBefore(box,frame);
+const stage=document.getElementById('m3Stage'),plane=document.getElementById('m3Plane'),img=document.getElementById('m3Img'),svg=document.getElementById('m3Svg');
+const srcImg=sec.querySelector('.atlas-map-frame svg image');img.src=srcImg?(srcImg.getAttribute('href')||srcImg.getAttribute('xlink:href')):'';
+const MW=984,MH=877,ns='http://www.w3.org/2000/svg';
+/* Posições calibradas sobre o desenho do mapa ilustrado (pixels da imagem 984×877). */
+const P={Condado:[217,262],Bri:[300,252],ColinasTrolls:[365,232],Valfenda:[425,222],MontanhasSombrias:[487,192],Moria:[476,333],Lothlorien:[605,385],AmonHen:[625,455],EmynMuil:[655,478],PantanosMortos:[705,500],PortaoNegro:[760,508],Ithilien:[665,560],MinasMorgul:[690,615],CirithUngol:[728,600],MontePerdicao:[884,500],Isengard:[326,490],Edoras:[532,497],Fangorn:[452,425],Gondor:[476,598],MinasTirith:[565,625],BaradDur:[808,595],Erebor:[800,140],FlorestaTrevas:[650,213],CidadeLago:[818,183],Lindon:[90,258],Angmar:[352,90]};
+/* Alfinetes: nome exibido, chave, nome do ponto no mapa plano (para reaproveitar a ficha), descrição para os lugares extras. */
+const PINS=[['Condado','Condado','Condado'],['Bri','Bri','Bri'],['Valfenda','Valfenda','Valfenda'],['Moria','Moria','Moria'],['Lothlórien','Lothlorien','Lothlórien'],['Isengard','Isengard','Isengard'],['Edoras','Edoras','Edoras'],['Minas Tirith','MinasTirith','Minas Tirith'],['Portão Negro','PortaoNegro','Portão Negro'],['Monte da Perdição','MontePerdicao','Monte da Perdição'],['Erebor','Erebor','Erebor'],
+ ['Fangorn','Fangorn',null,'Floresta antiga dos Ents, guardada por Barbárvore.','Barbárvore, Merry, Pippin'],['Gondor','Gondor',null,'Reino dos Homens do Sul, governado pelos Regentes até o retorno do Rei.','Denethor, Boromir, Faramir, Aragorn'],['Minas Morgul','MinasMorgul',null,'A antiga Minas Ithil, tomada pelos Nazgûl.','Rei-Bruxo, Frodo, Sam'],['Barad-dûr','BaradDur',null,'A Torre Sombria, fortaleza de Sauron em Mordor.','Sauron'],['Floresta das Trevas','FlorestaTrevas',null,'Grande floresta, antes chamada Verdemata, a Grande; reino de Thranduil.','Thranduil, Legolas, Bilbo'],['Cidade do Lago','CidadeLago',null,'Esgaroth, cidade de Homens construída sobre o Lago Longo.','Bard, Bilbo'],['Lindon','Lindon',null,'Terra élfica no extremo oeste; dos Portos Cinzentos partem os navios para o Oeste.','Círdan, Gil-galad'],['Angmar','Angmar',null,'Antigo reino do Rei-Bruxo, no norte, que destruiu Arnor.','Rei-Bruxo de Angmar']];
+const ROUTES={
+ fellowship:{title:'A Sociedade do Anel',icon:'💍',steps:[
+  ['Condado','Condado','Frodo deixa Bolsão em setembro de 3018 da Terceira Era, com Sam, Merry e Pippin, levando o Um Anel.'],
+  ['Bri','Bri','Na estalagem do Pônei Saltitante, os hobbits conhecem Passolargo — Aragorn —, que passa a guiá-los.'],
+  ['Valfenda','Valfenda','Em Valfenda, o Conselho de Elrond decide destruir o Anel. Nasce a Sociedade, com nove membros.'],
+  ['Moria','Moria','Barrados pela neve no Caradhras, atravessam Moria. Na ponte de Khazad-dûm, Gandalf enfrenta o Balrog e cai no abismo.'],
+  ['Lothlórien','Lothlorien','A Sociedade descansa em Lothlórien. Galadriel mostra seu Espelho a Frodo e Sam e dá presentes a todos.'],
+  ['Amon Hen','AmonHen','Boromir tenta tomar o Anel e depois morre defendendo Merry e Pippin. A Sociedade se desfaz; Frodo e Sam seguem sozinhos.']]},
+ frodo:{title:'Frodo e Sam até a Montanha da Perdição',icon:'💍',steps:[
+  ['Amon Hen','AmonHen','Frodo e Sam atravessam o Anduin sozinhos, rumo a Mordor.'],
+  ['Emyn Muil','EmynMuil','Perdidos nas colinas rochosas de Emyn Muil, capturam Gollum, que jura guiá-los.'],
+  ['Pântanos Mortos','PantanosMortos','Gollum os conduz pelos Pântanos Mortos, onde rostos pálidos parecem brilhar sob a água.'],
+  ['Portão Negro','PortaoNegro','Diante do Morannon, veem que é impossível entrar por ali. Gollum propõe um caminho secreto, mais ao sul.'],
+  ['Ithilien','Ithilien','Em Ithilien, os hobbits são encontrados por Faramir, que acaba deixando-os seguir viagem.'],
+  ['Minas Morgul','MinasMorgul','Passam diante de Minas Morgul e sobem as escadas íngremes do desfiladeiro.'],
+  ['Cirith Ungol','CirithUngol','No covil de Laracna, Frodo é picado e levado pelos orcs. Sam o resgata da torre de Cirith Ungol.'],
+  ['Monte da Perdição','MontePerdicao','Em 25 de março de 3019, Gollum arranca o Anel de Frodo e cai com ele no fogo da Montanha da Perdição.']]},
+ bilbo:{title:'Bilbo até a Montanha Solitária',icon:'🧳',steps:[
+  ['Condado','Condado','Em 2941 da Terceira Era, Gandalf e treze anões, liderados por Thorin, levam Bilbo para a aventura.'],
+  ['Colinas dos Trolls','ColinasTrolls','Três trolls capturam o grupo. Gandalf os distrai até o sol nascer e transformá-los em pedra.'],
+  ['Valfenda','Valfenda','Elrond descobre as letras da lua escondidas no mapa de Thrór.'],
+  ['Montanhas Sombrias','MontanhasSombrias','Nos túneis dos orcs, Bilbo se perde, encontra Gollum e o anel mágico.'],
+  ['Floresta das Trevas','FlorestaTrevas','Aranhas gigantes e a prisão dos elfos de Thranduil. Bilbo liberta os anões escondendo-os em barris.'],
+  ['Cidade do Lago','CidadeLago','Os moradores de Esgaroth acolhem os anões antes da subida à Montanha.'],
+  ['Erebor','Erebor','Bilbo enfrenta Smaug com palavras e encontra a Pedra Arken. Smaug ataca a Cidade do Lago e é morto por Bard; segue-se a Batalha dos Cinco Exércitos.']]}
+};
+/* ---- câmera ---- */
+let W=0,H=0,cam={x:MW/2,y:MH*0.52,z:1,t:48,h:0},zFit=1,anim=null,tilted=true;
+let inited=false;function measure(){W=stage.clientWidth||360;H=stage.clientHeight||420;zFit=Math.min(W/MW*1.05,H/MH*1.6);if(!inited&&stage.clientWidth){inited=true;cam.z=zFit*1.25}}
+function clampCam(){cam.z=Math.max(zFit*0.7,Math.min(zFit*7,cam.z));cam.t=Math.max(0,Math.min(65,cam.t));cam.x=Math.max(0,Math.min(MW,cam.x));cam.y=Math.max(0,Math.min(MH,cam.y))}
+function render(){clampCam();plane.classList.toggle('m3-far',cam.z<zFit*1.9);
+  plane.style.transform=`translate(${W/2}px,${H*0.58}px) rotateX(${cam.t}deg) rotateZ(${cam.h}deg) scale(${cam.z}) translate(${-cam.x}px,${-cam.y}px)`;
+  const ps=Math.min(1.6,1/Math.pow(cam.z,0.85));
+  plane.style.setProperty('--h',cam.h);plane.style.setProperty('--t',cam.t);plane.style.setProperty('--ps',ps);plane.style.setProperty('--sw',(3.2/cam.z).toFixed(3));
+  compass.firstChild.style.transform=`rotate(${cam.h}deg)`}
+const compass=document.getElementById('m3Compass');
+/* voo da câmera, com arco de afastamento como no Google Earth */
+function fly(to,ms=1200,onEnd,path){const from={...cam},dist=Math.hypot(to.x-from.x,to.y-from.y);const dip=Math.min(0.5,dist/900);const t0=performance.now();
+  if(to.h!=null){let d=((to.h-from.h)%360+540)%360-180;to.h=from.h+d}
+  cancelAnimationFrame(anim);
+  (function step(now){let k=Math.min(1,(now-t0)/ms),e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;
+    const pos=path?path(e):[from.x+(to.x-from.x)*e,from.y+(to.y-from.y)*e];cam.x=pos[0];cam.y=pos[1];
+    const zl=from.z+((to.z??from.z)-from.z)*e;cam.z=zl*(1-dip*Math.sin(Math.PI*e));
+    cam.t=from.t+((to.t??from.t)-from.t)*e;cam.h=from.h+((to.h??from.h)-from.h)*e;render();
+    if(path)traveler(pos);
+    if(k<1)anim=requestAnimationFrame(step);else{anim=null;onEnd&&onEnd()}})(t0)}
+/* ---- alfinetes ---- */
+const pinEls={};
+PINS.forEach(([name,key,pin2d,desc,who],i)=>{const [x,y]=P[key];const p=document.createElement('div');p.className='m3-pin'+(i>10?' minor':'');p.style.left=x+'px';p.style.top=y+'px';
+  p.innerHTML='<div class="m3-in" role="button" tabindex="0"><span class="m3-lbl"></span><span class="m3-stick"></span><span class="m3-dot"></span></div>';p.querySelector('.m3-lbl').textContent=name;p.querySelector('.m3-in').setAttribute('aria-label',name);
+  const go=()=>{if(moved)return;openPlace(name,key,pin2d,desc,who)};p.querySelector('.m3-in').addEventListener('click',go);p.querySelector('.m3-in').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();openPlace(name,key,pin2d,desc,who)}});
+  plane.append(p);pinEls[key]=p});
+const trav=document.createElement('div');trav.id='m3Traveler';trav.innerHTML='<div>💍</div>';plane.append(trav);
+function traveler(pos){if(!pos){trav.style.display='none';return}trav.style.display='block';trav.style.left=pos[0]+'px';trav.style.top=pos[1]+'px'}
+function mark(key){Object.entries(pinEls).forEach(([k,el])=>el.classList.toggle('on',k===key))}
+function openPlace(name,key,pin2d,desc,who){mark(key);const [x,y]=P[key];fly({x,y:y+40/Math.max(1,cam.z),z:Math.max(cam.z,zFit*2.6),t:52});
+  const panel=document.getElementById('atlasMapDescription');
+  const g2=pin2d&&[...document.querySelectorAll('#atlasMapPins .map-pin')].find(g=>g.getAttribute('aria-label')===pin2d);
+  if(g2){g2.dispatchEvent(new MouseEvent('click',{bubbles:true,detail:99}))}
+  else if(panel){panel.replaceChildren();const h=document.createElement('h3');h.textContent=name;const p=document.createElement('p');p.textContent=desc||'';const q=document.createElement('p');q.textContent='Personagens relacionados: '+(who||'—');panel.append(h,p,q)}}
+/* Voz e mapa plano: quando um ponto do mapa plano é acionado em modo 3D, a câmera voa até ele. */
+document.getElementById('atlasMapPins')?.addEventListener('click',e=>{if(!is3D()||e.detail===99)return;const g=e.target.closest('.map-pin');if(!g)return;const pin=PINS.find(p=>p[2]===g.getAttribute('aria-label'));if(pin){mark(pin[1]);const [x,y]=P[pin[1]];fly({x,y,z:Math.max(cam.z,zFit*2.6),t:52})}});
+/* ---- gestos ---- */
+const pts=new Map();let last=null,moved=false,g0=null;
+function mid(){const a=[...pts.values()];return{x:(a[0].x+a[1].x)/2,y:(a[0].y+a[1].y)/2,d:Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y),ang:Math.atan2(a[1].y-a[0].y,a[1].x-a[0].x)*180/Math.PI}}
+function panBy(dx,dy){const hr=cam.h*Math.PI/180,c=Math.cos(hr),s=Math.sin(hr),dyg=dy/Math.max(.35,Math.cos(cam.t*Math.PI/180));cam.x-=(dx*c+dyg*s)/cam.z;cam.y-=(-dx*s+dyg*c)/cam.z}
+stage.addEventListener('pointerdown',e=>{if(e.target.closest('.m3-tools'))return;pts.set(e.pointerId,{x:e.clientX,y:e.clientY});cancelAnimationFrame(anim);anim=null;stopPlay();
+  if(pts.size===1){last={x:e.clientX,y:e.clientY};moved=false;g0={x:e.clientX,y:e.clientY}}else if(pts.size===2){for(const id of pts.keys()){try{stage.setPointerCapture(id)}catch(_){}}last=mid();moved=true}});
+stage.addEventListener('pointermove',e=>{if(!pts.has(e.pointerId))return;pts.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  if(pts.size===1&&last&&last.d===undefined){const dx=e.clientX-last.x,dy=e.clientY-last.y;if(!moved&&Math.hypot(e.clientX-g0.x,e.clientY-g0.y)>6){moved=true;try{stage.setPointerCapture(e.pointerId)}catch(_){}}if(moved){panBy(dx,dy);render()}last={x:e.clientX,y:e.clientY}}
+  else if(pts.size===2&&last){const m=mid();if(last.d>0)cam.z*=m.d/last.d;let da=m.ang-last.ang;if(da>180)da-=360;if(da<-180)da+=360;cam.h+=da;
+    const dy=m.y-last.y;if(Math.abs(dy)>Math.abs(m.x-last.x)*0.6&&Math.abs(m.d-last.d)<6)cam.t-=dy*0.35;else panBy(m.x-last.x,m.y-last.y);
+    last=m;render()}});
+function up(e){pts.delete(e.pointerId);if(pts.size===1){const v=[...pts.values()][0];last={x:v.x,y:v.y};g0={x:v.x,y:v.y}}else if(pts.size===0){last=null;setTimeout(()=>{moved=false},30)}}
+stage.addEventListener('pointerup',up);stage.addEventListener('pointercancel',up);
+stage.addEventListener('wheel',e=>{e.preventDefault();cam.z*=e.deltaY<0?1.12:0.89;render()},{passive:false});
+/* ---- botões ---- */
+document.getElementById('m3In').onclick=()=>fly({x:cam.x,y:cam.y,z:cam.z*1.5},350);
+document.getElementById('m3Out').onclick=()=>fly({x:cam.x,y:cam.y,z:cam.z/1.5},350);
+document.getElementById('m3Tilt').onclick=()=>{tilted=cam.t<20;fly({x:cam.x,y:cam.y,t:tilted?52:0},500)};
+compass.onclick=()=>fly({x:cam.x,y:cam.y,h:0},500);
+function home(){mark(null);fly({x:MW/2,y:MH*0.52,z:zFit,t:48,h:0},900)}
+document.getElementById('m3Home').onclick=home;
+document.getElementById('m3Full').onclick=()=>{box.classList.toggle('m3-full');setTimeout(()=>{measure();render()},50)};
+/* ---- 2D / 3D ---- */
+const b3=document.getElementById('m3Btn3D'),b2=document.getElementById('m3Btn2D');
+function is3D(){return document.body.classList.contains('atlas-map3d-on')}
+function setMode(on){document.body.classList.toggle('atlas-map3d-on',on);stage.style.display=on?'':'none';b3.setAttribute('aria-pressed',String(on));b2.setAttribute('aria-pressed',String(!on));
+  if(!on){stopTour();box.classList.remove('m3-full')}else{measure();render();if(sel&&ROUTES[sel.value]&&!tour)startTour(sel.value)}try{localStorage.setItem('atlasMapMode',on?'3d':'2d')}catch(e){}}
+b3.onclick=()=>setMode(true);b2.onclick=()=>setMode(false);
+/* ---- rotas passo a passo ---- */
+const tourBox=document.getElementById('m3Tour'),playBtn=document.getElementById('m3Play');let tour=null,stepI=0,playing=false,playTimer=0;
+const sel=document.getElementById('atlasMapJourney');
+function drawRoute(){svg.replaceChildren();if(!tour)return;const pts=tour.steps.map(s=>P[s[1]]);
+  const all=document.createElementNS(ns,'polyline');all.setAttribute('class','m3-route-all');all.setAttribute('points',pts.map(p=>p.join(',')).join(' '));svg.append(all);
+  const done=document.createElementNS(ns,'polyline');done.setAttribute('class','m3-route-done');done.setAttribute('points',pts.slice(0,stepI+1).map(p=>p.join(',')).join(' '));svg.append(done);
+  pts.forEach((p,i)=>{const c=document.createElementNS(ns,'circle');c.setAttribute('cx',p[0]);c.setAttribute('cy',p[1]);c.setAttribute('r',(3.2/cam.z*2.2).toFixed(2));c.setAttribute('class','m3-stop'+(i<=stepI?' done':''));svg.append(c)})}
+function showStep(i,animate){if(!tour)return;const prev=stepI;stepI=Math.max(0,Math.min(tour.steps.length-1,i));const [name,key,text]=tour.steps[stepI];
+  document.getElementById('m3StepName').textContent=name;document.getElementById('m3StepCount').textContent=`Parada ${stepI+1} de ${tour.steps.length}`;document.getElementById('m3StepText').textContent=text;
+  document.getElementById('m3TourBar').style.width=((stepI+1)/tour.steps.length*100)+'%';
+  document.getElementById('m3Prev').disabled=stepI===0;document.getElementById('m3Next').disabled=stepI===tour.steps.length-1;
+  Object.values(pinEls).forEach(el=>el.classList.remove('stop'));if(pinEls[key])pinEls[key].classList.add('stop');mark(pinEls[key]?key:null);
+  const [x,y]=P[key];const z=Math.max(zFit*2.2,Math.min(cam.z,zFit*3.2));
+  if(animate&&stepI===prev+1){const a=P[tour.steps[prev][1]],b=[x,y];
+    // o viajante percorre o trecho e a câmera acompanha, virando na direção do caminho
+    const head=-Math.atan2(b[0]-a[0],-(b[1]-a[1]))*180/Math.PI;
+    fly({x,y,z,t:55,h:Math.abs(head)<100?head*0.5:cam.h},1800,()=>{drawRoute();if(playing)playTimer=setTimeout(()=>{if(stepI<tour.steps.length-1)showStep(stepI+1,true);else stopPlay()},3200)},e=>[a[0]+(b[0]-a[0])*e,a[1]+(b[1]-a[1])*e])}
+  else{traveler([x,y]);fly({x,y,z,t:52},1100,drawRoute)}
+  drawRoute()}
+function startTour(id){const r=ROUTES[id];if(!r){stopTour();return}tour=r;stepI=0;tourBox.hidden=false;document.getElementById('m3TourTitle').textContent='Rota: '+r.title;trav.firstChild.textContent=r.icon;showStep(0,false);stage.scrollIntoView({behavior:'smooth',block:'center'})}
+function stopPlay(){playing=false;clearTimeout(playTimer);playBtn.setAttribute('aria-pressed','false');playBtn.textContent='▶ Reproduzir'}
+function stopTour(){stopPlay();tour=null;tourBox.hidden=true;svg.replaceChildren();traveler(null);Object.values(pinEls).forEach(el=>el.classList.remove('stop','on'))}
+document.getElementById('m3Prev').onclick=()=>{stopPlay();showStep(stepI-1,false)};
+document.getElementById('m3Next').onclick=()=>{stopPlay();showStep(stepI+1,true)};
+playBtn.onclick=()=>{if(playing){stopPlay();return}playing=true;playBtn.setAttribute('aria-pressed','true');playBtn.textContent='⏸ Pausar';if(stepI>=tour.steps.length-1){showStep(0,false);playTimer=setTimeout(()=>showStep(1,true),1500)}else showStep(stepI+1,true)};
+document.getElementById('m3Stop').onclick=()=>{if(sel){sel.value='none';sel.dispatchEvent(new Event('change',{bubbles:true}))}stopTour();home()};
+if(sel)sel.addEventListener('change',()=>{if(is3D()){if(ROUTES[sel.value])startTour(sel.value);else stopTour()}});
+/* ---- início ---- */
+let mode='3d';try{mode=localStorage.getItem('atlasMapMode')||'3d'}catch(e){}
+measure();render();setMode(mode!=='2d');
+window.addEventListener('resize',()=>{if(is3D()){measure();render()}});
+new MutationObserver(()=>{if(document.body.dataset.view==='mapas-originais'&&is3D()){measure();render()}}).observe(document.body,{attributes:true,attributeFilter:['data-view']});
+window.AtlasMapa3D={cam:()=>({...cam}),startTour,showStep,setMode,fly,P};
+})();
+</script>
+
 <style>
 #atlasVoice{position:fixed;right:12px;bottom:132px;z-index:60;display:flex;flex-direction:column;gap:10px}
 #atlasVoice button{width:52px;height:52px;border-radius:50%;border:2px solid #e3c787;background:#1d3527;color:#f3e3bb;font-size:22px;line-height:1;box-shadow:0 3px 10px #0008;cursor:pointer;padding:0}
