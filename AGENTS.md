@@ -26,7 +26,8 @@ Este repositório guarda o **Atlas da Terra-média**: um aplicativo de **arquivo
 
 ## Estrutura do app
 
-- Navegação: `#atlasUxSelect` (menu de seções) e `#atlasUxBottom` (barra inferior). A seção ativa fica em `document.body.dataset.view`.
+- Navegação (v8.5): o leitor vê **9 seções** (`#atlasNavGroup` no topo) com **abas** (`#atlasNavTabs`) e a barra inferior Início · Pessoas · Teia · Mapa · História · ☰ Mais (`#atlasNavMore`). A lista de seções/abas fica no array `G` do script `atlas-v85-nav-script`.
+- Por dentro continuam existindo as 20 seções antigas: o `#atlasUxSelect` (escondido) troca a seção, e a ativa fica em `document.body.dataset.view`. Para abrir uma seção por código, mude `#atlasUxSelect` e dispare `change`. O "Comparador de obras" (`#comparador`) foi juntado embaixo de `#comparador-adaptacoes` (aba "Comparar").
 - Cada seção é um `<section id="...">` dentro do `<body>`.
 - A voz (busca e leitura) fica no bloco `#atlasVoice`, no fim do arquivo, e é exposta como `window.AtlasVoz`.
 - O mapa ilustrado está em `#mapas-originais`, com os pontos em `#atlasMapPins`.

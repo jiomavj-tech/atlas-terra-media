@@ -59,6 +59,9 @@ def main() -> int:
             pg.evaluate(abrir, s)
             pg.wait_for_timeout(400)
             vista = pg.evaluate("()=>document.body.dataset.view")
+            redir = pg.evaluate("v=>{const o=[...document.querySelectorAll('#atlasUxSelect option')].find(x=>x.value===v);return o&&o.dataset.redirect||''}", s)
+            if redir and vista == redir:
+                continue  # seção que foi juntada a outra (ex.: comparador -> comparador-adaptacoes)
             if vista != s:
                 erros.append((s, f"seção não abriu (tela ficou em '{vista}')"))
                 continue

@@ -1,5 +1,11 @@
 # Histórico de mudanças
 
+## 8.5 — 14/11/2026 — reorganização das seções
+- De 20 seções para 9, com abas: Início · Personagens (Galeria, Fichas) · Teia (Grafo 3D, Teia Viva, Comparar dois) · Mapa (Mapa 3D, Geografia por eras, Jornadas) · Famílias (Árvores completas, Árvores clássicas) · História (Linha do tempo, Acontecimentos, Primeira Era) · Obras (Livros, Filmes e séries, Comparar) · Jogos · Fontes.
+- Nenhum conteúdo foi apagado: as seções antigas viraram abas. Os dois comparadores ficaram juntos na aba "Comparar".
+- Nova barra inferior: Início · Pessoas · Teia · Mapa · História · ☰ Mais (Famílias, Obras, Jogos, Fontes).
+- Cada seção lembra a última aba aberta.
+
 ## 8.4 — 14/11/2026 — correções de usabilidade (verificação UX)
 - Nada mais flutua por cima do conteúdo: 🎙️ e 🔊 foram para a barra do topo (e o 🎙️ também ao lado da busca do Início). O botão "Auditoria visual" saiu da tela.
 - Ferramentas de curadoria (Auditoria visual, auditorias das imagens e editorial, exportar CSV, contagem de retratos em produção) ficam juntas num bloco recolhido "🛠 Ferramentas do editor", no fim de Personagens.
