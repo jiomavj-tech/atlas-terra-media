@@ -1,5 +1,15 @@
 # Histórico de mudanças
 
+## 8.4 — 14/11/2026 — correções de usabilidade (verificação UX)
+- Nada mais flutua por cima do conteúdo: 🎙️ e 🔊 foram para a barra do topo (e o 🎙️ também ao lado da busca do Início). O botão "Auditoria visual" saiu da tela.
+- Ferramentas de curadoria (Auditoria visual, auditorias das imagens e editorial, exportar CSV, contagem de retratos em produção) ficam juntas num bloco recolhido "🛠 Ferramentas do editor", no fim de Personagens.
+- Títulos sem números de versão internos (ex.: "Biblioteca de personagens — v2.3" → "Biblioteca de personagens").
+- Início: busca e atalhos vêm antes da esfera.
+- Toques mais fáceis: nomes da Genealogia completa em tamanho de leitura (com rolagem dentro da caixa), pontos do "Comparar dois elementos" com área de toque de 44 px, botões "Mostrar tudo / Somente conexões" maiores, pontos do mapa 3D afastado mais fáceis de acertar.
+- Genealogias clássicas: os nomes quebram linha em vez de sumir na direita.
+- Letras pequenas de Personagens e Jogos aumentadas.
+- Jornadas: o texto falava em "mapa fotografado", que não existe mais; agora diz mapa 3D.
+
 ## 8.3 — 14/11/2026
 - Corrigido: o Grafo 3D ficava em branco quando o app já abria direto na tela do grafo (ao recarregar a página ou voltar ao link). Agora ele desenha sempre que a área do grafo aparece ou muda de tamanho. A mesma proteção foi aplicada ao Mapa 3D e à esfera do Início.
 - Corrigido: no Grafo plano, os botões ＋ － Centralizar ficavam por cima dos botões "Grafo 3D / Grafo plano".
