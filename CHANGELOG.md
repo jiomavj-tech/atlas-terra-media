@@ -1,5 +1,8 @@
 # Histórico de mudanças
 
+## 8.9 — 14/11/2026 — retratos, lote 2
+- 5 retratos novos: Eaoden, Idrial, Morwen (The Third Age), Elegost e The Tower of Sauron. Nenhum personagem mostra mais silhueta vazia.
+
 ## 8.8 — 14/11/2026 — retratos, lote 1
 - 10 retratos novos no lugar das silhuetas vazias: Castamir, Ranger (Olog-hai), The Black Hand of Sauron, The Hammer of Sauron, Eradan, Farin, e as versões de Battle for Middle-earth II de Arwen, Eärnur, Glorfindel e Haldir. Originais em `retratos/`.
 
