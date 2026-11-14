@@ -30,7 +30,7 @@ Este repositório guarda o **Atlas da Terra-média**: um aplicativo de **arquivo
 - Por dentro continuam existindo as 20 seções antigas: o `#atlasUxSelect` (escondido) troca a seção, e a ativa fica em `document.body.dataset.view`. Para abrir uma seção por código, mude `#atlasUxSelect` e dispare `change`. O "Comparador de obras" (`#comparador`) foi juntado embaixo de `#comparador-adaptacoes` (aba "Comparar").
 - Cada seção é um `<section id="...">` dentro do `<body>`.
 - A voz (busca e leitura) fica no bloco `#atlasVoice`, no fim do arquivo, e é exposta como `window.AtlasVoz`.
-- O mapa ilustrado está em `#mapas-originais`, com os pontos em `#atlasMapPins`.
+- O mapa ilustrado está em `#mapas-originais`, com os pontos em `#atlasMapPins`. O modo 3D é o bloco `#atlasMap3D` (`window.AtlasMapa3D`); o relevo é o script `atlas-v86-relevo` (`window.AtlasRelevo`, WebGL puro). O mapa de altitude é gerado por `tools/relevo/gerar_relevo.py` (cordilheiras traçadas à mão + detecção das montanhas desenhadas na imagem) e fica embutido como PNG base64 na constante `HM`.
 - A Teia Viva está em `#teia-viva`. No celular ela roda em "modo leve" (`.atlas-litelist`).
 - Os retratos ficam em `#atlas-portraits`. O evento `atlas:open-person` abre a ficha de um personagem.
 

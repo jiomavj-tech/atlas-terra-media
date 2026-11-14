@@ -1,5 +1,12 @@
 # Histórico de mudanças
 
+## 8.6 — 14/11/2026 — relevo no mapa 3D
+- Mapa 3D com relevo de verdade: as Montanhas Sombrias, Ered Luin, Angmar, as Montanhas Brancas, as cordilheiras de Mordor, Erebor e a Montanha da Perdição se levantam do mapa, com luz e sombra vindas do noroeste e névoa no horizonte.
+- Feito em WebGL puro, sem bibliotecas: o app continua offline e cresceu só ~25 KB (o mapa de altitude é uma imagem pequena de 246×220).
+- Alfinetes, rotas passo a passo e o viajante acompanham o relevo (as rotas "sobem e descem" as montanhas).
+- Botão 🏔 liga/desliga o relevo (fica lembrado). Se o celular não tiver WebGL, o mapa 3D anterior (sem relevo) continua funcionando.
+- O relevo só é montado na primeira vez que o Mapa é aberto, para não atrasar a abertura do app.
+
 ## 8.5 — 14/11/2026 — reorganização das seções
 - De 20 seções para 9, com abas: Início · Personagens (Galeria, Fichas) · Teia (Grafo 3D, Teia Viva, Comparar dois) · Mapa (Mapa 3D, Geografia por eras, Jornadas) · Famílias (Árvores completas, Árvores clássicas) · História (Linha do tempo, Acontecimentos, Primeira Era) · Obras (Livros, Filmes e séries, Comparar) · Jogos · Fontes.
 - Nenhum conteúdo foi apagado: as seções antigas viraram abas. Os dois comparadores ficaram juntos na aba "Comparar".
