@@ -1,5 +1,10 @@
 # Histórico de mudanças
 
+## 8.3 — 14/11/2026
+- Corrigido: o Grafo 3D ficava em branco quando o app já abria direto na tela do grafo (ao recarregar a página ou voltar ao link). Agora ele desenha sempre que a área do grafo aparece ou muda de tamanho. A mesma proteção foi aplicada ao Mapa 3D e à esfera do Início.
+- Corrigido: no Grafo plano, os botões ＋ － Centralizar ficavam por cima dos botões "Grafo 3D / Grafo plano".
+- O Grafo 3D ficou com altura ajustada à parte visível da tela do celular, sem ficar escondido atrás da barra de atalhos.
+
 ## 8.2 — 14/11/2026
 - Grafo principal em 3D (modo padrão; o "Grafo plano" continua no botão ao lado). Os 118 elementos ficam distribuídos no espaço, com os itens ligados mais próximos uns dos outros. Arraste para girar (com embalo), dois dedos para aproximar, botões ＋ － ↻ (girar sozinho) e ◎.
 - Tocar num ponto acende as conexões e abre a ficha completa ao lado (ou abaixo, no celular, pelo botão "Detalhes ↓"). Escolher um item na lista, nas conexões da ficha ou vindo da esfera do Início gira o grafo até ele.
