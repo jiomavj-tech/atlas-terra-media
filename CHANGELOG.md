@@ -1,5 +1,12 @@
 # Histórico de mudanças
 
+## 8.7 — 14/11/2026 — mapa 3D caprichado e app instalável
+- O mapa 3D usa uma versão da ilustração sem os nomes, ícones redondos e botões pintados: cada lugar aparece uma vez só, no alfinete em pé.
+- Relevo melhorado: sombras projetadas pelas montanhas, oclusão nos vales, luz quente e sombra fria, neve só nos picos claros, água com tom de reflexo do céu, névoa no horizonte e laterais de terra como uma maquete.
+- Mordor agora tem as cordilheiras nas bordas (Ered Lithui e Ephel Dúath), o planalto de Gorgoroth no meio e a Montanha da Perdição em destaque.
+- O painel "Auditoria de conexões" saiu do Grafo e foi para "🛠 Ferramentas do editor".
+- O Atlas pode ser instalado no Android (Chrome → ⋮ → Instalar app): ícone próprio, abre em tela cheia e funciona sem internet.
+
 ## 8.6 — 14/11/2026 — relevo no mapa 3D
 - Mapa 3D com relevo de verdade: as Montanhas Sombrias, Ered Luin, Angmar, as Montanhas Brancas, as cordilheiras de Mordor, Erebor e a Montanha da Perdição se levantam do mapa, com luz e sombra vindas do noroeste e névoa no horizonte.
 - Feito em WebGL puro, sem bibliotecas: o app continua offline e cresceu só ~25 KB (o mapa de altitude é uma imagem pequena de 246×220).
