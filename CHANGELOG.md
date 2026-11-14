@@ -1,5 +1,8 @@
 # Histórico de mudanças
 
+## 8.8 — 14/11/2026 — retratos, lote 1
+- 10 retratos novos no lugar das silhuetas vazias: Castamir, Ranger (Olog-hai), The Black Hand of Sauron, The Hammer of Sauron, Eradan, Farin, e as versões de Battle for Middle-earth II de Arwen, Eärnur, Glorfindel e Haldir. Originais em `retratos/`.
+
 ## 8.7 — 14/11/2026 — mapa 3D caprichado e app instalável
 - O mapa 3D usa uma versão da ilustração sem os nomes, ícones redondos e botões pintados: cada lugar aparece uma vez só, no alfinete em pé.
 - Relevo melhorado: sombras projetadas pelas montanhas, oclusão nos vales, luz quente e sombra fria, neve só nos picos claros, água com tom de reflexo do céu, névoa no horizonte e laterais de terra como uma maquete.
