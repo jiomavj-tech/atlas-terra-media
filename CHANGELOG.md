@@ -1,5 +1,8 @@
 # Histórico de mudanças
 
+## 9.0 — 14/11/2026 — retratos, lote 3
+- 10 imagens novas no lugar dos desenhos simples: Dirhael, Marwen, Ioreth, Lithariel, Torvin, Hirgon, Adar, Senhor Luminoso, os Orcs do sistema Nêmesis e a região de Seregost.
+
 ## 8.9 — 14/11/2026 — retratos, lote 2
 - 5 retratos novos: Eaoden, Idrial, Morwen (The Third Age), Elegost e The Tower of Sauron. Nenhum personagem mostra mais silhueta vazia.
 
