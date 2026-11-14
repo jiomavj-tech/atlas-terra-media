@@ -66,3 +66,13 @@ A chamada vem de `window.atlasMainGraphStart` → `refresh()` → `draw()`.
 **Problema:** a seção Pessoas busca resumos em `en.wikipedia.org`. Sem internet, a busca falha, e com internet o texto vem em inglês.
 
 **Pronto quando:** a busca tenta primeiro `pt.wikipedia.org` e só usa a versão em inglês se não achar. Sem internet, aparece uma mensagem amigável e nenhum erro.
+
+---
+
+## Tarefa 7 — Retratos que faltam (143) (ALTA)
+
+**Problema:** 15 personagens aparecem só com uma silhueta vazia e 128 com um rosto vetorial genérico.
+
+**Como fazer:** seguir `RETRATOS_PENDENTES.md` (prioridade 1 primeiro). As imagens chegam do dono em lotes, com o nome da coluna `arquivo`; recortar em 3:4, converter para WebP (~25 KB), embutir no registro do personagem em `window.atlasP1People` e atualizar `portrait_group`.
+
+**Pronto quando:** nenhum personagem mostra silhueta vazia ou rosto vetorial.
