@@ -1,5 +1,16 @@
 # Histórico de mudanças
 
+## 11.1 — 15/11/2026 — Rohan e Isengard de perto
+- **Isengard**: o Anel de rocha com o portão arrebentado e uma brecha, e Orthanc com quatro pilares negros e chifres no alto.
+  - Dentro do Anel: estradas de pedra com pilares e a metade norte inundada pelos Ents. Na metade sul, os poços de Saruman com brilho de fogo e vapor.
+  - Em volta: a represa dos Ents no Isen, o Vale do Mago devastado (tocos de árvores), os Vaus do Isen com o Túmulo dos Cavaleiros cercado de lanças e a borda de Fangorn. 9 lugares e a rota "A queda de Isengard".
+- **Abismo de Helm**: o Forte da Trombeta no esporão (muralha, torres e a torre alta) e a Muralha do Abismo com o bueiro arrombado.
+  - Também: as Cavernas Cintilantes com brilhos, o Dique de Helm, a Floresta dos Huorns, a Colina da Morte e o Thrihyrne atrás. 9 lugares e a rota "A batalha do Abismo de Helm".
+- **Edoras**: a colina com cerca de 110 casas de madeira e palha, e Meduseld com telhado dourado no alto, sobre um terraço com escadaria e o canal da fonte.
+  - Também: a paliçada com o portão, os 16 túmulos dos reis com flores brancas, o rio Snowbourn com ponte e cavalos nos campos. 7 lugares e a rota "A chegada a Edoras".
+- Tocar em "Isengard", "Abismo de Helm" ou "Edoras" mergulha a câmera no lugar.
+- Os geradores agora usam uma biblioteca comum (`tools/relevo/regioes/reg.py`), o que acelera as próximas regiões.
+
 ## 11.0 — 15/11/2026 — regiões de detalhe sem limite
 - O mapa 3D aceita quantas regiões de detalhe forem criadas. Antes o limite era 4.
 - Só as regiões perto da câmera (até 4 ao mesmo tempo) ficam carregadas na placa de vídeo. As outras são carregadas quando você se aproxima e liberadas quando se afasta, o que poupa memória no celular.
