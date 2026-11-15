@@ -80,6 +80,13 @@ class Region:
         out=np.clip(fin*bw+base*(1-bw),0,1)
         cv2.imwrite(os.path.join(s.out,s.name+'_tex.webp'),cv2.cvtColor((out*255).astype(np.uint8),cv2.COLOR_RGB2BGR),[cv2.IMWRITE_WEBP_QUALITY,88])
         Image.fromarray((out*255).astype(np.uint8)).resize((s.TW//2,s.TH//2)).save(os.path.join(s.out,'prev.png'))
+    def base_water(s,thr=0.45,soft=0.08):
+        w=np.load(ME+'water.npy');crop=w[int(s.Y0*2):int(s.Y1*2),int(s.X0*2):int(s.X1*2)]
+        up=cv2.resize(crop,(s.TW,s.TH),interpolation=cv2.INTER_CUBIC)
+        return cv2.GaussianBlur(np.clip((up-thr)/soft,0,1),(0,0),0.9)
+    def base_water_grid(s):
+        w=np.load(ME+'water.npy');crop=w[int(s.Y0*2):int(s.Y1*2),int(s.X0*2):int(s.X1*2)]
+        return cv2.resize(crop,(s.GW,s.GH),interpolation=cv2.INTER_AREA)
     def tree(s,x,y,sz,t,c): s.TREES.append([round(x,2),round(y,2),round(sz,2),t,round(float(c[0]),2),round(float(c[1]),2),round(float(c[2]),2)])
     def save_json(s):
         def _c(o):

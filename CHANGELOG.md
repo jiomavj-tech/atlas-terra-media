@@ -1,5 +1,20 @@
 # Histórico de mudanças
 
+## 11.2 — 15/11/2026 — Moria, Lothlórien e Bri de perto
+- **Moria**:
+  - As Portas de Durin brilham em ithildin no paredão (arco, pilares, coroa e estrela), entre dois azevinhos. Diante delas ficam o lago escuro com os tentáculos do Vigia e o leito seco do Sirannon com as ruínas de Azevim.
+  - Do outro lado, o Portão Leste, a escada até o Lago Espelhado (com a coroa de estrelas refletida e a Pedra de Durin), o Veio de Prata, o Caradhras com o caminho do passo e a Torre de Durin no Zirakzigil.
+  - 11 lugares e a rota "A travessia de Moria".
+- **Lothlórien**:
+  - Caras Galadhon tem mallorns gigantes de tronco prateado e copa dourada, plataformas (talans) com lanternas, a muralha verde e a ponte branca. O maior mallorn, no centro, é o de Celeborn e Galadriel.
+  - Também: o Espelho de Galadriel, Cerin Amroth com os dois anéis de árvores e as flores elanor e niphredil, o talan de Haldir, o Nimrodel e a Margem com os barcos élficos e o barco-cisne.
+  - 8 lugares e a rota "Em Lothlórien".
+- **Bri**:
+  - A colina com casas de Homens e tocas de hobbits, a estalagem do Pônei Saltitante, o dique com a sebe alta e os portões Oeste e Sul, e a casa de Bill Samambaia.
+  - Também: Staddle, Combe, Archet, a Floresta Chet e a encruzilhada do Caminho Verde.
+  - 10 lugares e a rota "Os hobbits em Bri".
+- Câmera: quando uma montanha fica entre a câmera e o lugar olhado, a câmera sobe sozinha até enxergar.
+
 ## 11.1 — 15/11/2026 — Rohan e Isengard de perto
 - **Isengard**: o Anel de rocha com o portão arrebentado e uma brecha, e Orthanc com quatro pilares negros e chifres no alto.
   - Dentro do Anel: estradas de pedra com pilares e a metade norte inundada pelos Ents. Na metade sul, os poços de Saruman com brilho de fogo e vapor.
