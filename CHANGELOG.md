@@ -1,5 +1,10 @@
 # Histórico de mudanças
 
+## 11.0 — 15/11/2026 — regiões de detalhe sem limite
+- O mapa 3D aceita quantas regiões de detalhe forem criadas. Antes o limite era 4.
+- Só as regiões perto da câmera (até 4 ao mesmo tempo) ficam carregadas na placa de vídeo. As outras são carregadas quando você se aproxima e liberadas quando se afasta, o que poupa memória no celular.
+- De longe aparece o mapa normal, com os marcos em 3D (Minas Tirith, Barad-dûr etc.). Ao chegar perto, a região detalhada entra no lugar.
+
 ## 10.9 — 15/11/2026 — a Montanha da Perdição de perto
 - Nova região de detalhe no mapa 3D: a Montanha da Perdição (Orodruin) e o planalto de Gorgoroth.
 - A montanha tem o cone sobre uma base larga de cinzas, ravinas, a cratera com lago de fogo e a porta do Sammath Naur brilhando na face leste.
