@@ -1,5 +1,8 @@
 # Histórico de mudanças
 
+## 9.1 — 15/11/2026 — retratos, lote 4
+- 9 retratos novos: Arondir, Anárion, Ancalagon, o Negro, Ar-Pharazôn, Aredhel, Alatar, Aldarion, Amras, Amrod.
+
 ## 9.0 — 14/11/2026 — retratos, lote 3
 - 10 imagens novas no lugar dos desenhos simples: Dirhael, Marwen, Ioreth, Lithariel, Torvin, Hirgon, Adar, Senhor Luminoso, os Orcs do sistema Nêmesis e a região de Seregost.
 
