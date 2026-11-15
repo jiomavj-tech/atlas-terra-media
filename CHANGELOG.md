@@ -1,5 +1,8 @@
 # Histórico de mudanças
 
+## 9.4 — 15/11/2026
+- Novo retrato do Beregond (mais velho, cabelo curto e grisalho), para não ficar parecido com o Beren.
+
 ## 9.3 — 15/11/2026 — retratos, lote 6
 - 2 retratos novos: Azog, Beleg Cúthalion.
 
