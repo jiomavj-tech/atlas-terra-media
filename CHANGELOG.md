@@ -1,5 +1,11 @@
 # Histórico de mudanças
 
+## 10.3 — 15/11/2026
+- Retrato novo: Elrohir (com arco, para diferenciar do irmão Elladan).
+
+## 10.2 — 15/11/2026
+- Nova aba Mapa → Arda (mundo): globo 3D de Arda com base desenhada para o Atlas (Aman, Belegaer, Terra-média, Terra Escura, Terras do Leste), relevo, 19 lugares com descrição.
+
 ## 10.1 — 15/11/2026 — mapa 3D refeito
 - Câmera em perspectiva de verdade (corrige a faixa que cortava a tela ao inclinar), céu e névoa no horizonte.
 - Construções em 3D no lugar dos desenhos colados no chão: Barad-dûr com o Olho em chamas, Orthanc no anel de Isengard, Minas Tirith em sete anéis, Minas Morgul com brilho verde, Portão Negro, Carn Dûm, Cirith Ungol, Meduseld em Edoras, Valfenda, tocas do Condado, Bri e o portão de Erebor.
