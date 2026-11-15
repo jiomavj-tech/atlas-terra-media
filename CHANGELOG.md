@@ -1,5 +1,8 @@
 # Histórico de mudanças
 
+## 10.4 — 15/11/2026
+- Retratos trocados por versões novas: Círdan, Dwalin, Elrond.
+
 ## 10.3 — 15/11/2026
 - Retrato novo: Elrohir (com arco, para diferenciar do irmão Elladan).
 
