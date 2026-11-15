@@ -1,5 +1,16 @@
 # Histórico de mudanças
 
+## 10.9 — 15/11/2026 — a Montanha da Perdição de perto
+- Nova região de detalhe no mapa 3D: a Montanha da Perdição (Orodruin) e o planalto de Gorgoroth.
+- A montanha tem o cone sobre uma base larga de cinzas, ravinas, a cratera com lago de fogo e a porta do Sammath Naur brilhando na face leste.
+- A Estrada de Sauron chega do lado de Barad-dûr como uma calçada elevada e sobe em espiral até a porta.
+- Três rios de lava descem as encostas e se espalham pelo planalto.
+- O planalto tem fendas incandescentes, fumarolas, rochas, troncos secos, acampamentos de orcs com fogueiras, torres de vigia e a trilha por onde os hobbits chegaram.
+- 7 lugares com descrição, que aparecem ao aproximar: Sammath Naur, Cratera do Orodruin, Estrada de Sauron, Planalto de Gorgoroth, A subida de Sam, Colina de cinzas e Rios de lava.
+- Nova rota passo a passo, "A Montanha da Perdição", com 6 paradas, de Gorgoroth ao resgate pelas águias.
+- Tocar em "Monte da Perdição" mergulha a câmera na montanha.
+- O motor aceita no máximo 4 regiões de detalhe, e com esta chegou ao limite.
+
 ## 10.8 — 15/11/2026 — Valfenda de perto
 - Nova região de detalhe no mapa 3D: Valfenda, no vale escondido do Bruinen, ao pé das Montanhas Sombrias.
 - A Última Casa Amiga tem salão principal, alas, torres, o Salão do Fogo, a biblioteca, a varanda do Conselho com colunata, terraços, pavilhões e jardins com flores.
