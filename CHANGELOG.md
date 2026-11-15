@@ -1,5 +1,15 @@
 # Histórico de mudanças
 
+## 10.8 — 15/11/2026 — Valfenda de perto
+- Nova região de detalhe no mapa 3D: Valfenda, no vale escondido do Bruinen, ao pé das Montanhas Sombrias.
+- A Última Casa Amiga tem salão principal, alas, torres, o Salão do Fogo, a biblioteca, a varanda do Conselho com colunata, terraços, pavilhões e jardins com flores.
+- O vale tem escarpas em degraus, cachoeiras que descem dos paredões, a nascente do rio e árvores com cores de outono (Frodo chegou em outubro).
+- A ponte estreita de pedra, sem parapeito, e a trilha em zigue-zague que desce do planalto.
+- O Vau do Bruinen tem pedras no leito, e a Grande Estrada Leste segue rumo ao Passo Alto.
+- 9 lugares com descrição, que aparecem ao aproximar: Última Casa Amiga, Salão do Fogo, Varanda do Conselho, Ponte de Valfenda, Descida para Valfenda, Cachoeiras, Rio Bruinen, Vau do Bruinen e Grande Estrada Leste.
+- Nova rota passo a passo, "A chegada a Valfenda", com 8 paradas, do Vau do Bruinen à partida da Sociedade.
+- Tocar em "Valfenda" mergulha a câmera no vale.
+
 ## 10.7 — 15/11/2026 — Minas Tirith de perto
 - Nova região de detalhe no mapa 3D: Minas Tirith. Dá para aproximar até 15 vezes mais que no resto do mapa.
 - A cidade tem os 7 círculos de muralha, a proa de pedra voltada para o leste, os portões alternados e cerca de 520 casas nos terraços.
