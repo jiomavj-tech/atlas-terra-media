@@ -1,5 +1,12 @@
 # Histórico de mudanças
 
+## 10.5 — 15/11/2026 — nova Terra-média
+- Mapa da Terra-média redesenhado do zero, em estilo cartográfico, com toda a Terceira Era: de Lindon e das Montanhas Azuis até Rhûn, do Forochel até Harad e Umbar. Litoral, golfos e baías, 18 rios (Anduin, Brandevin, Fontegris, Isen, Entágua…), lagos, 12 cordilheiras, florestas com cerca de 3.300 árvores 3D, desertos, neve e o planalto de Mordor.
+- 16 lugares novos nos alfinetes: Portos Cinzentos, Fornost, Topo do Vento, Gundabad, Dol Guldur, Rauros, Dol Amroth, Pelargir, Umbar, Mar de Rhûn, Colinas de Ferro, Harad, Khand, Abismo de Helm, Osgiliath e Carrocha.
+- O mapa ilustrado antigo saiu; no lugar do "Mapa plano" ficam os botões "Vista inclinada" e "Vista de cima".
+- Ligação com Arda: ao ampliar a Terra-média no globo (ou tocar em "Entrar na Terra-média") o app voa para o mapa; ao afastar bastante o mapa (ou tocar em "Ver Arda") volta ao globo.
+- Os nomes dos alfinetes não se sobrepõem mais: quando dois se encostam, aparece só o mais próximo.
+
 ## 10.4 — 15/11/2026
 - Retratos trocados por versões novas: Círdan, Dwalin, Elrond.
 
