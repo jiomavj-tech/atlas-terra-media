@@ -1,5 +1,8 @@
 # Histórico de mudanças
 
+## 9.9 — 15/11/2026 — retratos
+- Retratos novos: Déagol, Elanor Brandyfoot, Durin, o Imortal, Durin IV (série), Elladan, Dís, Elendil, Durin, o Flagelo.
+
 ## 9.8 — 15/11/2026
 - Retrato novo: Drogo Bolseiro.
 
