@@ -34,6 +34,11 @@ Este repositório guarda o **Atlas da Terra-média**: um aplicativo de **arquivo
 - A Teia Viva está em `#teia-viva`. No celular ela roda em "modo leve" (`.atlas-litelist`).
 - Os retratos ficam em `#atlas-portraits`. O evento `atlas:open-person` abre a ficha de um personagem.
 
+## Regiões de detalhe do mapa 3D
+
+- Cada região é um `<script id="atlas-detail-...">` que faz `window.ATLAS_DETAILS.push({rect,hm,tex,models,trees})`. O motor (`AtlasRelevo`) troca o terreno dentro de `rect` por uma malha própria, permite zoom até `zFit*110` ali e desenha os `models` (`smial`, `house`, `bigsmial`, `inn`, `mill`, `bridge`, `ferry`, `jetty`, `tree_big`, `stone`, `hay`, `sheep`, `fence`, `hedge`, `gate`).
+- O Condado é gerado por `tools/relevo/desenhar_condado.py` (depende das saídas de `desenhar_terra_media.py` e `assar_terra_media.py`). Os nomes de perto ficam em `PINS` (marcados em `SUBK`).
+
 ## Instalação (PWA)
 
 - `manifest.webmanifest`, `sw.js` e os ícones `icon-*.png` permitem instalar o Atlas no Android. O `sw.js` usa "rede primeiro": com internet sempre baixa a versão nova; sem internet abre a última cópia. Ao mudar a lista de arquivos guardados, troque o nome do `CACHE`.

@@ -1,5 +1,15 @@
 # Histórico de mudanças
 
+## 10.6 — 15/11/2026 — o Condado de perto
+- Nova "região de detalhe" no mapa 3D: dentro do Condado dá para aproximar até 15 vezes mais que no resto do mapa.
+- O Condado foi pintado em alta resolução: colcha de plantações e pastos com sebes, trigais com sulcos, flores, hortas, estradas e caminhos, o rio O Água, a lagoa de Beirágua, o Pântano, a Ponta do Bosque, a Sebe Alta e a borda da Floresta Velha.
+- Mais de 180 construções em 3D: tocas de hobbit com porta redonda colorida, janelas acesas e chaminé; Bolsão no alto da Colina; casas, o moinho, a estalagem Dragão Verde, a Árvore da Festa, a Pedra das Três Quartas, as Grandes Smials, a Sede do Brandevin, a Ponte do Brandevin com arcos, a balsa com cais, Cricôncavo, a Sebe Alta com o túnel, montes de feno e ovelhas — e cerca de 1.000 árvores (salgueiros nas margens, pomares, árvores das sebes).
+- 19 lugares do Condado com descrição, que aparecem ao aproximar: Bolsão, Vila dos Hobbits, Árvore da Festa, Moinho, Beirágua, Dragão Verde, Pedra das Três Quartas, Grã Cava, Grandes Smials, Ponta do Bosque, Pântano, Fazenda do Magote, Tronco, Balsa de Buqueburgo, Sede do Brandevin, Cricôncavo, Ponte do Brandevin, Sebe Alta e Túnel da Sebe.
+- Nova rota passo a passo "A fuga do Condado" (Bolsão → Túnel da Sebe), com a câmera bem próxima.
+- Tocar em "Condado" mergulha a câmera no Condado.
+- Mapa inteiro: os rios deixaram de parecer cânions (vales mais largos e rasos).
+- A câmera nunca entra no chão ao aproximar em encostas.
+
 ## 10.5 — 15/11/2026 — nova Terra-média
 - Mapa da Terra-média redesenhado do zero, em estilo cartográfico, com toda a Terceira Era: de Lindon e das Montanhas Azuis até Rhûn, do Forochel até Harad e Umbar. Litoral, golfos e baías, 18 rios (Anduin, Brandevin, Fontegris, Isen, Entágua…), lagos, 12 cordilheiras, florestas com cerca de 3.300 árvores 3D, desertos, neve e o planalto de Mordor.
 - 16 lugares novos nos alfinetes: Portos Cinzentos, Fornost, Topo do Vento, Gundabad, Dol Guldur, Rauros, Dol Amroth, Pelargir, Umbar, Mar de Rhûn, Colinas de Ferro, Harad, Khand, Abismo de Helm, Osgiliath e Carrocha.
