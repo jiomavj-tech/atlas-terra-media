@@ -1,5 +1,8 @@
 # Histórico de mudanças
 
+## 9.6 — 15/11/2026 — retratos, lote 8
+- Retratos novos ou trocados por versões em busto: Círdan, Curufin, Bombur, Bronwyn, Celegorm, Bregalad, Disa, Bárd, o Arqueiro, Caranthir, Dior Eluchíl, Celebrían.
+
 ## 9.5 — 15/11/2026 — retratos, lote 7
 - 5 retratos novos, recortados em busto a partir de imagens de corpo inteiro: Bárd, o Arqueiro, Bombur, Bregalad, Bronwyn, Caranthir.
 
