@@ -1,5 +1,8 @@
 # Histórico de mudanças
 
+## 9.5 — 15/11/2026 — retratos, lote 7
+- 5 retratos novos, recortados em busto a partir de imagens de corpo inteiro: Bárd, o Arqueiro, Bombur, Bregalad, Bronwyn, Caranthir.
+
 ## 9.4 — 15/11/2026
 - Novo retrato do Beregond (mais velho, cabelo curto e grisalho), para não ficar parecido com o Beren.
 
