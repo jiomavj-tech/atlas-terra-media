@@ -1,5 +1,8 @@
 # Histórico de mudanças
 
+## 9.3 — 15/11/2026 — retratos, lote 6
+- 2 retratos novos: Azog, Beleg Cúthalion.
+
 ## 9.2 — 15/11/2026 — retratos, lote 5
 - 8 retratos novos: Alfrid Lickspittle, Aulë, Barbárvore, Bandobras Tûk, Beren, Beregond, Bifur, Bofur.
 
