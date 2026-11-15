@@ -37,6 +37,8 @@ Este repositório guarda o **Atlas da Terra-média**: um aplicativo de **arquivo
 ## Regiões de detalhe do mapa 3D
 
 - Cada região é um `<script id="atlas-detail-...">` que faz `window.ATLAS_DETAILS.push({rect,hm,tex,models,trees})`. O motor (`AtlasRelevo`) troca o terreno dentro de `rect` por uma malha própria, permite zoom até `zFit*110` ali e desenha os `models` (`smial`, `house`, `bigsmial`, `inn`, `mill`, `bridge`, `ferry`, `jetty`, `tree_big`, `stone`, `hay`, `sheep`, `fence`, `hedge`, `gate`).
+- Tipos com altura absoluta (usados em Minas Tirith): `cylA`, `capA`, `boxA`, `houseA`, `polyA`, `discA`, `blobA`, `treeW`; e ainda `cyl`, `box`, `wall`, `boat`. `tops` dá a altura dos nomes de perto.
+- Minas Tirith é gerada por `tools/relevo/desenhar_minas_tirith.py` e embutida por `embutir_minas_tirith.py`.
 - O Condado é gerado por `tools/relevo/desenhar_condado.py` (depende das saídas de `desenhar_terra_media.py` e `assar_terra_media.py`). Os nomes de perto ficam em `PINS` (marcados em `SUBK`).
 
 ## Instalação (PWA)

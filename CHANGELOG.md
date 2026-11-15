@@ -1,5 +1,19 @@
 # Histórico de mudanças
 
+## 10.7 — 15/11/2026 — Minas Tirith de perto
+- Nova região de detalhe no mapa 3D: Minas Tirith. Dá para aproximar até 15 vezes mais que no resto do mapa.
+- A cidade tem os 7 círculos de muralha, a proa de pedra voltada para o leste, os portões alternados e cerca de 520 casas nos terraços.
+- Na Cidadela ficam a Torre de Ecthelion, o Salão dos Reis, a fonte e a Árvore Branca. Também aparecem as Casas de Cura e as cúpulas de Rath Dínen.
+- O Mindolluin fica atrás da cidade, ligado a ela por um esporão. Em volta estão:
+  - os Campos do Pelennor, com fazendas;
+  - o Rammas Echor, com os Fortes da Calçada;
+  - o cais do Harlond, com os navios negros dos Corsários;
+  - as ruínas de Osgiliath, com a ponte partida.
+- 12 lugares com descrição, que aparecem ao aproximar: Grande Portão, Cidadela, Árvore Branca, Casas de Cura, Rath Dínen, Mindolluin, Campos do Pelennor, Batalha do Pelennor, Rammas Echor, Fortes da Calçada, Harlond e Ponte de Osgiliath.
+- Nova rota passo a passo, "O cerco de Minas Tirith", com 9 paradas, de Osgiliath à Árvore Branca.
+- Tocar em "Minas Tirith" mergulha a câmera na cidade.
+- O motor do relevo agora aceita várias regiões de detalhe e novos tipos de modelo (torres, muralhas curvas, cúpulas, barcos).
+
 ## 10.6 — 15/11/2026 — o Condado de perto
 - Nova "região de detalhe" no mapa 3D: dentro do Condado dá para aproximar até 15 vezes mais que no resto do mapa.
 - O Condado foi pintado em alta resolução: colcha de plantações e pastos com sebes, trigais com sulcos, flores, hortas, estradas e caminhos, o rio O Água, a lagoa de Beirágua, o Pântano, a Ponta do Bosque, a Sebe Alta e a borda da Floresta Velha.
