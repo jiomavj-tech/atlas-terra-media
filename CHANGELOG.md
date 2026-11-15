@@ -1,5 +1,8 @@
 # Histórico de mudanças
 
+## 9.8 — 15/11/2026
+- Retrato novo: Drogo Bolseiro.
+
 ## 9.7 — 15/11/2026
 - Retrato novo: Dori.
 
