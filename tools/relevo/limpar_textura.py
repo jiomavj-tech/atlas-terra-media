@@ -5,7 +5,8 @@ LABELS=[(108,12,224,66),(490,28,585,70),(365,68,420,88),(814,112,918,150),(855,1
  (4,454,136,526),(552,500,618,527),(292,520,362,540),(432,625,518,652),(530,660,625,682),(660,672,775,694),(866,556,984,584),(826,602,914,632),
  (830,646,924,686),(315,822,440,842),(652,820,712,846),(815,802,872,822)]
 ICONS=[(90,258,27),(220,262,27),(425,222,27),(476,333,27),(650,213,26),(605,385,27),(452,425,26),(532,497,26),(476,598,28),(835,568,26),(160,203,17),(282,200,17)]
-KEEP=[(800,140,36),(340,92,36),(326,490,36),(572,628,42),(690,630,42),(808,600,40),(885,480,52)]  # torres/picos desenhados: não servem de fonte
+KEEP=[(800,140,36),(885,480,52)]
+TOWERS=[(340,92,34),(326,490,34),(572,628,40),(690,628,38),(808,598,40)]  # torres/picos desenhados: não servem de fonte
 UI=[(0,10,74,214),(818,10,984,76),(876,708,984,818),(812,820,984,866)]
 LEG=(0,596,246,860)
 F=np.zeros((H,W),np.uint8)
@@ -15,7 +16,7 @@ WI=cv2.integral(WAT)
 def wfrac(x0,y0,x1,y1): return (WI[y1,x1]-WI[y0,x1]-WI[y1,x0]+WI[y0,x0])/max(1,(x1-x0)*(y1-y0))
 def fbox(b,m=8): cv2.rectangle(F,(b[0]-m,b[1]-m),(b[2]+m,b[3]+m),1,-1)
 for b in LABELS+UI+[LEG]: fbox(b)
-for x,y,r in ICONS+KEEP: cv2.circle(F,(x,y),r+10,1,-1)
+for x,y,r in ICONS+KEEP+TOWERS: cv2.circle(F,(x,y),r+10,1,-1)
 def integ(): return cv2.integral(F)
 def forb(Fi,x0,y0,x1,y1):
     if x0<0 or y0<0 or x1>W or y1>H: return 10**9
@@ -47,7 +48,7 @@ def clean(region_mask,bbox,clear_box):
     paste(region_mask,b[1],b[2])
     cv2.rectangle(F,(clear_box[0]-8,clear_box[1]-8),(clear_box[2]+8,clear_box[3]+8),0,-1)  # limpo: agora pode servir de fonte
     for x,y,r in KEEP: cv2.circle(F,(x,y),r+10,1,-1)
-for x,y,r in ICONS:
+for x,y,r in ICONS+TOWERS:
     m=np.zeros((H,W),np.uint8);cv2.circle(m,(x,y),r+3,1,-1);bb=(x-r-3,y-r-3,x+r+3,y+r+3);clean(m,bb,bb)
 for bb in LABELS:
     x0,y0,x1,y1=bb;m=np.zeros((H,W),np.uint8);cv2.rectangle(m,(max(0,x0),y0),(min(W-1,x1),y1),1,-1);clean(m,bb,bb)

@@ -1,5 +1,11 @@
 # Histórico de mudanças
 
+## 10.1 — 15/11/2026 — mapa 3D refeito
+- Câmera em perspectiva de verdade (corrige a faixa que cortava a tela ao inclinar), céu e névoa no horizonte.
+- Construções em 3D no lugar dos desenhos colados no chão: Barad-dûr com o Olho em chamas, Orthanc no anel de Isengard, Minas Tirith em sete anéis, Minas Morgul com brilho verde, Portão Negro, Carn Dûm, Cirith Ungol, Meduseld em Edoras, Valfenda, tocas do Condado, Bri e o portão de Erebor.
+- Cerca de 3.500 árvores 3D nas florestas; lava na Montanha da Perdição; relevo com o dobro de detalhe, cristas nas montanhas, sombras projetadas, neve e água assadas em resolução cheia.
+- Os alfinetes ficam no topo de cada construção.
+
 ## 10.0 — 15/11/2026
 - Nova versão do retrato do Dori.
 
