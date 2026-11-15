@@ -1,5 +1,8 @@
 # Histórico de mudanças
 
+## 10.0 — 15/11/2026
+- Nova versão do retrato do Dori.
+
 ## 9.9 — 15/11/2026 — retratos
 - Retratos novos: Déagol, Elanor Brandyfoot, Durin, o Imortal, Durin IV (série), Elladan, Dís, Elendil, Durin, o Flagelo.
 
