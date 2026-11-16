@@ -1,5 +1,14 @@
 # Histórico de mudanças
 
+## 12.3 — 16/11/2026 — Barad-dûr, Floresta Velha, Thranduil, Beorn, Fano-da-Colina e Henneth Annûn de perto
+- **Barad-dûr**: a Torre Negra em degraus, com três anéis de muralhas e torres, as pontas no alto com o Olho, janelas de fogo, a ponte de ferro, o fosso de lava em volta da rocha e as forjas do planalto. 6 lugares e a rota "A Torre Negra".
+- **Floresta Velha e Colinas dos Túmulos**: o Velho Salgueiro-homem à beira do Voltavime, a casa de Tom Bombadil com janelas acesas, flores e o lago dos lírios, a pedra erguida e os túmulos com anéis de pedras sob a névoa. 7 lugares e a rota "Tom Bombadil".
+- **Salões de Thranduil**: a ponte e os portões de pedra na colina, lanternas, o alçapão com os barris descendo o rio, a clareira das festas e as teias das aranhas. 6 lugares e a rota "Barris soltos".
+- **Carrocha e casa de Beorn**: o rochedo no meio do Anduin com os degraus e o vau, o salão de madeira de Beorn com colmeias, cerca viva, carvalhos e campos de trevo, e o Ninho das Águias. 6 lugares e a rota "Da Carrocha à casa de Beorn".
+- **Fano-da-Colina**: a estrada em zigue-zague com os homens-Púkel, o campo alto com o acampamento de Rohan, a fila de pedras erguidas, o Dimholt e a Porta Escura sob o Dwimorberg. 7 lugares e a rota "As Sendas dos Mortos".
+- **Henneth Annûn**: a cachoeira com a caverna atrás, o Lago Proibido com Gollum, a emboscada aos Haradrim com um olifante, a fogueira de Sam e Ithilien florida. 6 lugares e a rota "A Janela do Poente".
+- Quatro lugares novos no mapa geral: Floresta Velha, Salões de Thranduil, Fano-da-Colina e Henneth Annûn.
+
 ## 12.2 — 16/11/2026 — correção do globo travando
 - Causa encontrada: desde a 12.0 o globo fica dentro do palco do mapa 3D, e cada toque nele também chegava ao mapa de baixo. Arrastar o globo movia e redesenhava o mapa 3D inteiro, com todos os nomes, a cada movimento do dedo.
 - Agora os toques no globo param no globo, e o mapa 3D não redesenha enquanto o globo está aberto.
