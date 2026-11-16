@@ -1,5 +1,17 @@
 # Histórico de mudanças
 
+## 11.4 — 16/11/2026 — Erebor e Valle, Cidade do Lago e Dol Guldur de perto
+- **Erebor e Valle**:
+  - A Montanha Solitária com os braços em estrela, o Portão da Frente (arco, estátuas e ameias) e o Rio Corrente saindo dele e dando a volta em Valle.
+  - Valle reconstruída, com muralha, cerca de 75 casas de telhados coloridos e a torre dos sinos.
+  - A Colina do Corvo com o posto de guarda, a porta secreta com o brilho da fechadura e a Desolação de Smaug com árvores queimadas.
+  - 8 lugares e a rota "A Montanha Solitária".
+- **Cidade do Lago**:
+  - Esgaroth sobre estacas dentro do Lago Comprido, com cerca de 130 casas de madeira, o Salão do Mestre, a ponte até a margem e barcos.
+  - As estacas queimadas da cidade velha, os ossos de Smaug no fundo raso e os barris dos anões chegando pelo Rio da Floresta.
+  - 7 lugares e a rota "Smaug e a Cidade do Lago".
+- **Dol Guldur**: a colina nua de Amon Lanc com a fortaleza escura (muralha quebrada, torres e torreão com luz vermelha), a boca das masmorras, árvores mortas em volta e a Floresta das Trevas fechada. 5 lugares e a rota "A sombra de Dol Guldur".
+
 ## 11.3 — 16/11/2026 — Topo do Vento, Portão Negro, Minas Morgul e Cirith Ungol de perto
 - **Topo do Vento**: a colina de topo achatado com o anel de pedras em ruínas de Amon Sûl, a pedra com a marca de Gandalf, a clareira com a fogueira dos hobbits, a Grande Estrada e as Colinas do Vento. 5 lugares e a rota "O ataque no Topo do Vento".
 - **Portão Negro**: a passagem de Cirith Gorgor entre as montanhas, a muralha com as portas de ferro, as duas Torres dos Dentes (Narchost e Carchost), os morros de escória, os lodaçais de Dagorlad e o vale de Udûn. 6 lugares e a rota "A batalha do Morannon".
