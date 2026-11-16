@@ -1,6 +1,6 @@
 # Tarefas — em ordem de prioridade
 
-Situação atual: v7.9 (23/10/2026). Tarefas 1 a 4 resolvidas; pendentes: 5 e 6. Use `python tools/teste_fumaca.py` para reproduzir os erros.
+Situação atual: v12.5 (16/11/2026). Tarefas 1 a 5 resolvidas; a 6 precisa de decisão do dono; a 7 (retratos) depende das imagens que ele enviar. Use `python tools/teste_fumaca.py` para reproduzir os erros.
 
 ---
 
@@ -51,7 +51,13 @@ A chamada vem de `window.atlasMainGraphStart` → `refresh()` → `draw()`.
 
 ---
 
-## Tarefa 5 — Auditoria de conexões: 158 de 190 com pendência (MÉDIA, em lotes)
+## ✅ Tarefa 5 — Auditoria de conexões — RESOLVIDA na v12.5
+
+**Como ficou:** 0 pendências em 190 fichas. As ligações estão listadas em `tools/catalogar_conexoes.py`; para acrescentar ou corrigir, edite a lista `REL` e rode o script.
+
+*(Texto original da tarefa, para registro:)*
+
+### Auditoria de conexões: 158 de 190 com pendência (MÉDIA, em lotes)
 
 **Problema:** a auditoria (`window.atlasRelationsAuditV76()`) lista 190 personagens, e 158 deles têm conexões que não batem com outras fichas (`unresolved_connection_labels`).
 
@@ -61,7 +67,11 @@ A chamada vem de `window.atlasMainGraphStart` → `refresh()` → `draw()`.
 
 ---
 
-## Tarefa 6 — Resumos da Wikipédia em inglês e só com internet (BAIXA)
+## Tarefa 6 — Resumos da Wikipédia em inglês e só com internet (BAIXA) — REVISTA na v12.5: talvez não se aplique mais
+
+**Situação em 16/11/2026:** o Atlas não busca mais textos na Wikipédia. A única chamada que restou (`fetchCharacterPortrait`) pede só a **imagem** do verbete em inglês, e sem internet ela já falha em silêncio, com a mensagem "Ilustração provisória". Trocar para a Wikipédia em português exigiria os títulos em português de cada personagem. O dono decide se vale a pena ou se a tarefa pode ser fechada.
+
+*(Texto original:)*
 
 **Problema:** a seção Pessoas busca resumos em `en.wikipedia.org`. Sem internet, a busca falha, e com internet o texto vem em inglês.
 

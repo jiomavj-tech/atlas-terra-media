@@ -1,5 +1,13 @@
 # Histórico de mudanças
 
+## 12.5 — 16/11/2026 — conexões dos personagens catalogadas (Tarefa 5) e mais acabamento
+- **Conexões**: a auditoria mostrava 158 de 190 fichas com pendência. Em 150 delas o campo dizia só "A catalogar"; as outras 8 tinham nomes que não batiam com nenhuma ficha.
+  - As 150 fichas ganharam as ligações principais com outros personagens do Atlas (família, aliados, inimigos), tiradas da obra citada em cada ficha.
+  - Dos 8 nomes soltos, 5 foram ligados à ficha certa (Thorin; Idril e Morwen dos jogos). Os outros 3 são lugares (Gondor, Valfenda, Lothlórien) e ficaram só como texto.
+  - Resultado: 0 pendências e nenhuma ligação apontando para ficha inexistente. A lista completa está em `tools/catalogar_conexoes.py`.
+- **Valfenda**: as cachoeiras passaram para o modelo novo, com fios de água e névoa.
+- **Fangorn**: a clareira do Valarcano ficou maior e mais clara, e os Ents mais claros, para aparecerem.
+
 ## 12.4 — 16/11/2026 — revisão de acabamento
 - **Cachoeiras**: novo modelo, com fios de água que se abrem ao cair e névoa na base, no lugar da placa clara. Usado nas Quedas de Rauros e em Henneth Annûn.
 - **Forte da Trombeta**: fortaleza 70% maior, com torre mais alta, mais torres na muralha e a Muralha do Abismo mais alta.

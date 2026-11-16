@@ -251,18 +251,25 @@ for q in range(16):
 # cachoeiras: véus de água nas escarpas (caixas finas claras)
 FALLS=[]
 for st in STREAMS:
-    fall=False
+    # amostra o riacho e junta os trechos íngremes seguidos numa só cachoeira
+    P_=[]
     for (ax,ay),(bx,by) in zip(st[:-1],st[1:]):
-        n=max(2,int(math.hypot(bx-ax,by-ay)/0.12));rot=math.atan2(by-ay,bx-ax)
-        for k in range(n):
-            x0_,y0_=ax+(bx-ax)*k/n,ay+(by-ay)*k/n;x1_,y1_=ax+(bx-ax)*(k+1)/n,ay+(by-ay)*(k+1)/n
-            za,zb=gz(x0_,y0_),gz(x1_,y1_)
-            if abs(za-zb)>0.12: fall=True
-            if abs(za-zb)>0.06: MOD.append(['boxA',(x0_+x1_)/2,(y0_+y1_)/2,math.hypot(x1_-x0_,y1_-y0_)/2+0.01,0.035,min(za,zb)-0.03,max(za,zb)+0.025,rot,[0.88,0.94,0.98,0.4],None])
+        n=max(2,int(math.hypot(bx-ax,by-ay)/0.1))
+        for k in range(n): P_.append((ax+(bx-ax)*k/n,ay+(by-ay)*k/n))
+    P_.append(st[-1]);Z_=[gz(x,y) for x,y in P_];run=None;fall=False
+    for k in range(len(P_)):
+        steep=k<len(P_)-1 and (Z_[k]-Z_[k+1])>0.1
+        if steep and run is None: run=k
+        if (not steep) and run is not None:
+            drop=Z_[run]-Z_[k]
+            if drop>0.35:
+                (x0_,y0_),(x1_,y1_)=P_[run],P_[k];L=math.hypot(x1_-x0_,y1_-y0_) or 1;dx_,dy_=(x1_-x0_)/L,(y1_-y0_)/L
+                MOD.append(['fall',x0_+(x1_-x0_)*0.75,y0_+(y1_-y0_)*0.75,dx_,dy_,0.16,Z_[run]+0.02,Z_[k]-0.02]);fall=True
+            run=None
     if fall: FALLS.append(st[1])
 # a nascente: cascata que sai das montanhas
 sx,sy=RV[0];zs=gz(sx,sy);zt=gz(sx+0.9,sy-0.25)
-MOD.append(['boxA',sx+0.1,sy-0.03,0.05,0.12,zs,max(zt,zs+1.2),math.atan2(-0.25,0.9),[0.88,0.94,0.98,0.4],None])
+MOD.append(['fall',sx+0.12,sy-0.03,-0.96,0.27,0.22,max(zt,zs+1.2),zs-0.02])
 print('quedas',len(FALLS))
 # ---------- árvores ----------
 AUT=[C(196,140,48),C(178,96,40),C(150,60,36),C(206,170,64),C(90,128,52),C(76,116,46)]

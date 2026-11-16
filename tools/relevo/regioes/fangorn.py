@@ -8,7 +8,7 @@ hbs=cv2.GaussianBlur(R.hb,(0,0),3);nz=R.noise(8,5,3,True)
 hd=hbs+0.012*nz
 hd=R.soften(hd,0.5,6)
 hd=hd+0.03*gauss(*HILL,0.6,GX,GY)                                   # a colina de Barbárvore
-hd=hd-0.025*gauss(*DERN,0.9,GX,GY)+0.012*np.exp(-((np.hypot(GX-DERN[0],GY-DERN[1])-1.3)/0.3)**2)   # Valarcano: uma tigela cercada de sebe
+hd=hd-0.02*gauss(*DERN,1.3,GX,GY)+0.01*np.exp(-((np.hypot(GX-DERN[0],GY-DERN[1])-1.85)/0.3)**2)   # Valarcano: uma tigela cercada de sebe
 R.set_height(hd);gz=R.gz
 img=np.zeros((R.TH,R.TW,3),np.float32)
 n1=R.noise(40,4,5)[...,None];n2=R.noise(200,3,6)[...,None]
@@ -18,7 +18,7 @@ rk=np.clip(sstep(1.4,3.0,R.slope)+sstep(0.6,0.7,R.HT),0,1)
 img=R.paint(img,rk,C(110,106,100),0.85)
 plain=sstep(466.0,470.5,UX+0.5*(UY-468)+1.2*R.noise(8,3,14))
 img=R.paint(img,plain,C(140,146,84),0.75)
-img=R.paint(img,1-sstep(0.9,1.2,np.hypot(UX-DERN[0],UY-DERN[1])),C(96,134,62),0.8)
+img=R.paint(img,1-sstep(1.4,1.75,np.hypot(UX-DERN[0],UY-DERN[1])),C(120,160,74),0.9)
 img=R.paint(img,np.clip(cv2.dilate(water,np.ones((5,5),np.uint8))-water,0,1),C(70,84,56),0.4)
 img=R.paint(img,water,C(64,104,116))
 fin=R.light(img,amb=0.58)
@@ -44,8 +44,8 @@ for s_ in (-1,1):
     x,y=WELL[0]+0.45,WELL[1]+s_*0.3;z=gz(x,y);M.append(['cylA',x,y,z-0.05,z+0.9,0.05,0.04,6,'#4a3a28']);M.append(['blobA',x,y,z+0.6,[[0.15,0],[0.28,0.2],[0.2,0.5],[0,0.62]],8,'#2c5a30'])
 # Valarcano: o Entebate, com os Ents reunidos em roda
 for k in range(14):
-    a=k/14*6.28;ent(DERN[0]+math.cos(a)*0.55,DERN[1]+math.sin(a)*0.55,R.rng.uniform(0.55,0.8),['#5a4a34','#6a5a40','#4a4030'][k%3],['#4a6a36','#3a5a30','#6a7a3a'][k%3])
-for a in np.linspace(0.25,6.28,46): R.tree(DERN[0]+math.cos(a)*1.3,DERN[1]+math.sin(a)*1.3,0.9,0,C(26,58,34))
+    a=k/14*6.28;ent(DERN[0]+math.cos(a)*0.95,DERN[1]+math.sin(a)*0.95,R.rng.uniform(0.6,0.85),['#8a7650','#9a8660','#7a6a48'][k%3],['#7a9a46','#6a8a3c','#96a44a'][k%3])
+for a in np.linspace(0.25,6.28,56): R.tree(DERN[0]+math.cos(a)*1.85,DERN[1]+math.sin(a)*1.85,0.9,0,C(26,58,34))
 # borda leste: o monte dos orcs queimados pelos Rohirrim, com lanças
 ze=gz(*EDGE)
 M.append(['blobA',EDGE[0],EDGE[1],ze-0.03,[[0.3,0],[0.24,0.08],[0.1,0.15],[0,0.17]],10,'#3a3430'])
@@ -55,7 +55,7 @@ for k in range(9):
 for _ in range(34000):
     x,y=R.rng.uniform(R.X0,R.X1),R.rng.uniform(R.Y0,R.Y1)
     if R.at(water,x,y)>0.05 or R.at(rk,x,y)>0.5 or R.at(plain,x,y)>0.5: continue
-    if math.hypot(x-DERN[0],y-DERN[1])<1.45 or math.hypot(x-HILL[0],y-HILL[1])<0.7 or math.hypot(x-WELL[0],y-WELL[1])<0.6: continue
+    if math.hypot(x-DERN[0],y-DERN[1])<2.0 or math.hypot(x-HILL[0],y-HILL[1])<0.7 or math.hypot(x-WELL[0],y-WELL[1])<0.6: continue
     if R.rng.random()<0.12: R.tree(x,y,R.rng.uniform(0.8,1.3),1 if R.rng.random()<0.7 else 0,C(40,66,36)*R.rng.uniform(0.75,1.2))
 R.TOPS=[[HILL[0],HILL[1],1.0,0.4]]
 R.PL={'ColinaBarbarvore':HILL,'GrutaNascente':WELL,'Valarcano':DERN,'MonteOrcs':EDGE,'Entagua':(467.5,468.6)}
