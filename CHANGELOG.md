@@ -1,5 +1,13 @@
 # Histórico de mudanças
 
+## 11.3 — 16/11/2026 — Topo do Vento, Portão Negro, Minas Morgul e Cirith Ungol de perto
+- **Topo do Vento**: a colina de topo achatado com o anel de pedras em ruínas de Amon Sûl, a pedra com a marca de Gandalf, a clareira com a fogueira dos hobbits, a Grande Estrada e as Colinas do Vento. 5 lugares e a rota "O ataque no Topo do Vento".
+- **Portão Negro**: a passagem de Cirith Gorgor entre as montanhas, a muralha com as portas de ferro, as duas Torres dos Dentes (Narchost e Carchost), os morros de escória, os lodaçais de Dagorlad e o vale de Udûn. 6 lugares e a rota "A batalha do Morannon".
+- **Minas Morgul e Cirith Ungol** (uma região só):
+  - A cidade pálida com muralhas, casas e a torre alta com brilho esverdeado; a ponte com estátuas sobre o Morgulduin e os campos de flores pálidas.
+  - A Encruzilhada com o rei de pedra coroado de flores, as escadas Reta e Sinuosa, a boca da Toca de Laracna com teias e a Torre de Cirith Ungol em três andares.
+  - 8 lugares e a rota "O caminho de Cirith Ungol".
+
 ## 11.2 — 15/11/2026 — Moria, Lothlórien e Bri de perto
 - **Moria**:
   - As Portas de Durin brilham em ithildin no paredão (arco, pilares, coroa e estrela), entre dois azevinhos. Diante delas ficam o lago escuro com os tentáculos do Vigia e o leito seco do Sirannon com as ruínas de Azevim.

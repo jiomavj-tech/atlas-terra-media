@@ -134,9 +134,9 @@ def integrate(places,SUB,basekey,deepz,route_key=None,route_js=None,option=None)
     s=s[:j]+','+','.join(f'{k}:[{places[k][0]},{places[k][1]}]' for k in K)+s[j:]
     i=s.index("const PINS=[");j=s.index("];",i);s=s[:j]+','+','.join(json.dumps([n,k,None,d,w],ensure_ascii=False) for n,k,d,w in SUB)+s[j:]
     i=s.index("const SUBK=new Set([");j=s.index("]);",i);s=s[:j]+','+','.join(json.dumps(k) for k in K)+s[j:]
-    if basekey:
-        rep("(SUBK.has(k)?deep:!(deep&&(","(SUBK.has(k)?deep:!(deep&&(k==="+json.dumps(basekey).replace('"',"'")+"||")
-        rep("const deepZ=key==='Condado'?zFit*11:","const deepZ=key==='Condado'?zFit*11:key==="+json.dumps(basekey).replace('"',"'")+f"?zFit*{deepz}:")
+    for bk in ([basekey] if isinstance(basekey,str) else (basekey or [])):
+        rep("(SUBK.has(k)?deep:!(deep&&(","(SUBK.has(k)?deep:!(deep&&(k==="+json.dumps(bk).replace('"',"'")+"||")
+        rep("const deepZ=key==='Condado'?zFit*11:","const deepZ=key==='Condado'?zFit*11:key==="+json.dumps(bk).replace('"',"'")+f"?zFit*{deepz}:")
     if route_key:
         rep(" cerco:{title:'O cerco de Minas Tirith',",f" {route_key}:"+route_js+",\n cerco:{title:'O cerco de Minas Tirith',")
         rep('<option value="cerco">O cerco de Minas Tirith (de perto)</option>',f'<option value="cerco">O cerco de Minas Tirith (de perto)</option><option value="{route_key}">{option} (de perto)</option>')
