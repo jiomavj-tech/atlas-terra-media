@@ -1,5 +1,10 @@
 # Histórico de mudanças
 
+## 12.2 — 16/11/2026 — correção do globo travando
+- Causa encontrada: desde a 12.0 o globo fica dentro do palco do mapa 3D, e cada toque nele também chegava ao mapa de baixo. Arrastar o globo movia e redesenhava o mapa 3D inteiro, com todos os nomes, a cada movimento do dedo.
+- Agora os toques no globo param no globo, e o mapa 3D não redesenha enquanto o globo está aberto.
+- Uma região de detalhe que falhar ao carregar não é mais tentada de novo a cada quadro.
+
 ## 12.1 — 16/11/2026 — globo mais leve
 - O globo travava no celular. Mudanças para aliviar:
   - Os nomes sobre o globo não recalculam mais a página a cada quadro (medidos uma vez, movidos com `transform`).
