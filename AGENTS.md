@@ -34,6 +34,13 @@ Este repositório guarda o **Atlas da Terra-média**: um aplicativo de **arquivo
 - A Teia Viva está em `#teia-viva`. No celular ela roda em "modo leve" (`.atlas-litelist`).
 - Os retratos ficam em `#atlas-portraits`. O evento `atlas:open-person` abre a ficha de um personagem.
 
+## Globo de Arda e zoom contínuo (v12.0)
+
+- O globo (`#arStage`, script `atlas-arda-script`) é uma **camada dentro do `#m3Stage`**, não uma seção separada. O script `atlas-v105-arda-go-script` faz a passagem: `AtlasArdaGo.fromME()` e `toME()`.
+- A Terra-média do mapa 3D está colada na textura do globo em **projeção ortográfica** centrada em lon 12°, lat 35°, com 36° de largura (`tools/relevo/desenhar_arda.py`). É isso que faz o globo coincidir com a vista de cima do mapa (`AtlasMapa3D.flatPose()`). Se mudar o mapa-base, rode `desenhar_arda.py` de novo.
+- A seção antiga `atlas-arda` continua existindo só para redirecionar para o mapa com o globo aberto.
+- Navegação: Mapa, Teia e Grafo 3D ficam no grupo `mapa` ("Explorar") do array `G`.
+
 ## Regiões de detalhe do mapa 3D
 
 - Cada região é um `<script id="atlas-detail-...">` que faz `window.ATLAS_DETAILS.push({rect,hm,tex,models,trees})`. O motor (`AtlasRelevo`) troca o terreno dentro de `rect` por uma malha própria, permite zoom até `zFit*110` ali e desenha os `models` (`smial`, `house`, `bigsmial`, `inn`, `mill`, `bridge`, `ferry`, `jetty`, `tree_big`, `stone`, `hay`, `sheep`, `fence`, `hedge`, `gate`).

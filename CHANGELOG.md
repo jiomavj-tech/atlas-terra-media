@@ -1,5 +1,15 @@
 # Histórico de mudanças
 
+## 12.0 — 16/11/2026 — o mundo e a Terra-média viraram um mapa só; Mapa e Teia na mesma seção
+- **Zoom contínuo de Arda até a Terra-média**: o globo agora mostra a Terra-média do próprio Atlas (o mesmo desenho do mapa 3D), no lugar certo do continente. Antes eram dois mapas diferentes, com uma troca de tela no meio.
+  - Afastando o mapa até o fim (ou tocando em "Ver o mundo"), a câmera vai para a vista de cima e o globo aparece por cima, alinhado, e se afasta.
+  - Aproximando o globo sobre a Terra-média (ou tocando em "Voltar à Terra-média"), o globo gira até ficar alinhado, some, e o mapa 3D continua dali.
+  - O globo ficou com textura 4 vezes maior (4096 × 2048).
+- **Arda no fim da Terceira Era**: Beleriand aparece afundada no mar, e os mares interiores foram redesenhados para não cobrir a Terra-média.
+- **Seção "Explorar"**: Mapa, Teia e Grafo 3D ficam na mesma seção, com botões no topo para trocar. A aba "Arda (mundo)" saiu, porque o globo agora faz parte do mapa.
+- A barra de baixo ficou: Início · Pessoas · Explorar · Famílias · História · Mais.
+- O mapa passou a ser a primeira coisa da tela e ficou mais alto; os textos e as listas vêm embaixo.
+
 ## 11.5 — 16/11/2026 — Fangorn, Rauros, Portos Cinzentos, Fornost, Pelargir e Dol Amroth de perto
 - **Fangorn**: a floresta densa, a colina de rocha de Barbárvore junto ao Entágua (com um Ent ao lado), a Gruta da Nascente, o Valarcano com os Ents em roda e o monte dos orcs queimados na borda. 5 lugares e a rota "Os Ents de Fangorn".
 - **Rauros e Amon Hen**: o lago Nen Hithoel com a água nivelada, as estátuas gigantes do Argonath, Parth Galen com os três barcos, o Assento da Visão no alto de Amon Hen, Tol Brandir, Amon Lhaw, as quedas e o lugar onde Boromir caiu. 8 lugares e a rota "A dissolução da Sociedade".
