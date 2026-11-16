@@ -72,7 +72,7 @@ for k in range(7): M.append(['cylA',BOR[0]+math.cos(k*0.9)*0.2,BOR[1]+math.sin(k
 # Rauros: a cortina de água e o barco fúnebre de Boromir
 z0=gz(FALL[0],FALL[1]-0.3);z1=gz(FALL[0],FALL[1]+1.3)
 hwf=(shore_x(yf+0.4,1)-shore_x(yf+0.4,-1))/2*0.85
-M.append(['boxA',lake_mid(yf+0.4),FALL[1]+0.45,hwf,0.03,z1-0.1,z0+0.02,0,[0.95,0.98,1.0,0.85],None])
+M.append(['boxA',lake_mid(yf+0.4),FALL[1]+0.45,hwf,0.03,z1-0.1,z0+0.02,0,[0.78,0.86,0.9,0.12],None])
 M.append(['boat',FALL[0]-0.2,FALL[1]-0.6,1.57,'#d8d4c4'])
 for _ in range(22000):
     x,y=R.rng.uniform(R.X0,R.X1),R.rng.uniform(R.Y0,R.Y1)
