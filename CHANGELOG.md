@@ -1,5 +1,13 @@
 # Histórico de mudanças
 
+## 12.1 — 16/11/2026 — globo mais leve
+- O globo travava no celular. Mudanças para aliviar:
+  - Os nomes sobre o globo não recalculam mais a página a cada quadro (medidos uma vez, movidos com `transform`).
+  - Ao arrastar, o globo é desenhado no máximo uma vez por quadro.
+  - Com o globo aberto, o mapa 3D que fica por baixo é escondido.
+  - O globo é carregado com antecedência, parado, para a primeira passagem não engasgar.
+  - Resolução do desenho limitada a 1,5× e sem filtro anisotrópico. Em aparelhos com 4 GB de memória ou menos, a textura do globo cai para 2048 × 1024.
+
 ## 12.0 — 16/11/2026 — o mundo e a Terra-média viraram um mapa só; Mapa e Teia na mesma seção
 - **Zoom contínuo de Arda até a Terra-média**: o globo agora mostra a Terra-média do próprio Atlas (o mesmo desenho do mapa 3D), no lugar certo do continente. Antes eram dois mapas diferentes, com uma troca de tela no meio.
   - Afastando o mapa até o fim (ou tocando em "Ver o mundo"), a câmera vai para a vista de cima e o globo aparece por cima, alinhado, e se afasta.
