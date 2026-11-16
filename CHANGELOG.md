@@ -1,5 +1,13 @@
 # Histórico de mudanças
 
+## 11.5 — 16/11/2026 — Fangorn, Rauros, Portos Cinzentos, Fornost, Pelargir e Dol Amroth de perto
+- **Fangorn**: a floresta densa, a colina de rocha de Barbárvore junto ao Entágua (com um Ent ao lado), a Gruta da Nascente, o Valarcano com os Ents em roda e o monte dos orcs queimados na borda. 5 lugares e a rota "Os Ents de Fangorn".
+- **Rauros e Amon Hen**: o lago Nen Hithoel com a água nivelada, as estátuas gigantes do Argonath, Parth Galen com os três barcos, o Assento da Visão no alto de Amon Hen, Tol Brandir, Amon Lhaw, as quedas e o lugar onde Boromir caiu. 8 lugares e a rota "A dissolução da Sociedade".
+- **Portos Cinzentos**: Mithlond nas duas margens do golfo, com casas e torres brancas, os cais, o Navio Branco, barcos élficos e o estaleiro de Círdan. 7 lugares e a rota "A última viagem".
+- **Fornost**: as ruínas da capital do Norte (muralha quebrada, torres, cidadela, colunas caídas), o fosso em volta, o Caminho Verde e os montes do campo de batalha. 5 lugares e a rota "A queda do Reino do Norte".
+- **Pelargir**: a cidade murada na margem do Anduin, com cerca de 130 casas, os cais, a frota negra dos Corsários e o rio Sirith. 5 lugares e a rota "Os navios negros".
+- **Dol Amroth**: o promontório de rocha avançando no mar, com o castelo de torres azuis, a Torre do Mar na ponta, a cidade e o porto com navios-cisne. 5 lugares e a rota "Os cavaleiros do cisne".
+
 ## 11.4 — 16/11/2026 — Erebor e Valle, Cidade do Lago e Dol Guldur de perto
 - **Erebor e Valle**:
   - A Montanha Solitária com os braços em estrela, o Portão da Frente (arco, estátuas e ameias) e o Rio Corrente saindo dele e dando a volta em Valle.
