@@ -31,10 +31,10 @@ M.append(['capA',HILL[0],HILL[1],zh+0.42,0,0.22,9,'#9a968a'])
 for k in range(6): M.append(['boxA',HILL[0]+0.3+k*0.045,HILL[1]+0.25,0.03,0.07,zh-0.2,zh-0.12+k*0.09,0.6,'#9a968a',None])
 # Barbárvore (um Ent) junto à colina
 def ent(x,y,h,col='#5a4a34',top='#4a6a36'):
-    h*=1.6
+    h*=2.6
     z=gz(x,y);M.append(['cylA',x,y,z-0.05,z+h,0.05*h,0.035*h,6,col]);M.append(['blobA',x,y,z+h*0.8,[[0.07*h,0],[0.16*h,0.1*h],[0.12*h,0.28*h],[0,0.36*h]],7,top])
     for s_ in (-1,1): M.append(['cylA',x+s_*0.07*h,y,z+h*0.45,z+h*0.75,0.015*h,0.012*h,4,col])
-ent(HILL[0]-0.35,HILL[1]+0.3,0.75)
+ent(HILL[0]-0.55,HILL[1]+0.45,0.95)
 # Gruta da Nascente: a casa de Barbárvore, com a cortina de água e as árvores do portão
 zw=gz(*WELL)
 M.append(['boxA',WELL[0]-0.25,WELL[1],0.05,0.3,zw-0.1,zw+0.7,0,'#7a766e','#6a665e'])

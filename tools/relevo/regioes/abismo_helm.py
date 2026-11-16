@@ -38,7 +38,7 @@ hd=np.where(dr<wall,np.minimum(hd,prof),hd)
 # esporão de rocha do Forte da Trombeta
 zH=0.30
 hb_=np.hypot(GX-HB[0],GY-HB[1])
-hd=np.where(hb_<0.6,np.maximum(hd,zH),np.maximum(hd,zH-(hb_-0.6)*0.11))*(hb_<1.6)+hd*(hb_>=1.6)
+hd=np.where(hb_<1.0,np.maximum(hd,zH),np.maximum(hd,zH-(hb_-1.0)*0.11))*(hb_<2.0)+hd*(hb_>=2.0)
 hd=hd-0.006*sstep(0.25,0.0,dr)
 R.set_height(hd);gz=R.gz
 # ---------- textura ----------
@@ -76,26 +76,29 @@ R.save_tex(fin)
 M=R.MOD
 STONE='#b9b2a0';STONE2='#a8a190';ROOF='#5c4a3a'
 zb=zH*HSW
-# Forte da Trombeta: muralha externa, torre alta e salão
-NW=14
+# Forte da Trombeta: muralha externa, torre alta e salão (escala K)
+K=1.7;NW=18
 for k in range(NW):
-    a=k/NW*2*math.pi;da=2*math.pi/NW;r=0.52
-    if abs(((a-0.35+math.pi)%(2*math.pi))-math.pi)<0.18: continue      # portão (lado da calçada)
+    a=k/NW*2*math.pi;da=2*math.pi/NW;r=0.52*K
+    if abs(((a-0.35+math.pi)%(2*math.pi))-math.pi)<0.16: continue      # portão (lado da calçada)
     x,y=HB[0]+math.cos(a+da/2)*r,HB[1]+math.sin(a+da/2)*r
-    M.append(['boxA',x,y,r*da/2+0.02,0.05,zb-0.8,zb+0.32,a+da/2+math.pi/2,STONE,STONE2])
-for k in range(5):
-    a=k/5*2*math.pi+0.2;x,y=HB[0]+math.cos(a)*0.52,HB[1]+math.sin(a)*0.52
-    M.append(['cylA',x,y,zb-0.6,zb+0.5,0.07,0.065,8,STONE]);M.append(['cylA',x,y,zb+0.5,zb+0.68,0.075,0,8,ROOF])
-M.append(['cylA',HB[0]-0.1,HB[1]-0.08,zb-0.2,zb+1.55,0.16,0.14,12,STONE])           # a torre
-M.append(['cylA',HB[0]-0.1,HB[1]-0.08,zb+1.55,zb+1.95,0.17,0.0,12,ROOF])
-M.append(['discA',HB[0]+0.04,HB[1]-0.05,zb+1.25,1,0,0.025,[1.0,0.8,0.4,0.6]])
-M.append(['boxA',HB[0]+0.17,HB[1]+0.12,0.2,0.1,zb,zb+0.4,0.4,'#c2baa6',ROOF])          # salão
+    M.append(['boxA',x,y,r*da/2+0.02,0.06,zb-0.9,zb+0.36*K,a+da/2+math.pi/2,STONE,STONE2])
+for k in range(6):
+    a=k/6*2*math.pi+0.2;x,y=HB[0]+math.cos(a)*0.52*K,HB[1]+math.sin(a)*0.52*K
+    M.append(['cylA',x,y,zb-0.7,zb+0.55*K,0.08*K,0.072*K,8,STONE]);M.append(['cylA',x,y,zb+0.55*K,zb+0.75*K,0.085*K,0,8,ROOF])
+TWX,TWY=HB[0]-0.1*K,HB[1]-0.08*K
+M.append(['cylA',TWX,TWY,zb-0.2,zb+1.7*K,0.17*K,0.14*K,12,STONE])           # a torre
+M.append(['cylA',TWX,TWY,zb+1.4*K,zb+1.47*K,0.19*K,0.19*K,12,STONE2])
+M.append(['cylA',TWX,TWY,zb+1.7*K,zb+2.1*K,0.17*K,0.0,12,ROOF])
+M.append(['discA',TWX+0.15*K,TWY+0.02,zb+1.25*K,1,0,0.03*K,[1.0,0.8,0.4,0.6]])
+M.append(['boxA',HB[0]+0.17*K,HB[1]+0.12*K,0.2*K,0.1*K,zb,zb+0.42*K,0.4,'#c2baa6',ROOF])          # salão
+M.append(['boxA',HB[0]-0.05*K,HB[1]+0.3*K,0.12*K,0.08*K,zb,zb+0.3*K,1.2,'#c2baa6',ROOF])
 # calçada (rampa) até o portão
-M.append(['boxA',HB[0]+0.72,HB[1]+0.32,0.3,0.07,gz(HB[0]+0.85,HB[1]+0.38)-0.2,zb-0.02,0.4,STONE2,STONE2])
+M.append(['boxA',HB[0]+0.72*K,HB[1]+0.32*K,0.34*K,0.08,gz(HB[0]+1.05*K,HB[1]+0.46*K)-0.2,zb-0.02,0.4,STONE2,STONE2])
 # Muralha do Abismo: do Forte até a escarpa sul, atravessando a boca do Abismo
 WS=(MOUTH[0]-nx_*1.15,MOUTH[1]-ny_*1.15)
-WALLP=[(HB[0]-nx_*0.48,HB[1]-ny_*0.48),MOUTH,WS]
-M.append(['wall',[[round(x,3),round(y,3)] for x,y in WALLP],0.45,STONE,0.13])
+WALLP=[(HB[0]-nx_*0.48*1.7,HB[1]-ny_*0.48*1.7),MOUTH,WS]
+M.append(['wall',[[round(x,3),round(y,3)] for x,y in WALLP],0.7,STONE,0.16])
 for (x,y) in [WALLP[0],WS]: M.append(['cyl',x,y,-0.2,0.6,0.09,0.085,8,STONE])
 # bueiro do riacho sob a muralha (arrombado)
 M.append(['discA',MOUTH[0]+ux_*0.08,MOUTH[1]+uy_*0.08,gz(*MOUTH)+0.08,ux_,uy_,0.1,'#1a1816'])
@@ -122,7 +125,7 @@ for _ in range(9000):
     h=R.at(hu,x,y)
     if h>0.35 and R.rng.random()<0.55: R.tree(x,y,R.rng.uniform(0.8,1.2),1 if R.rng.random()<0.7 else 0,C(30,48,30)*R.rng.uniform(0.8,1.2))
     elif R.at(rk,x,y)<0.3 and R.rng.random()<0.006: R.tree(x,y,R.rng.uniform(0.5,0.75),1,C(70,98,50)*R.rng.uniform(0.85,1.1))
-R.TOPS=[[HB[0],HB[1],2.3,0.35],[MOUTH[0],MOUTH[1],0.9,0.3]]
+R.TOPS=[[HB[0],HB[1],3.9,0.6],[MOUTH[0],MOUTH[1],0.9,0.3]]
 R.PL={'ForteTrombeta':HB,'MuralhaAbismo':((MOUTH[0]+WS[0])/2,(MOUTH[1]+WS[1])/2),'Bueiro':MOUTH,'CavernasCintilantes':CAVE,'DiqueHelm':tuple(dp+dn*1.5),
       'FlorestaHuorns':tuple(HUORN),'ColinaMorte':DEATH,'ColinaGandalf':GAND,'ValeAbismo':tuple(SP[int(np.argmin(np.abs(SS-(S_MOUTH+2.6))))]+dn*0.9)}
 R.save_json()

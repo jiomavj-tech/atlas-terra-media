@@ -48,11 +48,11 @@ SHIP=(QUAY[0]+0.45,QUAY[1]-0.95)
 M.append(['blobA',SHIP[0],SHIP[1],ZW-0.02,[[0.1,0],[0.2,0.05],[0.18,0.12],[0,0.13]],10,WHITE])
 M.append(['cylA',SHIP[0],SHIP[1],ZW+0.1,ZW+0.75,0.015,0.01,5,'#d8d4c8']);M.append(['boxA',SHIP[0],SHIP[1],0.012,0.2,ZW+0.3,ZW+0.7,0.2,[0.96,0.96,0.92,0.15],None])
 M.append(['cylA',SHIP[0]-0.2,SHIP[1],ZW+0.08,ZW+0.32,0.02,0.01,5,WHITE])
-for k,(dx,dy) in enumerate([(-0.9,-1.0),(-0.45,-0.9),(1.3,-0.8)]): M.append(['boat',QUAY[0]+dx,QUAY[1]+dy,1.4,'#e8e4d8'])
+for k,(dx,dy) in enumerate([(-0.9,-1.0),(-0.45,-0.9),(1.3,-0.8)]): M.append(['boat',QUAY[0]+dx,QUAY[1]+dy,1.4,'#f4f2ea','#e8e4d8'])
 # estaleiro de Círdan
 YARD=(TOWN[0]+1.6,S[1]+0.25)
 M.append(['house',YARD[0],YARD[1],0.5,0.22,0.1,'#c8b890','#7c98a8',0.3])
-M.append(['boat',YARD[0]+0.1,YARD[1]-0.4,0.1,'#b89868'])
+M.append(['boat',YARD[0]+0.1,YARD[1]-0.4,0.1,'#f4f2ea','#c8b890'])
 for _ in range(9000):
     x,y=R.rng.uniform(R.X0,R.X1),R.rng.uniform(R.Y0,R.Y1)
     if R.at(water,x,y)>0.03 or R.at(roadm,x,y)>0.05 or any(math.hypot(x-px,y-py)<0.3 for px,py in HP): continue

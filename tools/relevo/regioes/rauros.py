@@ -64,7 +64,7 @@ M.append(['boxA',HEN[0],HEN[1],0.1,0.1,zh+0.3,zh+0.36,0,'#c2bcac',None]);M.appen
 for k in range(8): M.append(['cylA',HEN[0]+math.cos(k*0.785)*0.3,HEN[1]+math.sin(k*0.785)*0.3,zh,zh+0.12,0.02,0.02,5,'#a8a294'])
 zl=gz(*LHAW);M.append(['capA',LHAW[0],LHAW[1],zl+0.02,0,0.25,12,'#a8a294']);M.append(['boxA',LHAW[0],LHAW[1],0.08,0.08,zl,zl+0.25,0,'#a8a294',None])
 # Parth Galen: os três barcos élficos na margem
-for k in range(3): M.append(['boat',PARTH[0]+0.45,PARTH[1]-0.25+k*0.25,0.2,'#d8d4c4'])
+for k in range(3): M.append(['boat',PARTH[0]+0.45,PARTH[1]-0.25+k*0.25,0.2,'#f0eee4','#d8d8d0'])
 M.append(['capA',PARTH[0]-0.1,PARTH[1],gz(PARTH[0]-0.1,PARTH[1])+0.02,0,0.03,6,[1.0,0.55,0.15,1.0]])
 # onde Boromir caiu: a trompa partida e as armas dos inimigos
 zb=gz(*BOR);M.append(['stone',BOR[0],BOR[1]])
@@ -72,8 +72,8 @@ for k in range(7): M.append(['cylA',BOR[0]+math.cos(k*0.9)*0.2,BOR[1]+math.sin(k
 # Rauros: a cortina de água e o barco fúnebre de Boromir
 z0=gz(FALL[0],FALL[1]-0.3);z1=gz(FALL[0],FALL[1]+1.3)
 hwf=(shore_x(yf+0.4,1)-shore_x(yf+0.4,-1))/2*0.85
-M.append(['boxA',lake_mid(yf+0.4),FALL[1]+0.45,hwf,0.03,z1-0.1,z0+0.02,0,[0.78,0.86,0.9,0.12],None])
-M.append(['boat',FALL[0]-0.2,FALL[1]-0.6,1.57,'#d8d4c4'])
+M.append(['fall',lake_mid(yf+0.4),FALL[1]+0.42,0,1,hwf*2,z0+0.03,z1-0.05])
+M.append(['boat',FALL[0]-0.2,FALL[1]-0.6,1.57,'#f0eee4','#d8d8d0'])
 for _ in range(22000):
     x,y=R.rng.uniform(R.X0,R.X1),R.rng.uniform(R.Y0,R.Y1)
     if R.at(water,x,y)>0.03 or R.at(rk,x,y)>0.5: continue

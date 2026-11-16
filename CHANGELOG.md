@@ -1,5 +1,12 @@
 # Histórico de mudanças
 
+## 12.4 — 16/11/2026 — revisão de acabamento
+- **Cachoeiras**: novo modelo, com fios de água que se abrem ao cair e névoa na base, no lugar da placa clara. Usado nas Quedas de Rauros e em Henneth Annûn.
+- **Forte da Trombeta**: fortaleza 70% maior, com torre mais alta, mais torres na muralha e a Muralha do Abismo mais alta.
+- **Fangorn**: Ents maiores, para aparecerem entre as árvores.
+- **Barcos élficos** (Portos Cinzentos, Lothlórien e Parth Galen): casco branco em vez de escuro.
+- **Colinas dos Túmulos**: os morros não se empilham mais num pico pontudo.
+
 ## 12.3 — 16/11/2026 — Barad-dûr, Floresta Velha, Thranduil, Beorn, Fano-da-Colina e Henneth Annûn de perto
 - **Barad-dûr**: a Torre Negra em degraus, com três anéis de muralhas e torres, as pontas no alto com o Olho, janelas de fogo, a ponte de ferro, o fosso de lava em volta da rocha e as forjas do planalto. 6 lugares e a rota "A Torre Negra".
 - **Floresta Velha e Colinas dos Túmulos**: o Velho Salgueiro-homem à beira do Voltavime, a casa de Tom Bombadil com janelas acesas, flores e o lago dos lírios, a pedra erguida e os túmulos com anéis de pedras sob a névoa. 7 lugares e a rota "Tom Bombadil".

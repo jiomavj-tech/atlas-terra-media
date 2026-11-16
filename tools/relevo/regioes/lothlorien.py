@@ -83,7 +83,7 @@ HAL=(480.9,390.2);mallorn(HAL[0],HAL[1],1.6,0.3,GOLD,2)
 rows=np.where(R.base_water()[:,R.tp(495.0,0)[0]]>0.5)[0]
 HITHE=(495.0,R.Y0+rows.min()/R.PX-0.15 if len(rows) else 399.5)
 for q in range(3): M.append(['jetty',HITHE[0]-0.3+q*0.3,HITHE[1],1.57])
-for q in range(3): M.append(['boat',HITHE[0]-0.35+q*0.35,HITHE[1]+0.45,0.0,'#f4f2ea'])
+for q in range(3): M.append(['boat',HITHE[0]-0.35+q*0.35,HITHE[1]+0.45,0.0,'#f4f2ea','#d8d8d0'])
 M.append(['blobA',HITHE[0]+0.9,HITHE[1]+0.4,gz(HITHE[0]+0.9,HITHE[1]+0.4)+0.02,[[0.12,0],[0.14,0.05],[0.06,0.1],[0,0.12]],8,'#f8f8f4'])
 M.append(['cylA',HITHE[0]+1.02,HITHE[1]+0.4,gz(HITHE[0]+0.9,HITHE[1]+0.4)+0.08,gz(HITHE[0]+0.9,HITHE[1]+0.4)+0.35,0.02,0.012,5,'#f8f8f4'])
 # floresta: mallorns (dourados) e árvores menores

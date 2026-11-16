@@ -8,7 +8,9 @@ hbs=cv2.GaussianBlur(R.hb,(0,0),3);nz=R.noise(8,5,3,True)
 hd=hbs*0.8+0.02+0.01*nz
 # as Colinas dos Túmulos: morros redondos e verdes
 MOUNDS=[(288.0+R.rng.uniform(0,10),279.0+R.rng.uniform(0,12)) for _ in range(16)]+[BARROW]
-for mx,my in MOUNDS: hd=hd+0.022*gauss(mx,my,0.9,GX,GY)
+mb=np.zeros_like(hd)
+for mx,my in MOUNDS: mb=np.maximum(mb,gauss(mx,my,0.8,GX,GY))
+hd=hd+0.02*mb
 wm=cv2.resize(R.line_mask(WITHY,0.9,6),(R.GW,R.GH));hd=hd-0.02*np.clip(wm*2,0,1)
 R.set_height(hd);gz=R.gz
 img=np.zeros((R.TH,R.TW,3),np.float32)

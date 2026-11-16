@@ -35,7 +35,7 @@ R.save_tex(fin)
 M=R.MOD
 z1=gz(HA[0]+0.35,HA[1]);z0=gz(*POOL)
 # a cortina de água e a caverna por trás (a Janela do Poente)
-M.append(['boxA',HA[0]-0.05,HA[1],0.02,0.16,z0,z1+0.02,0,[0.72,0.82,0.88,0.08],None])
+M.append(['fall',HA[0]-0.06,HA[1],-1,0,0.34,z1+0.03,z0])
 M.append(['boxA',HA[0]+0.02,HA[1],0.02,0.2,z0,z0+0.45,0,'#141210',None])
 M.append(['discA',HA[0]-0.0,HA[1]+0.28,z0+0.25,-0.7,0.7,0.05,[1.0,0.7,0.3,0.9]])       # tocha na entrada lateral
 # o Lago Proibido, com Gollum pescando numa pedra
