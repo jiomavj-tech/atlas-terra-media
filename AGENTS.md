@@ -70,6 +70,9 @@ Este repositório guarda o **Atlas da Terra-média**: um aplicativo de **arquivo
 - Regras (Apêndice D): o ano começa no 2º Yule, num Sterday; Meio-do-Ano e Overlithe não têm dia da semana; o Overlithe entra a cada 4 anos, exceto no último ano do século. Correspondência aproximada: 9 de Afteryule ≈ 1º de janeiro.
 - "Ver este dia no mapa" usa `window.AtlasDias.openAt(modo, índiceDoDia)`.
 
+## Toque duplo no mapa (v12.10)
+- No script do mapa: `m3Tap` (detecta dois toques em até 350 ms e 40 px, chamado no `up()` dos ponteiros), `m3Dbl` (passo de zoom até `capZ(key)`), `nearestPin` (alfinete visível a até 60 px). `capZ` é o mesmo zoom máximo usado em `openPlace`: ao criar uma região nova, acrescentar a chave nas duas listas.
+
 ## Instalação (PWA)
 
 - `manifest.webmanifest`, `sw.js` e os ícones `icon-*.png` permitem instalar o Atlas no Android. O `sw.js` usa "rede primeiro": com internet sempre baixa a versão nova; sem internet abre a última cópia. Ao mudar a lista de arquivos guardados, troque o nome do `CACHE`.

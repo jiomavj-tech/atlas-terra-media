@@ -1,5 +1,12 @@
 # Histórico de mudanças
 
+## 12.10 — 17/11/2026 — toque duplo para aproximar de um lugar
+- **Mapa**: dois toques rápidos perto de um nome ou de um alfinete aproximam o mapa em direção àquele lugar, um passo por vez (cerca de 2,4× a cada toque duplo).
+  - Toques duplos seguidos continuam indo para o mesmo lugar, mesmo quando o nome dele some e aparecem os detalhes da cena.
+  - O zoom para no máximo daquele lugar, o mesmo da cena detalhada. No toque duplo seguinte, o mapa mostra a descrição do lugar. Depois disso, um novo toque duplo num detalhe (por exemplo, o Harlond) aproxima daquele detalhe.
+  - Dois toques longe de qualquer nome aproximam 2× no centro.
+- O toque simples num alfinete continua levando direto ao lugar, agora com uma espera de 0,28 s para não confundir com o toque duplo.
+
 ## 12.9 — 17/11/2026 — calendário do Condado
 - **História → 📆 Calendário**: nova aba com o calendário do Condado, feito a partir das regras do Apêndice D.
   - **Hoje no Condado**: converte uma data nossa para a data do Condado, com o dia da semana hobbit. A conversão é aproximada: nosso 1º de janeiro ≈ 9 de Afteryule.
