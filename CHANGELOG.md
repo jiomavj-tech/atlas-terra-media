@@ -1,5 +1,14 @@
 # Histórico de mudanças
 
+## 12.7 — 17/11/2026 — reinos e Eras no mapa
+- **Mapa**: novo botão "👑 Reinos e Eras". Ele desenha as fronteiras de 12 reinos sobre o mapa (com relevo ou na vista plana) e abre um painel para escolher a época:
+  - **Segunda Era**: Lindon, Arnor, Eregion, Khazad-dûm, Lórien, Reino da Floresta, Gondor e Mordor;
+  - **Terceira Era**: também Angmar, o Condado, Erebor e Valle e Rohan;
+  - **Guerra do Anel**: os reinos que ainda existiam em 3019.
+- Tocar num reino leva o mapa até ele e abre a ficha: período, sede, governantes, aliados, inimigos e um resumo.
+- As fronteiras foram desenhadas à mão sobre o mapa do Atlas e são aproximadas. As fichas foram traduzidas e adaptadas do [Middle-earth Interactive Atlas](https://github.com/grot666/middle-earth-atlas) (licença MIT), com crédito e licença no quadro "Dados abertos usados no Atlas".
+- Ferramentas em `tools/reinos/`.
+
 ## 12.6 — 17/11/2026 — famílias a partir de duas genealogias abertas
 - **Dados novos**: parentescos de 756 personagens (841 filiações, 121 casais), combinados de duas fontes abertas e revisados:
   - [Arda-Maps](https://github.com/kwoxer/Arda-Maps) (CC BY-NC-SA 4.0);

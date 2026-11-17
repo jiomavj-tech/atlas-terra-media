@@ -55,6 +55,11 @@ Este repositório guarda o **Atlas da Terra-média**: um aplicativo de **arquivo
 - Os parentescos ficam em `window.ATLAS_FAMILY` (script `atlas-familias-dados`): `n`=[nome, povo, sexo, chave da ficha], `p`=[filho, pai ou mãe], `s`=[cônjuges], `b`=[irmãos]. São gerados por `tools/familias/` a partir do Arda-Maps e do Middle-Earth Genealogy Project. **Licença dos dados: CC BY-NC-SA 4.0. Mantenha os créditos em `#atlasCreditosDados`** (seção Fontes).
 - Correções feitas à mão ficam em `tools/familias/final.py` (`DROP_PAR`, `OV`, homônimos). Para corrigir um parentesco, edite ali e rode `parse.py` → `match.py` → `final.py` → `embed.py`.
 
+## Reinos e Eras (v12.7)
+- Dados em `<script id="atlas-reinos-dados">` (`window.ATLAS_REINOS`: id, nome, cor, eras SA/TA/GA, período, sede, governantes, aliados, inimigos, resumo, polígono em coordenadas do mapa 984×877). Script `atlas-reinos-script` cria o canvas `#m3Reinos` dentro de `#m3Plane` e o painel `#m3RealmBox`.
+- O `render()` do mapa chama `window.AtlasReinos.draw(cam,W,H,relevo,zFit)`. Com relevo, os pontos são projetados com `AtlasRelevo.projector(cam,W,H)` (uma câmera por quadro). Some quando o zoom é de cena detalhada (`cam.z>zFit*7`).
+- Fichas adaptadas do grot666/middle-earth-atlas (MIT): manter o crédito e o texto da licença em `#atlasCreditosDados`. Fronteiras redesenhadas em `tools/reinos/fronteiras.py`.
+
 ## Instalação (PWA)
 
 - `manifest.webmanifest`, `sw.js` e os ícones `icon-*.png` permitem instalar o Atlas no Android. O `sw.js` usa "rede primeiro": com internet sempre baixa a versão nova; sem internet abre a última cópia. Ao mudar a lista de arquivos guardados, troque o nome do `CACHE`.
