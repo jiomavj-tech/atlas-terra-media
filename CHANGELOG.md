@@ -1,5 +1,11 @@
 # Histórico de mudanças
 
+## 12.11 — 17/11/2026 — toque duplo vai direto ao lugar
+- **Mapa**: o toque duplo agora vai **direto** ao zoom máximo do lugar mais perto do dedo e mostra a descrição. Depois disso, é só usar os dedos ou os botões + e − para ajustar. Dois toques longe de qualquer nome continuam aproximando 2× no centro.
+- O alfinete escolhido é o que está visível embaixo do dedo. Se o dedo não estiver em cima de nenhum, vale o mais perto, até 60 px.
+- **Correção**: tocar num lugar a partir do mapa inteiro às vezes parava no zoom 7× em vez de entrar na cena detalhada (Minas Tirith, Edoras…). O ponto de chegada caía uns 40 km ao sul da cena. Agora a câmera chega dentro dela e completa a aproximação se a cena ainda estiver carregando.
+- **Correção**: os nomes invisíveis do globo de Arda ficavam por cima do mapa e "roubavam" alguns toques (Condado, Erebor, Isengard…). Agora só recebem toques quando o globo está aberto.
+
 ## 12.10 — 17/11/2026 — toque duplo para aproximar de um lugar
 - **Mapa**: dois toques rápidos perto de um nome ou de um alfinete aproximam o mapa em direção àquele lugar, um passo por vez (cerca de 2,4× a cada toque duplo).
   - Toques duplos seguidos continuam indo para o mesmo lugar, mesmo quando o nome dele some e aparecem os detalhes da cena.
