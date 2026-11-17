@@ -1,5 +1,16 @@
 # Histórico de mudanças
 
+## 12.6 — 17/11/2026 — famílias a partir de duas genealogias abertas
+- **Dados novos**: parentescos de 756 personagens (841 filiações, 121 casais), combinados de duas fontes abertas e revisados:
+  - [Arda-Maps](https://github.com/kwoxer/Arda-Maps) (CC BY-NC-SA 4.0);
+  - [Middle-Earth Genealogy Project](https://github.com/RobSis/middle-earth-genealogy-project) (CC BY-SA 4.0).
+  Quando as duas fontes trazem a mesma pessoa, vale a genealogia; o Arda-Maps completa o que faltar. Homônimos (dois Beren, dois Orodreth, duas Morwen) foram separados conferindo os parentes.
+- Erros das fontes corrigidos ou retirados: Morwen Eledhwen como mãe de Théoden (era Morwen Steelsheen), Eöl como filho de Fingolfin, e filhos de Melkor e Tulkas que só existem nos rascunhos antigos. Beleg Cúthalion e Haldir de Lórien ficaram sem família, porque as fontes os confundem com homônimos.
+- **Fichas**: 107 personagens ganharam o bloco "🌳 Família", com pais, cônjuge, filhos e irmãos. Quem tem ficha abre com um toque, e o botão "Ver árvore completa" leva à árvore.
+- **Genealogias**: nova opção "🔎 Qualquer personagem (árvore automática)", com busca por nome e árvore de avós a netos. Tocar num parente centraliza a árvore nele. As 8 árvores feitas à mão continuam iguais.
+- **Conexões**: 44 parentescos que faltavam foram acrescentados a 14 fichas.
+- **Fontes**: novo quadro "Dados abertos usados no Atlas", com os créditos e as licenças. O que deriva desses dados fica sob CC BY-NC-SA 4.0.
+
 ## 12.5 — 16/11/2026 — conexões dos personagens catalogadas (Tarefa 5) e mais acabamento
 - **Conexões**: a auditoria mostrava 158 de 190 fichas com pendência. Em 150 delas o campo dizia só "A catalogar"; as outras 8 tinham nomes que não batiam com nenhuma ficha.
   - As 150 fichas ganharam as ligações principais com outros personagens do Atlas (família, aliados, inimigos), tiradas da obra citada em cada ficha.
