@@ -60,6 +60,11 @@ Este repositório guarda o **Atlas da Terra-média**: um aplicativo de **arquivo
 - O `render()` do mapa chama `window.AtlasReinos.draw(cam,W,H,relevo,zFit)`. Com relevo, os pontos são projetados com `AtlasRelevo.projector(cam,W,H)` (uma câmera por quadro). Some quando o zoom é de cena detalhada (`cam.z>zFit*7`).
 - Fichas adaptadas do grot666/middle-earth-atlas (MIT): manter o crédito e o texto da licença em `#atlasCreditosDados`. Fronteiras redesenhadas em `tools/reinos/fronteiras.py`.
 
+## Dia a dia (v12.8)
+- Dados em `<script id="atlas-dias-dados">` (`window.ATLAS_DIAS` com `guerra` e `hobbit`: `cal` = rótulo de cada dia, `ev` = acontecimento por índice do dia, `tracks` = grupos com `pts` [dia, x, y, rótulo opcional]). Script `atlas-dias-script`: canvas `#m3Dias` e painel `#m3DiaBox`; desenhado pelo `render()` do mapa via `window.AtlasDias.draw`.
+- O calendário segue o Condado (meses de 30 dias, com os dias de Yule e Lithe). Para regenerar: `tools/jornadas/data.py` (precisa do clone do Arda-Maps) e `integ.py`.
+- "Reproduzir" é uma animação sob demanda que para no fim ou ao fechar o painel; não transformar em animação contínua.
+
 ## Instalação (PWA)
 
 - `manifest.webmanifest`, `sw.js` e os ícones `icon-*.png` permitem instalar o Atlas no Android. O `sw.js` usa "rede primeiro": com internet sempre baixa a versão nova; sem internet abre a última cópia. Ao mudar a lista de arquivos guardados, troque o nome do `CACHE`.
