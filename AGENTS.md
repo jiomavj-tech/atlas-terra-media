@@ -65,6 +65,11 @@ Este repositório guarda o **Atlas da Terra-média**: um aplicativo de **arquivo
 - O calendário segue o Condado (meses de 30 dias, com os dias de Yule e Lithe). Para regenerar: `tools/jornadas/data.py` (precisa do clone do Arda-Maps) e `integ.py`.
 - "Reproduzir" é uma animação sob demanda que para no fim ou ao fechar o painel; não transformar em animação contínua.
 
+## Calendário do Condado (v12.9)
+- Seção `#calendario-condado` (aba "📆 Calendário" do grupo História), com o script `atlas-calendario-script` logo depois do `atlas-dias-script`, porque lê `window.ATLAS_DIAS` para marcar os dias com acontecimento.
+- Regras (Apêndice D): o ano começa no 2º Yule, num Sterday; Meio-do-Ano e Overlithe não têm dia da semana; o Overlithe entra a cada 4 anos, exceto no último ano do século. Correspondência aproximada: 9 de Afteryule ≈ 1º de janeiro.
+- "Ver este dia no mapa" usa `window.AtlasDias.openAt(modo, índiceDoDia)`.
+
 ## Instalação (PWA)
 
 - `manifest.webmanifest`, `sw.js` e os ícones `icon-*.png` permitem instalar o Atlas no Android. O `sw.js` usa "rede primeiro": com internet sempre baixa a versão nova; sem internet abre a última cópia. Ao mudar a lista de arquivos guardados, troque o nome do `CACHE`.

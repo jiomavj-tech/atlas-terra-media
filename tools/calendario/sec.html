@@ -1,0 +1,52 @@
+<style id="atlas-calendario-css">
+#calendario-condado .cc-box{border:1px solid #6d6346;border-radius:14px;padding:12px 14px;margin:12px 0;background:#13261f}
+#calendario-condado .cc-box h3{margin:0 0 8px;font-size:17px;color:#f2d98f}
+#calendario-condado .cc-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+#calendario-condado input,#calendario-condado select{min-height:40px;background:#0f1f19;color:#f1e2bb;border:1px solid #8c784b;border-radius:9px;padding:6px 8px;font-size:15px}
+#calendario-condado input[type=number]{width:96px}
+#calendario-condado .cc-out{margin-top:8px;font-size:16px;line-height:1.5}
+#calendario-condado .cc-out b{color:#f6dfa0}
+#calendario-condado .cc-out small{display:block;color:#b9ad8c;font-size:13px}
+#calendario-condado .cc-year{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin-top:10px}
+#calendario-condado .cc-m{border:1px solid #4f5a45;border-radius:10px;padding:6px;background:#0f1f19}
+#calendario-condado .cc-m h4{margin:0 0 4px;font-size:14px;color:#f2d98f;display:flex;justify-content:space-between;gap:6px}
+#calendario-condado .cc-m h4 small{color:#a99d7e;font-weight:400}
+#calendario-condado .cc-g{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+#calendario-condado .cc-g span{font-size:10px;color:#a99d7e;text-align:center}
+#calendario-condado .cc-d{min-height:30px;padding:0;font-size:13px;border-radius:6px;border:1px solid transparent;background:#18332a;color:#e9dcb7}
+#calendario-condado .cc-d.ev{background:#5a4a1e;border-color:#d4b16a;color:#fff;font-weight:700}
+#calendario-condado .cc-d.hj{outline:2px solid #8fd0ff}
+#calendario-condado .cc-d.sel{background:#d4b16a;color:#102b25}
+#calendario-condado .cc-sp{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:4px;margin:2px 0}
+#calendario-condado .cc-sp .cc-d{padding:4px 9px;min-height:30px;background:#2a3b4a;border-color:#6f8ea6}
+#calendario-condado .cc-sp .cc-d.ev{background:#5a4a1e;border-color:#d4b16a}
+#calendario-condado .cc-info{margin-top:10px;padding:10px 12px;border-radius:10px;background:#1b3329;border:1px solid #6d6346;line-height:1.5}
+#calendario-condado .cc-info button{margin-top:6px;min-height:38px;border-radius:9px;background:#d4b16a;color:#102b25;font-weight:700;border:0;padding:6px 12px}
+#calendario-condado table{border-collapse:collapse;width:100%;font-size:14px}
+#calendario-condado td,#calendario-condado th{border-bottom:1px solid #3a4636;padding:4px 6px;text-align:left;vertical-align:top}
+#calendario-condado th{color:#d4b16a}
+</style>
+<section id="calendario-condado" aria-labelledby="cc-title">
+<h2 id="cc-title">📆 Calendário do Condado</h2>
+<p>O Contado do Condado (Shire Reckoning), descrito no Apêndice D de <i>O Senhor dos Anéis</i>: 12 meses de 30 dias e 5 dias fora dos meses (6 nos anos bissextos). Cada data cai sempre no mesmo dia da semana, todo ano.</p>
+<div class="cc-box"><h3>🗓️ Hoje no Condado</h3>
+<div class="cc-row"><label for="ccNossa">Nossa data:</label><input type="date" id="ccNossa"></div>
+<div class="cc-out" id="ccNossaOut"></div></div>
+<div class="cc-box"><h3>📜 Ano do Condado</h3>
+<div class="cc-row"><label for="ccAno">Ano:</label><input type="number" id="ccAno" min="1" max="1700" value="1419"><select id="ccConta" aria-label="Contagem do ano"><option value="SR">Contagem do Condado (C.C.)</option><option value="TA">Terceira Era (T.E.)</option></select>
+<select id="ccAtalho" aria-label="Anos famosos"><option value="">Anos famosos…</option><option value="1341">C.C. 1341 — O Hobbit (T.E. 2941)</option><option value="1418">C.C. 1418 — Frodo parte (T.E. 3018)</option><option value="1419">C.C. 1419 — Guerra do Anel (T.E. 3019)</option><option value="1290">C.C. 1290 — nasce Bilbo</option><option value="1368">C.C. 1368 — nasce Frodo</option></select></div>
+<div class="cc-out" id="ccAnoOut"></div>
+<div class="cc-info" id="ccInfo">Toque num dia. Os dias em dourado têm acontecimentos; em 1341, 1418 e 1419 eles abrem a jornada no mapa.</div>
+<div class="cc-year" id="ccGrade"></div></div>
+<div class="cc-box"><h3>📖 Como funciona</h3>
+<table><tr><th>Ordem do ano</th><th>Correspondência aproximada</th></tr>
+<tr><td>2º Yule (1º dia do ano)</td><td>≈ 23 de dezembro</td></tr>
+<tr><td>Afteryule, Solmath, Rethe, Astron, Thrimidge, Forelithe</td><td>janeiro a junho (≈ 10 dias adiantados)</td></tr>
+<tr><td>1º Lithe, Meio-do-Ano, (Overlithe), 2º Lithe</td><td>solstício de junho</td></tr>
+<tr><td>Afterlithe, Wedmath, Halimath, Winterfilth, Blotmath, Foreyule</td><td>julho a dezembro</td></tr>
+<tr><td>1º Yule (último dia do ano)</td><td>≈ 22 de dezembro</td></tr></table>
+<p><b>Semana do Condado</b>: Sterday (das Estrelas), Sunday (do Sol), Monday (da Lua), Trewsday (das Duas Árvores), Hevensday (dos Céus), Mersday (do Mar) e Highday (dos Valar, o dia principal). O ano sempre começa num Sterday. O Meio-do-Ano e o Overlithe não têm dia da semana.</p>
+<p><b>Bissexto</b>: a cada 4 anos entra o Overlithe depois do Meio-do-Ano, exceto no último ano de cada século.</p>
+<p><b>Anos</b>: o ano 1 do Condado é o ano 1601 da Terceira Era, quando Marcho e Blanco atravessaram o Brandevin. Por isso, C.C. = T.E. − 1600.</p>
+<small>Fontes: J. R. R. Tolkien, <i>O Senhor dos Anéis</i>, Prólogo (o ano 1 do Condado), Apêndice D (os calendários) e Apêndice B (as datas). Pelo Apêndice D, nosso 1º de janeiro equivale mais ou menos ao 9 de Afteryule; as conversões são aproximadas.</small></div>
+</section>

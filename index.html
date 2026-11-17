@@ -1,4 +1,4 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#14271f"><title>Atlas da Terra-média — v12.6</title><script>window.ATLAS_VERSAO='12.8';document.addEventListener('DOMContentLoaded',function(){try{var v=window.ATLAS_VERSAO;document.title='Atlas da Terra-média — v'+v;var e=document.getElementById('atlasVersaoTxt');if(e)e.textContent='Versão '+v}catch(x){}})</script><style>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#14271f"><title>Atlas da Terra-média — v12.6</title><script>window.ATLAS_VERSAO='12.9';document.addEventListener('DOMContentLoaded',function(){try{var v=window.ATLAS_VERSAO;document.title='Atlas da Terra-média — v'+v;var e=document.getElementById('atlasVersaoTxt');if(e)e.textContent='Versão '+v}catch(x){}})</script><style>
 :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#f4ecd5;background:#0e1b17}*{box-sizing:border-box}body{margin:0}header{padding:19px 22px;background:#152a22;border-bottom:1px solid #5c704a}h1{font-family:Georgia,serif;margin:0;color:#e9c77d;font-size:28px}header p{margin:5px 0;color:#bac9b6}.layout{display:grid;grid-template-columns:300px minmax(0,1fr) 340px;height:calc(100dvh - 91px)}aside{padding:18px;overflow:auto;background:#14251f}aside:first-child{border-right:1px solid #34483d}aside:last-child{border-left:1px solid #34483d}input,select,button{font:inherit}input,select{width:100%;padding:11px;margin:7px 0;background:#21382e;color:#fff;border:1px solid #526e59;border-radius:8px}button{cursor:pointer;background:#2c4838;color:#f8edce;border:1px solid #728263;border-radius:8px;padding:9px 11px}button:hover,.active{background:#5a6640!important}.filters{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.filters button{font-size:12px;padding:7px}.list{display:grid;gap:5px}.list button{text-align:left}.list small{display:block;color:#c3cbbd}main{position:relative;overflow:hidden;background:radial-gradient(circle,#243c30 0%,#0d1916 75%)}svg{width:100%;height:100%;touch-action:none}line{stroke:#8f9d7c;stroke-opacity:.4;stroke-width:1.5}.edge-active{stroke:#f5cc75;stroke-opacity:.9;stroke-width:2.6}.node{cursor:pointer}.node circle{stroke:#e7d19a;stroke-width:1.4}.node text{fill:#fff7e5;font-size:12px;paint-order:stroke;stroke:#10211b;stroke-width:4px;stroke-linejoin:round;pointer-events:none}.node.selected circle{stroke:#fff;stroke-width:3}.node.dim{opacity:.17}.legend{position:absolute;bottom:12px;left:12px;background:#13261edc;border:1px solid #526e59;padding:9px;border-radius:8px;font-size:12px}.tools{position:absolute;top:12px;right:12px;display:flex;gap:5px}h2{font-family:Georgia,serif;color:#e8c77f;margin-top:0}p{line-height:1.5}.tag{display:inline-block;font-size:12px;background:#344b37;border-radius:5px;padding:5px 8px;margin:3px}.connections{display:grid;gap:7px}.connections button{text-align:left}.connections small{display:block;color:#d4d9c8;margin-top:4px}.muted{color:#bac6b7;font-size:13px}.mobile-tabs{display:none}@media(max-width:900px){header{padding:13px}h1{font-size:22px}.layout{display:flex;flex-direction:column;height:auto}main{height:55dvh;min-height:360px;order:1}aside{order:2;max-height:none;border:0!important}.legend{font-size:10px}.mobile-tabs{display:block}aside:last-child{order:3}} </style><style id="atlas-ux-v4">
 html{scroll-behavior:smooth}body.atlas-ux{padding-bottom:78px}body.atlas-ux>header{padding:12px 16px!important}body.atlas-ux>header h1{font-size:clamp(19px,5vw,29px);margin:0 0 3px}body.atlas-ux>header p{margin:2px 0;font-size:12px}
 body.atlas-ux>.layout{display:none!important}body.atlas-ux>section{display:none!important}body.atlas-ux[data-view="grafo"]>.layout{display:grid!important}body.atlas-ux>section.atlas-current{display:block!important;min-height:60vh;max-width:100vw;box-sizing:border-box;margin-top:8px!important}body.atlas-ux section{scroll-margin-top:72px}body.atlas-ux .layout{min-height:65vh}body.atlas-ux .layout aside{max-height:calc(100vh - 190px);overflow:auto}
@@ -522,6 +522,59 @@ selectEl.onchange=()=>{i=Number(selectEl.value);render()};document.getElementByI
 <style>
 .timeline{background:#101f1b;border-top:2px solid #ae9258;padding:22px;color:#f4ecd5}.timeline h2{margin:0 0 10px}.time-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.time-controls select,.time-controls input{max-width:320px}.time-items{position:relative;margin:20px 0 0 12px;padding-left:22px;border-left:2px solid #a48a57;display:grid;gap:13px}.time-item{position:relative;background:#1c3329;border:1px solid #566b52;border-radius:10px;padding:14px}.time-item:before{content:'';position:absolute;width:12px;height:12px;left:-29px;top:20px;border-radius:50%;background:#e4c178;border:2px solid #101f1b}.time-item h3{color:#e9c77d;margin:4px 0}.time-item p{margin:7px 0}.time-item small{color:#bdcbbd}.time-item button{margin-top:7px}.time-pill{display:inline-block;font-size:12px;color:#f1db9c;background:#344536;border-radius:5px;padding:4px 7px}.time-count{color:#bfcbbd;font-size:13px}
 </style>
+<style id="atlas-calendario-css">
+#calendario-condado .cc-box{border:1px solid #6d6346;border-radius:14px;padding:12px 14px;margin:12px 0;background:#13261f}
+#calendario-condado .cc-box h3{margin:0 0 8px;font-size:17px;color:#f2d98f}
+#calendario-condado .cc-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+#calendario-condado input,#calendario-condado select{min-height:40px;background:#0f1f19;color:#f1e2bb;border:1px solid #8c784b;border-radius:9px;padding:6px 8px;font-size:15px}
+#calendario-condado input[type=number]{width:96px}
+#calendario-condado .cc-out{margin-top:8px;font-size:16px;line-height:1.5}
+#calendario-condado .cc-out b{color:#f6dfa0}
+#calendario-condado .cc-out small{display:block;color:#b9ad8c;font-size:13px}
+#calendario-condado .cc-year{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin-top:10px}
+#calendario-condado .cc-m{border:1px solid #4f5a45;border-radius:10px;padding:6px;background:#0f1f19}
+#calendario-condado .cc-m h4{margin:0 0 4px;font-size:14px;color:#f2d98f;display:flex;justify-content:space-between;gap:6px}
+#calendario-condado .cc-m h4 small{color:#a99d7e;font-weight:400}
+#calendario-condado .cc-g{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+#calendario-condado .cc-g span{font-size:10px;color:#a99d7e;text-align:center}
+#calendario-condado .cc-d{min-height:30px;padding:0;font-size:13px;border-radius:6px;border:1px solid transparent;background:#18332a;color:#e9dcb7}
+#calendario-condado .cc-d.ev{background:#5a4a1e;border-color:#d4b16a;color:#fff;font-weight:700}
+#calendario-condado .cc-d.hj{outline:2px solid #8fd0ff}
+#calendario-condado .cc-d.sel{background:#d4b16a;color:#102b25}
+#calendario-condado .cc-sp{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:4px;margin:2px 0}
+#calendario-condado .cc-sp .cc-d{padding:4px 9px;min-height:30px;background:#2a3b4a;border-color:#6f8ea6}
+#calendario-condado .cc-sp .cc-d.ev{background:#5a4a1e;border-color:#d4b16a}
+#calendario-condado .cc-info{margin-top:10px;padding:10px 12px;border-radius:10px;background:#1b3329;border:1px solid #6d6346;line-height:1.5}
+#calendario-condado .cc-info button{margin-top:6px;min-height:38px;border-radius:9px;background:#d4b16a;color:#102b25;font-weight:700;border:0;padding:6px 12px}
+#calendario-condado table{border-collapse:collapse;width:100%;font-size:14px}
+#calendario-condado td,#calendario-condado th{border-bottom:1px solid #3a4636;padding:4px 6px;text-align:left;vertical-align:top}
+#calendario-condado th{color:#d4b16a}
+</style>
+<section id="calendario-condado" aria-labelledby="cc-title">
+<h2 id="cc-title">📆 Calendário do Condado</h2>
+<p>A Contagem do Condado (Shire Reckoning), descrito no Apêndice D de <i>O Senhor dos Anéis</i>: 12 meses de 30 dias e 5 dias fora dos meses (6 nos anos bissextos). Cada data cai sempre no mesmo dia da semana, todo ano.</p>
+<div class="cc-box"><h3>🗓️ Hoje no Condado</h3>
+<div class="cc-row"><label for="ccNossa">Nossa data:</label><input type="date" id="ccNossa"></div>
+<div class="cc-out" id="ccNossaOut"></div></div>
+<div class="cc-box"><h3>📜 Ano do Condado</h3>
+<div class="cc-row"><label for="ccAno">Ano:</label><input type="number" id="ccAno" min="1" max="1700" value="1419"><select id="ccConta" aria-label="Contagem do ano"><option value="SR">Contagem do Condado (C.C.)</option><option value="TA">Terceira Era (T.E.)</option></select>
+<select id="ccAtalho" aria-label="Anos famosos"><option value="">Anos famosos…</option><option value="1341">C.C. 1341 — O Hobbit (T.E. 2941)</option><option value="1418">C.C. 1418 — Frodo parte (T.E. 3018)</option><option value="1419">C.C. 1419 — Guerra do Anel (T.E. 3019)</option><option value="1290">C.C. 1290 — nasce Bilbo</option><option value="1368">C.C. 1368 — nasce Frodo</option></select></div>
+<div class="cc-out" id="ccAnoOut"></div>
+<div class="cc-info" id="ccInfo">Toque num dia. Os dias em dourado têm acontecimentos; em 1341, 1418 e 1419 eles abrem a jornada no mapa.</div>
+<div class="cc-year" id="ccGrade"></div></div>
+<div class="cc-box"><h3>📖 Como funciona</h3>
+<table><tr><th>Ordem do ano</th><th>Correspondência aproximada</th></tr>
+<tr><td>2º Yule (1º dia do ano)</td><td>≈ 23 de dezembro</td></tr>
+<tr><td>Afteryule, Solmath, Rethe, Astron, Thrimidge, Forelithe</td><td>janeiro a junho (≈ 10 dias adiantados)</td></tr>
+<tr><td>1º Lithe, Meio-do-Ano, (Overlithe), 2º Lithe</td><td>solstício de junho</td></tr>
+<tr><td>Afterlithe, Wedmath, Halimath, Winterfilth, Blotmath, Foreyule</td><td>julho a dezembro</td></tr>
+<tr><td>1º Yule (último dia do ano)</td><td>≈ 22 de dezembro</td></tr></table>
+<p><b>Semana do Condado</b>: Sterday (das Estrelas), Sunday (do Sol), Monday (da Lua), Trewsday (das Duas Árvores), Hevensday (dos Céus), Mersday (do Mar) e Highday (dos Valar, o dia principal). O ano sempre começa num Sterday. O Meio-do-Ano e o Overlithe não têm dia da semana.</p>
+<p><b>Bissexto</b>: a cada 4 anos entra o Overlithe depois do Meio-do-Ano, exceto no último ano de cada século.</p>
+<p><b>Anos</b>: o ano 1 do Condado é o ano 1601 da Terceira Era, quando Marcho e Blanco atravessaram o Brandevin. Por isso, C.C. = T.E. − 1600.</p>
+<small>Fontes: J. R. R. Tolkien, <i>O Senhor dos Anéis</i>, Prólogo (o ano 1 do Condado), Apêndice D (os calendários) e Apêndice B (as datas). Pelo Apêndice D, nosso 1º de janeiro equivale mais ou menos ao 9 de Afteryule; as conversões são aproximadas.</small></div>
+</section>
+
 <section class="timeline" id="cronologia"><h2>⌛ Linha do tempo interativa</h2><p>Explore acontecimentos por era, consulte as fontes literárias e siga as conexões até o mapa mental. Datas aproximadas ou incertas são identificadas.</p><div class="time-controls"><label for="timeEra">Era</label><select id="timeEra"><option value="all">Todas as eras</option><option value="Antes das Eras">Antes das Eras</option><option value="Anos das Árvores">Anos das Árvores</option><option value="Primeira Era">Primeira Era</option><option value="Segunda Era">Segunda Era</option><option value="Terceira Era">Terceira Era</option><option value="Quarta Era">Quarta Era</option></select><input id="timeSearch" type="search" placeholder="Buscar evento, obra ou personagem..."></div><p id="timeCount" class="time-count"></p><div id="timeItems" class="time-items" aria-live="polite"></div></section>
 <script>
 (()=>{
@@ -1433,7 +1486,7 @@ family.addEventListener('change',draw);type.addEventListener('change',draw);draw
 })();
 </script>
 <script id="atlas-ux-v4-script">(()=>{'use strict';
-const sections=[['atlas-home','Início'],['atlas-portraits','Personagens ilustrados'],['atlas-games','Jogos da Terra-média'],['grafo','Grafo principal'],['teia-viva','Teia Viva neural'],['comparar-teia','Comparar dois elementos'],['mapas-originais','Mapa ilustrado'],['geografia','Geografia por eras'],['personagens','Personagens'],['atlas-genealogia','Genealogias completas'],['genealogy','Genealogias clássicas'],['atlas-primeira-era','Primeira Era'],['jornadas-detalhadas','Jornadas'],['cronologia','Cronologia'],['obras','Livros e obras'],['midias19','Filmes, séries e jogos'],['eventos19','Acontecimentos'],['comparador-adaptacoes','Livro × Filme × Jogo'],['comparador','Comparador de obras'],['fontes-tolkien','Fontes e referências']];
+const sections=[['atlas-home','Início'],['atlas-portraits','Personagens ilustrados'],['atlas-games','Jogos da Terra-média'],['grafo','Grafo principal'],['teia-viva','Teia Viva neural'],['comparar-teia','Comparar dois elementos'],['mapas-originais','Mapa ilustrado'],['geografia','Geografia por eras'],['personagens','Personagens'],['atlas-genealogia','Genealogias completas'],['genealogy','Genealogias clássicas'],['atlas-primeira-era','Primeira Era'],['jornadas-detalhadas','Jornadas'],['cronologia','Cronologia'],['calendario-condado','Calendário do Condado'],['obras','Livros e obras'],['midias19','Filmes, séries e jogos'],['eventos19','Acontecimentos'],['comparador-adaptacoes','Livro × Filme × Jogo'],['comparador','Comparador de obras'],['fontes-tolkien','Fontes e referências']];
 const select=document.getElementById('atlasUxSelect'),search=document.getElementById('atlasUxSearch'),results=document.getElementById('atlasUxResults');
 for(const [id,label] of sections){if(id==='grafo'||document.getElementById(id)){const o=document.createElement('option');o.value=id;o.textContent=label;select.append(o)}}
 const toast=(msg)=>{let t=document.getElementById('atlasUxToast');t.textContent=msg;t.style.display='block';clearTimeout(window.atlasUxToastTimer);window.atlasUxToastTimer=setTimeout(()=>t.style.display='none',2200)};
@@ -2790,7 +2843,72 @@ function draw(cam,W,H,relief){last=[cam,W,H,relief];if(!on)return;
     ctx.beginPath();ctx.arc(s[0],y,r,0,Math.PI*2);ctx.fillStyle='rgba(16,30,26,.92)';ctx.fill();ctx.lineWidth=r*.22;ctx.strokeStyle=t.cor;ctx.stroke();
     ctx.font=`${r*1.05}px sans-serif`;ctx.fillStyle='#fff';ctx.fillText(t.ic,s[0],y+r*.05);
     ctx.font=`700 ${r*.95}px Georgia,serif`;ctx.lineWidth=r*.3;ctx.strokeStyle='rgba(12,14,12,.9)';ctx.textAlign='left';ctx.strokeText(q.lab,s[0]+r*1.25,y);ctx.fillStyle='#fbefc8';ctx.fillText(q.lab,s[0]+r*1.25,y);ctx.textAlign='center'})}
-window.AtlasDias={draw,setOn,isOn:()=>on};
+window.AtlasDias={draw,setOn,isOn:()=>on,openAt:(m,i)=>{if(!DATA[m])return;stop();modo=m;dia=Math.max(0,Math.min(DATA[m].cal.length-1,i));if(!on)setOn(true);else{panel();follow(1100)}}};
+})();
+
+</script>
+<script id="atlas-calendario-script">
+(()=>{'use strict';
+const sec=document.getElementById('calendario-condado');if(!sec)return;
+const MES=['Afteryule','Solmath','Rethe','Astron','Thrimidge','Forelithe','Afterlithe','Wedmath','Halimath','Winterfilth','Blotmath','Foreyule'];
+const MNOS=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+const SEM=['Sterday','Sunday','Monday','Trewsday','Hevensday','Mersday','Highday'],SEMPT=['das Estrelas','do Sol','da Lua','das Duas Árvores','dos Céus','do Mar','dos Valar'];
+const bis=a=>a%4===0&&a%100!==0;
+/* monta o ano: lista de dias {t:'m'|'e', m, d, nome, sem} */
+function ano(a){const L=[];const add=(o)=>L.push(o);add({t:'e',k:'2yule',nome:'2º Yule'});
+  for(let m=0;m<12;m++){for(let d=1;d<=30;d++)add({t:'m',m,d});
+    if(m===5){add({t:'e',k:'1lithe',nome:'1º Lithe'});add({t:'e',k:'meio',nome:'Meio-do-Ano',sw:1});if(bis(a))add({t:'e',k:'over',nome:'Overlithe',sw:1});add({t:'e',k:'2lithe',nome:'2º Lithe'})}}
+  add({t:'e',k:'1yule',nome:'1º Yule'});let w=0;for(const o of L){if(o.sw)o.sem=-1;else o.sem=(w++)%7}return L}
+const nomeDia=o=>o.t==='m'?`${o.d} de ${MES[o.m]}`:o.nome;
+const semTxt=o=>o.sem<0?'sem dia da semana':`${SEM[o.sem]} (dia ${SEMPT[o.sem]})`;
+/* nossa data ≈ índice num ano comum do Condado: 1º de janeiro = 9 de Afteryule */
+function nossaParaIdx(dt){const y=dt.getFullYear(),j=Date.UTC(y,0,1);let n=Math.round((Date.UTC(y,dt.getMonth(),dt.getDate())-j)/864e5);
+  const lp=(y%4===0&&y%100!==0)||y%400===0;if(lp&&n>=59)n--;return (n+9)%365}
+function idxComum(o){const L=ano(1);return L.findIndex(x=>x.t===o.t&&(o.t==='m'?x.m===o.m&&x.d===o.d:x.k===(o.k==='over'?'meio':o.k)))}
+function idxParaNossa(i){const d=new Date(Date.UTC(2001,0,1)+(i-9)*864e5);return `${d.getUTCDate()} de ${MNOS[d.getUTCMonth()]}`}
+/* acontecimentos: os dias da jornada (Dia a dia) e datas fixas */
+const EV={};const put=(a,key,txt,go)=>{(EV[a+'|'+key]=EV[a+'|'+key]||[]).push({txt,go})};
+const keyOf=o=>o.t==='m'?o.m+'-'+o.d:o.k;
+const D=window.ATLAS_DIAS;
+if(D)for(const [modo,M] of Object.entries(D))M.cal.forEach((lab,i)=>{const tx=M.ev[i];if(!tx)return;let a,k,m;
+  if(m=lab.match(/^(\d+) de (\S+) de (\d+)$/)){a=+m[3]-1600;k=MNOS.indexOf(m[2])+'-'+m[1]}
+  else if(m=lab.match(/^1º Yule.*?(\d{4})/)){a=+m[1]-1600;k='1yule'}else if(m=lab.match(/^2º Yule.*?(\d{4})/)){a=+m[1]-1600;k='2yule'}
+  else if(m=lab.match(/^1º Lithe de (\d+)/)){a=+m[1]-1600;k='1lithe'}else if(m=lab.match(/^Meio-do-Ano de (\d+)/)){a=+m[1]-1600;k='meio'}else if(m=lab.match(/^2º Lithe de (\d+)/)){a=+m[1]-1600;k='2lithe'}
+  if(a)put(a,k,tx,[modo,i])});
+put(1290,'8-22','Nasce Bilbo Bolseiro, em 22 de Halimath.');put(1368,'8-22','Nasce Frodo Bolseiro, no mesmo dia de aniversário de Bilbo.');
+put(1401,'8-22','A Festa de Aniversário de Bilbo (111 anos) e de Frodo (33): Bilbo desaparece com o Anel e deixa o Condado.');
+const anual={'8-22':'Aniversário de Bilbo e de Frodo.','meio':'Meio-do-Ano: festa no Condado, nos dias do Lithe.','over':'Overlithe: dia extra de festa, só nos anos bissextos.','2yule':'Ano-novo no Condado.'};
+const $=id=>document.getElementById(id);
+const nossa=$('ccNossa'),nossaOut=$('ccNossaOut'),inAno=$('ccAno'),conta=$('ccConta'),grade=$('ccGrade'),info=$('ccInfo'),anoOut=$('ccAnoOut');
+const hoje=new Date();nossa.value=`${hoje.getFullYear()}-${String(hoje.getMonth()+1).padStart(2,'0')}-${String(hoje.getDate()).padStart(2,'0')}`;
+function mostraNossa(){const v=nossa.value.split('-').map(Number);if(v.length<3||!v[0]){nossaOut.textContent='';return}const o=ano(1)[nossaParaIdx(new Date(v[0],v[1]-1,v[2]))];
+  nossaOut.innerHTML=`<b>${nomeDia(o)}</b> — ${semTxt(o)}<small>No Condado, as datas ficavam uns 10 dias à frente das nossas. Conversão aproximada (Apêndice D).</small>`}
+nossa.addEventListener('input',mostraNossa);mostraNossa();
+function anoSR(){const n=+inAno.value||1;return conta.value==='TA'?n-1600:n}
+function abreMapa(go){const s=document.getElementById('atlasUxSelect');if(s){s.value='mapas-originais';s.dispatchEvent(new Event('change'))}
+  let n=0;const t=setInterval(()=>{if(window.AtlasDias&&window.AtlasDias.openAt&&document.body.dataset.view==='mapas-originais'){clearInterval(t);setTimeout(()=>window.AtlasDias.openAt(go[0],go[1]),400)}else if(++n>40)clearInterval(t)},150)}
+function info1(o,a){const evs=(EV[a+'|'+keyOf(o)]||[]).slice(),an=anual[keyOf(o)];
+  const i=idxComum(o);let h=`<b>${nomeDia(o)} de ${a} C.C.</b> (T.E. ${a+1600}) — ${semTxt(o)}<br><small>≈ ${idxParaNossa(i)} no nosso calendário</small>`;
+  if(evs.length)h+=evs.map(e=>`<p>${e.txt}</p>`).join('');else if(an)h+=`<p>${an}</p>`;
+  info.innerHTML=h;const g=evs.find(e=>e.go);if(g){const b=document.createElement('button');b.type='button';b.textContent='🗺️ Ver este dia no mapa';b.onclick=()=>abreMapa(g.go);info.append(b)}}
+function desenha(){const a=anoSR();if(a<1){anoOut.textContent='Antes do ano 1 do Condado (T.E. 1601) não há Contagem do Condado.';grade.innerHTML='';return}
+  const L=ano(a),hi=nossaParaIdx(new Date());const hk=keyOf(ano(1)[hi]);
+  anoOut.innerHTML=`<b>Ano ${a} do Condado</b> = ano ${a+1600} da Terceira Era${a>=1422?` (ano ${a-1421} da Quarta Era)`:''} · ${bis(a)?'bissexto: 366 dias, com Overlithe':'365 dias'}`;
+  grade.innerHTML='';let box=null,g=null;const esp=[];
+  const btn=(o)=>{const b=document.createElement('button');b.type='button';b.className='cc-d';b.textContent=o.t==='m'?o.d:o.nome;const k=keyOf(o);
+    if(EV[a+'|'+k]||(k==='8-22'))b.classList.add('ev');if(k===hk)b.classList.add('hj');b.title=nomeDia(o)+' — '+semTxt(o);
+    b.onclick=()=>{grade.querySelectorAll('.sel').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');info1(o,a);info.scrollIntoView({block:'nearest',behavior:'smooth'})};return b};
+  const mbox=(titulo,sub)=>{box=document.createElement('div');box.className='cc-m';box.innerHTML=`<h4>${titulo}<small>${sub}</small></h4>`;g=document.createElement('div');g.className='cc-g';
+    SEM.forEach(s=>{const sp=document.createElement('span');sp.textContent=s.slice(0,3);g.append(sp)});box.append(g);grade.append(box)};
+  let pend=[];
+  for(const o of L){if(o.t==='e'){pend.push(o);continue}
+    if(o.d===1){mbox(MES[o.m],`${o.m+1}º mês · ≈ ${MNOS[o.m]}`);if(pend.length){const sp=document.createElement('div');sp.className='cc-sp';pend.forEach(p=>sp.append(btn(p)));g.append(sp);pend=[]}
+      for(let k=0;k<o.sem;k++)g.append(document.createElement('i'))}
+    g.append(btn(o))}
+  if(pend.length){const sp=document.createElement('div');sp.className='cc-sp';pend.forEach(p=>sp.append(btn(p)));g.append(sp)}}
+inAno.addEventListener('input',desenha);conta.addEventListener('change',()=>{const n=+inAno.value||0;inAno.value=conta.value==='TA'?n+1600:n-1600;desenha()});
+$('ccAtalho').addEventListener('change',e=>{if(!e.target.value)return;conta.value='SR';inAno.value=e.target.value;e.target.value='';desenha()});
+desenha();
 })();
 
 </script>
@@ -3225,7 +3343,7 @@ const G=[
  ['personagens','👤','Personagens',[['atlas-portraits','Galeria'],['personagens','Fichas']]],
  ['mapa','🧭','Explorar',[['mapas-originais','🗺️ Mapa'],['teia-viva','🕸 Teia'],['grafo','✳️ Grafo 3D'],['comparar-teia','Comparar dois'],['geografia','Eras'],['jornadas-detalhadas','Jornadas']]],
  ['familias','🌳','Famílias',[['atlas-genealogia','Árvores completas'],['genealogy','Árvores clássicas']]],
- ['historia','📜','História',[['cronologia','Linha do tempo'],['eventos19','Acontecimentos'],['atlas-primeira-era','Primeira Era']]],
+ ['historia','📜','História',[['cronologia','Linha do tempo'],['calendario-condado','📆 Calendário'],['eventos19','Acontecimentos'],['atlas-primeira-era','Primeira Era']]],
  ['obras','📚','Obras',[['obras','Livros'],['midias19','Filmes e séries'],['comparador-adaptacoes','Comparar']]],
  ['jogos','🎮','Jogos',[['atlas-games','Jogos']]],
  ['fontes','📖','Fontes',[['fontes-tolkien','Fontes e referências']]]

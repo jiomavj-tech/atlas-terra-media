@@ -1,5 +1,13 @@
 # Histórico de mudanças
 
+## 12.9 — 17/11/2026 — calendário do Condado
+- **História → 📆 Calendário**: nova aba com o calendário do Condado, feito a partir das regras do Apêndice D.
+  - **Hoje no Condado**: converte uma data nossa para a data do Condado, com o dia da semana hobbit. A conversão é aproximada: nosso 1º de janeiro ≈ 9 de Afteryule.
+  - **Ano do Condado**: mostra o ano inteiro, em Contagem do Condado ou da Terceira Era (C.C. = T.E. − 1600), com os 12 meses de 30 dias, os dias de Yule e de Lithe, o Meio-do-Ano e o Overlithe dos anos bissextos.
+  - Atalhos para os anos famosos (1290, 1341, 1368, 1418, 1419). Nos anos de O Hobbit e da Guerra do Anel, os dias com acontecimento ficam dourados; ao tocar num deles, o botão "Ver este dia no mapa" abre o "Dia a dia" naquela data.
+  - Um quadro explica a ordem do ano, a semana do Condado (Sterday a Highday), os anos bissextos e a origem da contagem.
+- Implementação própria, sem código de terceiros.
+
 ## 12.8 — 17/11/2026 — jornadas dia a dia
 - **Mapa**: novo botão "📅 Dia a dia". Um controle de datas mostra onde cada grupo estava em cada dia, com o caminho já feito em cor e o que falta tracejado. O mapa acompanha os viajantes.
   - **Guerra do Anel** (23/09/3018 a 25/03/3019): Frodo e os hobbits, a Sociedade do Anel, Frodo e Sam, Aragorn com Legolas e Gimli, Merry e Pippin, Merry com os Rohirrim, Gandalf com Pippin. 60 dias têm o acontecimento do Apêndice B escrito em português.
