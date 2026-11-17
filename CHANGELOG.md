@@ -2,7 +2,7 @@
 
 ## 12.8 — 17/11/2026 — jornadas dia a dia
 - **Mapa**: novo botão "📅 Dia a dia". Um controle de datas mostra onde cada grupo estava em cada dia, com o caminho já feito em cor e o que falta tracejado. O mapa acompanha os viajantes.
-  - **Guerra do Anel** (23/09/3018 a 25/03/3019): Frodo e os hobbits, a Sociedade do Anel, Frodo e Sam, Aragorn com Legolas e Gimli, Merry e Pippin, Merry com os Rohirrim, Gandalf com Pippin. 66 dias têm o acontecimento do Apêndice B escrito em português.
+  - **Guerra do Anel** (23/09/3018 a 25/03/3019): Frodo e os hobbits, a Sociedade do Anel, Frodo e Sam, Aragorn com Legolas e Gimli, Merry e Pippin, Merry com os Rohirrim, Gandalf com Pippin. 60 dias têm o acontecimento do Apêndice B escrito em português.
   - **O Hobbit** (2941): Bilbo e os anões, de Bolsão a Erebor, com datas aproximadas.
 - Botões ◀ ▶, régua de dias e "▶ Reproduzir", que avança um dia por segundo e para sozinho no fim. Tocar num grupo leva o mapa até ele.
 - Percursos adaptados dos pontos de viagem do [Arda-Maps](https://github.com/kwoxer/Arda-Maps) (CC BY-NC-SA 4.0), encaixados no mapa do Atlas. Datas e acontecimentos da Guerra do Anel conferidos com o Apêndice B.
