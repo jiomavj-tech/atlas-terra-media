@@ -1,6 +1,6 @@
 # Tarefas — em ordem de prioridade
 
-Situação atual: v12.5 (16/11/2026). Tarefas 1 a 5 resolvidas; a 6 precisa de decisão do dono; a 7 (retratos) depende das imagens que ele enviar. Use `python tools/teste_fumaca.py` para reproduzir os erros.
+Situação atual: v12.5 (16/11/2026). Tarefas 1 a 6 fechadas. A 7 (77 retratos) fica parada até o dono enviar as imagens. Use `python tools/teste_fumaca.py` para reproduzir os erros.
 
 ---
 
@@ -67,7 +67,7 @@ A chamada vem de `window.atlasMainGraphStart` → `refresh()` → `draw()`.
 
 ---
 
-## Tarefa 6 — Resumos da Wikipédia em inglês e só com internet (BAIXA) — REVISTA na v12.5: talvez não se aplique mais
+## ✅ Tarefa 6 — Resumos da Wikipédia — FECHADA pelo dono em 16/11/2026 (não se aplica mais)
 
 **Situação em 16/11/2026:** o Atlas não busca mais textos na Wikipédia. A única chamada que restou (`fetchCharacterPortrait`) pede só a **imagem** do verbete em inglês, e sem internet ela já falha em silêncio, com a mensagem "Ilustração provisória". Trocar para a Wikipédia em português exigiria os títulos em português de cada personagem. O dono decide se vale a pena ou se a tarefa pode ser fechada.
 
