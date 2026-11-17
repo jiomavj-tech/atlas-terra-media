@@ -75,6 +75,9 @@ Este repositório guarda o **Atlas da Terra-média**: um aplicativo de **arquivo
 - `openPlace` mira dentro da cena detalhada: o deslocamento usa `deepZ`, não o zoom atual. `deepRetry` completa o voo quando `zMax()` libera o zoom.
 - Os nomes do globo (`.ar-pin`) só recebem toques com `#arStage.on`. Sem isso, eles bloqueiam o mapa mesmo invisíveis.
 
+## Barra do topo (v12.13)
+- `atlas-barra-script` (fim do body) move `#atlasUxTop` para o início do body e põe `#atlasNavTabs` dentro dela. `atlas-barra-css` esconde o seletor de seção, a busca de seção e o ↑. Os elementos continuam existindo, porque outros scripts usam `#atlasUxSelect` para trocar de seção.
+
 ## Instalação (PWA)
 
 - `manifest.webmanifest`, `sw.js` e os ícones `icon-*.png` permitem instalar o Atlas no Android. O `sw.js` usa "rede primeiro": com internet sempre baixa a versão nova; sem internet abre a última cópia. Ao mudar a lista de arquivos guardados, troque o nome do `CACHE`.

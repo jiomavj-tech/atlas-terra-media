@@ -1,4 +1,4 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#14271f"><title>Atlas da Terra-média — v12.6</title><script>window.ATLAS_VERSAO='12.12';document.addEventListener('DOMContentLoaded',function(){try{var v=window.ATLAS_VERSAO;document.title='Atlas da Terra-média — v'+v;var e=document.getElementById('atlasVersaoTxt');if(e)e.textContent='Versão '+v}catch(x){}})</script><style>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#14271f"><title>Atlas da Terra-média — v12.6</title><script>window.ATLAS_VERSAO='12.13';document.addEventListener('DOMContentLoaded',function(){try{var v=window.ATLAS_VERSAO;document.title='Atlas da Terra-média — v'+v;var e=document.getElementById('atlasVersaoTxt');if(e)e.textContent='Versão '+v}catch(x){}})</script><style>
 :root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#f4ecd5;background:#0e1b17}*{box-sizing:border-box}body{margin:0}header{padding:19px 22px;background:#152a22;border-bottom:1px solid #5c704a}h1{font-family:Georgia,serif;margin:0;color:#e9c77d;font-size:28px}header p{margin:5px 0;color:#bac9b6}.layout{display:grid;grid-template-columns:300px minmax(0,1fr) 340px;height:calc(100dvh - 91px)}aside{padding:18px;overflow:auto;background:#14251f}aside:first-child{border-right:1px solid #34483d}aside:last-child{border-left:1px solid #34483d}input,select,button{font:inherit}input,select{width:100%;padding:11px;margin:7px 0;background:#21382e;color:#fff;border:1px solid #526e59;border-radius:8px}button{cursor:pointer;background:#2c4838;color:#f8edce;border:1px solid #728263;border-radius:8px;padding:9px 11px}button:hover,.active{background:#5a6640!important}.filters{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.filters button{font-size:12px;padding:7px}.list{display:grid;gap:5px}.list button{text-align:left}.list small{display:block;color:#c3cbbd}main{position:relative;overflow:hidden;background:radial-gradient(circle,#243c30 0%,#0d1916 75%)}svg{width:100%;height:100%;touch-action:none}line{stroke:#8f9d7c;stroke-opacity:.4;stroke-width:1.5}.edge-active{stroke:#f5cc75;stroke-opacity:.9;stroke-width:2.6}.node{cursor:pointer}.node circle{stroke:#e7d19a;stroke-width:1.4}.node text{fill:#fff7e5;font-size:12px;paint-order:stroke;stroke:#10211b;stroke-width:4px;stroke-linejoin:round;pointer-events:none}.node.selected circle{stroke:#fff;stroke-width:3}.node.dim{opacity:.17}.legend{position:absolute;bottom:12px;left:12px;background:#13261edc;border:1px solid #526e59;padding:9px;border-radius:8px;font-size:12px}.tools{position:absolute;top:12px;right:12px;display:flex;gap:5px}h2{font-family:Georgia,serif;color:#e8c77f;margin-top:0}p{line-height:1.5}.tag{display:inline-block;font-size:12px;background:#344b37;border-radius:5px;padding:5px 8px;margin:3px}.connections{display:grid;gap:7px}.connections button{text-align:left}.connections small{display:block;color:#d4d9c8;margin-top:4px}.muted{color:#bac6b7;font-size:13px}.mobile-tabs{display:none}@media(max-width:900px){header{padding:13px}h1{font-size:22px}.layout{display:flex;flex-direction:column;height:auto}main{height:55dvh;min-height:360px;order:1}aside{order:2;max-height:none;border:0!important}.legend{font-size:10px}.mobile-tabs{display:block}aside:last-child{order:3}} </style><style id="atlas-ux-v4">
 html{scroll-behavior:smooth}body.atlas-ux{padding-bottom:78px}body.atlas-ux>header{padding:12px 16px!important}body.atlas-ux>header h1{font-size:clamp(19px,5vw,29px);margin:0 0 3px}body.atlas-ux>header p{margin:2px 0;font-size:12px}
 body.atlas-ux>.layout{display:none!important}body.atlas-ux>section{display:none!important}body.atlas-ux[data-view="grafo"]>.layout{display:grid!important}body.atlas-ux>section.atlas-current{display:block!important;min-height:60vh;max-width:100vw;box-sizing:border-box;margin-top:8px!important}body.atlas-ux section{scroll-margin-top:72px}body.atlas-ux .layout{min-height:65vh}body.atlas-ux .layout aside{max-height:calc(100vh - 190px);overflow:auto}
@@ -3406,6 +3406,22 @@ function sync(){let v=document.body.dataset.view;if(v==='comparador'){go('compar
   tabs.style.top=(top.offsetHeight||61)+'px'}
 new MutationObserver(sync).observe(document.body,{attributes:true,attributeFilter:['data-view']});sync();
 window.AtlasNav={groups:G,openGroup};
+})();
+</script>
+<style id="atlas-barra-css">
+/* v12.13: uma barra só, no topo de todas as abas: as abas da seção + 🎙️ e 🔊. A escolha de seção fica só no rodapé. */
+#atlasUxTop>#atlasUxSelect,#atlasUxTop>select,#atlasUxTop>#atlasUxSearch,#atlasUxTop>#atlasUxUp,#atlasUxTop>#atlasUxResults{display:none!important}
+#atlasUxTop{justify-content:flex-end;padding:5px 8px!important}
+#atlasUxTop>#atlasNavTabs{position:static!important;flex:1 1 auto;min-width:0;padding:0 2px!important;border:0!important;background:none!important;top:auto!important}
+#atlasUxTop .ux-voice{flex:0 0 40px!important;width:40px!important;height:40px!important;font-size:17px!important}
+body[data-view="atlas-home"] #atlasUxTop{display:none!important}
+</style>
+<script id="atlas-barra-script">
+(()=>{'use strict';
+const top=document.getElementById('atlasUxTop'),tabs=document.getElementById('atlasNavTabs');if(!top)return;
+/* a barra estava no meio da página: nas seções que vinham antes dela, aparecia no fim do conteúdo, perto do rodapé */
+document.body.insertBefore(top,document.body.firstElementChild);
+if(tabs)top.insertBefore(tabs,top.firstChild);
 })();
 </script>
 </body></html>

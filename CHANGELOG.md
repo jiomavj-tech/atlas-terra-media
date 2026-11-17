@@ -1,5 +1,9 @@
 # Histórico de mudanças
 
+## 12.13 — 17/11/2026 — uma barra só no topo
+- A barra com "seção / Buscar seção / 🎙️ / 🔊" ficava no meio da página. Por isso aparecia no fim do conteúdo, perto do rodapé, em Personagens e em outras abas, além de repetir a escolha de seção do rodapé.
+- Agora fica uma barra fina no topo de todas as abas, com as abas da seção (Galeria/Fichas, Linha do tempo/Calendário, Mapa/Teia…) e os botões 🎙️ e 🔊. A escolha de seção ficou só no rodapé. No Início a barra não aparece: a busca e o 🎙️ já estão na tela.
+
 ## 12.12 — 17/11/2026 — correções vistas no celular
 - **Mapa**: some a faixa vazia que aparecia no topo do mapa. Os painéis de "Reinos e Eras" e "Dia a dia" ficavam visíveis mesmo fechados.
 - **Dia a dia**: o painel ficou mais compacto. Ganhou o botão ▴/▾, que recolhe tudo e deixa só a data, os botões e a régua, liberando o mapa.
