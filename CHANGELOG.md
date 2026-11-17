@@ -1,5 +1,9 @@
 # Histórico de mudanças
 
+## 12.12 — 17/11/2026 — correções vistas no celular
+- **Mapa**: some a faixa vazia que aparecia no topo do mapa. Os painéis de "Reinos e Eras" e "Dia a dia" ficavam visíveis mesmo fechados.
+- **Dia a dia**: o painel ficou mais compacto. Ganhou o botão ▴/▾, que recolhe tudo e deixa só a data, os botões e a régua, liberando o mapa.
+
 ## 12.11 — 17/11/2026 — toque duplo vai direto ao lugar
 - **Mapa**: o toque duplo agora vai **direto** ao zoom máximo do lugar mais perto do dedo e mostra a descrição. Depois disso, é só usar os dedos ou os botões + e − para ajustar. Dois toques longe de qualquer nome continuam aproximando 2× no centro.
 - O alfinete escolhido é o que está visível embaixo do dedo. Se o dedo não estiver em cima de nenhum, vale o mais perto, até 60 px.
